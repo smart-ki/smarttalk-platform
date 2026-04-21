@@ -14,6 +14,7 @@ export interface KommKurs {
   dauer: string
   preisAb: string
   preisDetail?: string
+  preisAbFirma?: string
   highlight?: string
   highlightFarbe?: string
   seoTitel: string
@@ -49,6 +50,7 @@ export const kommKurse: KommKurs[] = [
     dauer: 'Halbtag (ca. 3.5h)',
     preisAb: 'CHF 249',
     preisDetail: 'CHF 249 / Person, Firmenkurse auf Anfrage',
+    preisAbFirma: 'CHF 320',
     seoTitel: 'Sicher auftreten in Meetings – Kommunikationstraining | SmartTalk',
     metaBeschreibung: 'Körpersprache, Stimme und Wortwahl gezielt einsetzen. Halbtageskurs für souveränen Auftritt in Meetings. Zentralschweiz.',
     keywords: ['Auftrittskompetenz', 'Körpersprache Training', 'Kommunikationskurs Schweiz', 'Meetings Auftreten'],
@@ -80,6 +82,7 @@ export const kommKurse: KommKurs[] = [
     dauer: 'Ganztag (ca. 7h)',
     preisAb: 'CHF 349',
     preisDetail: 'CHF 349 / Person, Firmenkurse auf Anfrage',
+    preisAbFirma: 'CHF 450',
     seoTitel: 'Kommunikation im Team und als Führungsperson – Training | SmartTalk',
     metaBeschreibung: 'Gewaltfreie Kommunikation, aktives Zuhören und Raum lassen. Tageskurs für Führungskräfte und Teams. Zentralschweiz.',
     keywords: ['Kommunikationstraining Führung', 'Gewaltfreie Kommunikation Schweiz', 'Teamkommunikation', 'Führungskräftetraining'],
@@ -113,9 +116,44 @@ export const kommKurse: KommKurs[] = [
     dauer: 'Halbtag (ca. 3.5h)',
     preisAb: 'Kostenlos',
     preisDetail: 'Kostenlos mit Bildungsgutschein (Kt. LU, ZG, AG, SZ, OW)',
+    preisAbFirma: 'CHF 320',
     seoTitel: 'Sicher sprechen, klar kommunizieren – Kurs | SmartTalk',
     metaBeschreibung: 'Ich-Botschaften, klare Sprache und 4-Ohren-Modell. Kostenlos mit Bildungsgutschein. Halbtageskurs in der Zentralschweiz.',
     keywords: ['Kommunikationskurs', '4-Ohren-Modell', 'Ich-Botschaften', 'Klare Sprache Kurs Schweiz'],
+  },
+  {
+    slug: 'ki-in-der-kommunikation',
+    nummer: 4,
+    level: 'AUFBAU',
+    levelFarbe: 'bg-purple-100 text-purple-800',
+    titel: 'KI in der Kommunikation',
+    untertitel: 'KI-gestützte Präsentationen und effiziente virtuelle Kommunikation.',
+    highlight: 'Neu ab Q3 2026',
+    highlightFarbe: 'bg-indigo-50 border-indigo-200 text-indigo-800',
+    kurzbeschreibung: 'KI verändert auch die Art, wie wir präsentieren und virtuell kommunizieren. Dieser Tageskurs zeigt dir, wie du KI-Tools für überzeugende Präsentationen nutzt, virtuelle Meetings wirkungsvoller gestaltest und deine digitale Kommunikation auf das nächste Level bringst.',
+    ausfuehrlicheBeschreibung: 'Von der KI-gestützten Präsentation bis zur effizienten virtuellen Zusammenarbeit: In diesem Tageskurs verbindest du menschliche Kommunikationskompetenz mit dem Potenzial moderner KI-Tools. Du lernst, wie KI bei der Vorbereitung von Präsentationen hilft, wie virtuelle Meetings klarer und wirkungsvoller werden – und wie du als Mensch dabei immer die Regie behältst.',
+    lernziele: [
+      'KI-Tools für Präsentationsvorbereitung und -gestaltung einsetzen',
+      'Virtuelle Kommunikation strukturieren und professionell führen',
+      'KI und menschliche Kommunikation sinnvoll verbinden',
+      'Eigene digitale Kommunikationspräsenz stärken',
+    ],
+    inhalte: [
+      'KI-gestützte Präsentationen: Canva AI, Gamma & Co.',
+      'Virtuelle Meetings: Vorbereitung, Moderation, Nachbereitung mit KI',
+      'Schriftliche Kommunikation mit KI verbessern (E-Mail, Chat, Dokumentation)',
+      'Authentisch bleiben: Wann KI hilft – und wann der Mensch übernimmt',
+      'Praxisübungen mit eigenen Kommunikationssituationen',
+    ],
+    zielgruppe: 'Berufsleute, Führungskräfte, alle die hybrid und virtuell kommunizieren',
+    format: 'Präsenz (Ganztag)',
+    dauer: 'Ganztag (ca. 7h)',
+    preisAb: 'CHF 450',
+    preisDetail: 'CHF 450 / Person, Firmenkurse CHF 590',
+    preisAbFirma: 'CHF 590',
+    seoTitel: 'KI in der Kommunikation – Kurs | SmartTalk',
+    metaBeschreibung: 'KI-gestützte Präsentationen und effiziente virtuelle Kommunikation. Tageskurs für moderne Kommunikation. Zentralschweiz.',
+    keywords: ['KI Kommunikation Kurs', 'KI Präsentation', 'Virtuelle Kommunikation', 'Future Skills Schweiz'],
   },
 ]
 

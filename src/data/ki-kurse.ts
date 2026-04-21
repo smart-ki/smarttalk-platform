@@ -22,6 +22,7 @@ export interface KiKurs {
   minutenProSession?: number   // z.B. 90
   preisAb: string
   preisDetail?: string
+  preisAbFirma?: string
   highlight?: string
   highlightFarbe?: string
   externerLink?: string
@@ -98,41 +99,41 @@ export const kiKurse: KiKurs[] = [
     nummer: 3,
     level: 'KOMPETENZ',
     levelFarbe: 'bg-purple-100 text-purple-800',
-    titel: 'Welche KI kann was? Tools im Vergleich & gezielt einsetzen',
+    titel: 'Welche KI kann was? Tools & Produktivität im Vergleich',
     untertitel: 'Den Überblick behalten – und das richtige Tool für jede Aufgabe wählen.',
     kurzbeschreibung:
-      'ChatGPT, Claude, Gemini, Perplexity – die KI-Welt wächst rasant. In 4 Lektionen à 90 Min. lernst du die wichtigsten Tools kennen und baust dir deine persönliche KI-Toolbox für den Alltag auf.',
+      'ChatGPT, Claude, Gemini, Copilot, Notion AI – die KI-Welt wächst rasant. In 4 Lektionen à 90 Min. lernst du die wichtigsten Tools kennen, vergleichst KI-Assistenten und Produktivitätstools und baust dir deine persönliche KI-Toolbox auf.',
     ausfuehrlicheBeschreibung:
-      'Jeden Monat erscheinen neue KI-Tools – und es wird unübersichtlicher. Statt alles auszuprobieren, bekommst du hier einen strukturierten Überblick: In 4 Lektionen à 90 Minuten vergleichen wir die führenden Sprachmodelle und zeigen, für welche Aufgaben welches Tool wirklich geeignet ist. Du übst direkt mit eigenen Berufsaufgaben. Am Ende hast du deine persönliche KI-Toolbox – und weisst genau, was du wann einsetzt.',
+      'Jeden Monat erscheinen neue KI-Tools – und es wird unübersichtlicher. Statt alles auszuprobieren, bekommst du hier einen strukturierten Überblick: In 4 Lektionen à 90 Minuten vergleichen wir die führenden Sprachmodelle sowie Produktivitätstools wie Microsoft Copilot und Notion AI. Du übst direkt mit eigenen Berufsaufgaben. Am Ende hast du deine persönliche KI-Toolbox – und weisst genau, was du wann einsetzt.',
     sessions: [
       {
         woche: 1,
-        titel: 'Überblick: ChatGPT, Claude, Gemini – was steckt dahinter?',
+        titel: 'Überblick: ChatGPT, Claude, Gemini, Copilot – was steckt dahinter?',
         inhalt: [
           'Wie funktionieren Sprachmodelle? (einfach erklärt)',
-          'Die wichtigsten KI-Anbieter im Vergleich',
+          'ChatGPT, Claude, Gemini & Microsoft Copilot im Vergleich',
           'Gratis vs. Bezahlversionen – lohnt es sich?',
           'Erste Übungen mit eigenen Aufgaben',
         ],
       },
       {
         woche: 2,
-        titel: 'Text-KI im Alltag: E-Mails, Berichte, Zusammenfassungen',
+        titel: 'Text-KI im Büroalltag: E-Mails, Berichte, Meetings',
         inhalt: [
           'KI für E-Mails: schneller, besser, persönlicher',
           'Lange Dokumente in Sekunden zusammenfassen',
           'Berichte und Protokolle mit KI erstellen',
-          'Praxisübungen mit eigenen Texten',
+          'Microsoft Copilot in Word, Outlook & Teams',
         ],
       },
       {
         woche: 3,
-        titel: 'Bild-, Recherche- & Produktivitäts-KI im Vergleich',
+        titel: 'Produktivitäts-KI: Notion AI, Canva AI & Recherche-Tools',
         inhalt: [
+          'Notion AI: Projekte, Notizen und Wissen organisieren',
+          'Canva AI: Präsentationen und Grafiken in Minuten',
           'KI-Suche und Recherche: Perplexity & Co.',
-          'Bild-KI: Wann sinnvoll, wie einsetzen?',
-          'Produktivitäts-Tools: Notion AI, Canva AI u.a.',
-          'Was passt zu meinem Berufsalltag?',
+          'Was passt konkret zu meinem Berufsalltag?',
         ],
       },
       {
@@ -140,7 +141,7 @@ export const kiKurse: KiKurs[] = [
         titel: 'Meine persönliche KI-Toolbox + Aktionsplan',
         inhalt: [
           'Alles zusammenführen: Welche Tools für welche Aufgaben',
-          'Persönliche KI-Toolbox aufbauen',
+          'Persönliche KI-Toolbox definieren und dokumentieren',
           'Aktionsplan: Was setze ich ab nächster Woche um?',
           'Fragen & Austausch in der Gruppe',
         ],
@@ -148,9 +149,9 @@ export const kiKurse: KiKurs[] = [
     ],
     lernziele: [
       'Die wichtigsten KI-Kategorien kennen: Text, Bild, Recherche, Produktivität',
-      'ChatGPT, Claude, Gemini & Co. direkt vergleichen und einschätzen',
+      'ChatGPT, Claude, Gemini, Copilot & Notion AI direkt vergleichen',
       'Das richtige Tool für E-Mails, Texte, Recherche und Präsentationen wählen',
-      'Gratis- und Bezahlversionen sinnvoll einsetzen',
+      'Microsoft Copilot in Office-Anwendungen sinnvoll einsetzen',
       'Eine persönliche KI-Toolbox für den eigenen Berufsalltag aufbauen',
     ],
     zielgruppe: 'Berufsleute mit ersten KI-Erfahrungen',
@@ -160,6 +161,7 @@ export const kiKurse: KiKurs[] = [
     minutenProSession: 90,
     preisAb: 'CHF 249',
     preisDetail: 'CHF 249 / Person | auf Anfrage als Firmenkurs',
+    preisAbFirma: 'CHF 320',
     seoTitel: 'KI Tools Vergleich Kurs Schweiz – ChatGPT, Claude, Gemini | SmartTalk',
     metaBeschreibung:
       'Welche KI kann was? 4 Lektionen à 90 Min. zum Vergleich und gezielten Einsatz von KI-Tools. Für Berufsleute in der Zentralschweiz.',
@@ -232,6 +234,7 @@ export const kiKurse: KiKurs[] = [
     minutenProSession: 90,
     preisAb: 'CHF 249',
     preisDetail: 'CHF 249 / Person | auf Anfrage als Firmenkurs',
+    preisAbFirma: 'CHF 320',
     seoTitel: 'Prompting Kurs Schweiz – Besser mit KI arbeiten | SmartTalk',
     metaBeschreibung:
       'Prompts die wirklich funktionieren: 4 Lektionen à 90 Min. Lerne wie du KI richtig anweist. Für Berufsleute in der Zentralschweiz.',
@@ -283,6 +286,7 @@ export const kiKurse: KiKurs[] = [
     minutenProSession: 90,
     preisAb: 'CHF 129',
     preisDetail: 'CHF 129 / Person | auf Anfrage als Firmenkurs',
+    preisAbFirma: 'CHF 180',
     seoTitel: 'KI Datenschutz & Ethik Kurs Schweiz – DSG, DSGVO | SmartTalk',
     metaBeschreibung:
       'KI sicher und rechtskonform einsetzen: DSG, DSGVO, EU AI Act. 2 Lektionen à 90 Min. Für Unternehmen und Mitarbeitende in der Zentralschweiz.',
@@ -355,6 +359,7 @@ export const kiKurse: KiKurs[] = [
     minutenProSession: 90,
     preisAb: 'CHF 349',
     preisDetail: 'CHF 349 / Person | auf Anfrage als Firmenkurs',
+    preisAbFirma: 'CHF 450',
     seoTitel: 'KI Implementierung KMU Schweiz – Strategie & Geschäftsprozesse | SmartTalk',
     metaBeschreibung:
       'KI strategisch in KMU einführen: 4 Lektionen à 90 Min. Roadmap, Change Management, Massnahmenplan. Für Führungskräfte in der Zentralschweiz.',
@@ -426,6 +431,7 @@ export const kiKurse: KiKurs[] = [
     minutenProSession: 90,
     preisAb: 'CHF 349',
     preisDetail: 'CHF 349 / Person | auf Anfrage als Firmenkurs',
+    preisAbFirma: 'CHF 450',
     seoTitel: 'KI in der Bildung – Kurs für Schulen & Weiterbildungsanbieter Schweiz | SmartTalk',
     metaBeschreibung:
       'KI verantwortungsbewusst in Bildungsinstitutionen einsetzen. 4 Lektionen à 90 Min. Für Schulleitungen und Bildungsanbieter in der Zentralschweiz.',

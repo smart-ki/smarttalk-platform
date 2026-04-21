@@ -82,6 +82,9 @@ export default function KommKursCard({ kurs }: { kurs: KommKurs }) {
           <div>
             <span className="text-xs text-gray-400 uppercase tracking-wide">ab</span>
             <span className="block text-xl font-bold text-gray-900">{kurs.preisAb}</span>
+            {kurs.preisAbFirma && (
+              <span className="text-xs text-gray-400">Firma: {kurs.preisAbFirma}</span>
+            )}
           </div>
           <Link
             href={`/kommunikation/${kurs.slug}`}

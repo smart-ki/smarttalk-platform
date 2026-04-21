@@ -80,6 +80,9 @@ export default function KiKursCard({ kurs }: { kurs: KiKurs }) {
           <div>
             <span className="text-xs text-gray-400 uppercase tracking-wide">ab</span>
             <span className="block text-xl font-bold text-gray-900">{kurs.preisAb}</span>
+            {kurs.preisAbFirma && (
+              <span className="text-xs text-gray-400">Firma: {kurs.preisAbFirma}</span>
+            )}
             {kurs.slug === 'grundkompetenzen' && (
               <span className="text-xs text-gray-400">*mit Bildungsgutschein</span>
             )}

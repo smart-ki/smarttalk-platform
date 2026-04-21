@@ -204,18 +204,100 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── FIRMENKURS CTA BANNER ─── */}
-      <section className="py-14 px-4 bg-[#F5821F]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-4">
-            Kurse für Ihr Unternehmen
-          </h2>
-          <p className="text-orange-100 text-base mb-8 max-w-xl mx-auto">
-            Alle Kurse sind auch als massgeschneiderte Firmenkurse buchbar – in Ihren Räumlichkeiten, auf Ihre Bedürfnisse zugeschnitten. Für Teams ab 5 Personen.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#kontakt" className="bg-white text-[#F5821F] font-bold rounded-lg hover:bg-orange-50 transition-colors inline-block text-center py-3.5 px-8 text-base shadow-lg">
-              Firmenkurs anfragen →
+      {/* ─── B2B SECTION ─── */}
+      <section id="fuer-unternehmen" className="py-20 px-4 bg-[#1B2E4B]">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-14">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Für Unternehmen & Teams</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-4">
+              Future Skills für Ihre Organisation
+            </h2>
+            <p className="text-gray-300 max-w-xl mx-auto">
+              Alle Kurse sind als Inhouse-Trainings buchbar – massgeschneidert auf Ihre Prozesse, Ihre Tools und Ihre Menschen. Teams ab 5 Personen.
+            </p>
+          </div>
+
+          {/* B2B Pakete */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            {/* Paket 1 */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
+              <div className="w-10 h-10 rounded-xl bg-[#F5821F]/20 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-[#F5821F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-white text-lg mb-2">Inhouse Team-Training</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Alle KI- und Kommunikationskurse direkt bei Ihnen im Unternehmen – angepasst an Ihre Aufgaben, Tools und Branche.
+              </p>
+              <div className="border-t border-white/10 pt-4">
+                <span className="text-xs text-gray-500 uppercase tracking-wide">ab</span>
+                <p className="text-white font-bold text-lg">Firmenpreise auf Anfrage</p>
+                <p className="text-[#F5821F] text-sm font-semibold mt-1">20% Rabatt auf alle Kurse</p>
+              </div>
+            </div>
+
+            {/* Paket 2 */}
+            <div className="bg-[#F5821F]/10 border border-[#F5821F]/30 rounded-2xl p-6 relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                <span className="bg-[#F5821F] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Empfohlen</span>
+              </div>
+              <div className="w-10 h-10 rounded-xl bg-[#F5821F]/30 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-[#F5821F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-white text-lg mb-2">KI-Team-Training + Beratung</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                Kombination aus Kursreihe und begleitender KI-Beratung: Wir trainieren Ihr Team und begleiten die Implementierung.
+              </p>
+              <div className="border-t border-[#F5821F]/20 pt-4">
+                <span className="text-xs text-gray-400 uppercase tracking-wide">Paketpreis</span>
+                <p className="text-white font-bold text-lg">Auf Anfrage</p>
+                <p className="text-[#F5821F] text-sm font-semibold mt-1">Training + Beratung aus einer Hand</p>
+              </div>
+            </div>
+
+            {/* Paket 3 */}
+            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
+              <div className="w-10 h-10 rounded-xl bg-[#7C3AED]/20 flex items-center justify-center mb-4">
+                <svg className="w-5 h-5 text-[#7C3AED]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-white text-lg mb-2">KI-Beratung & Audit</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Analyse Ihrer Prozesse, Identifikation von KI-Potenzialen und massgeschneiderte Roadmap für die KI-Einführung in Ihrem Unternehmen.
+              </p>
+              <div className="border-t border-white/10 pt-4">
+                <span className="text-xs text-gray-500 uppercase tracking-wide">Tagessatz</span>
+                <p className="text-white font-bold text-lg">CHF 1'600</p>
+                <p className="text-gray-400 text-sm mt-1">Individuelle Projektpakete möglich</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Future Lab */}
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-6">
+            <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center shrink-0">
+              <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <div className="flex-1 text-center sm:text-left">
+              <h3 className="font-bold text-white text-lg mb-1">Future Lab – Raum für Innovation</h3>
+              <p className="text-gray-400 text-sm">Modernste Tech-Infrastruktur für Ihre Workshops, Trainings und Innovation-Sessions. Miete inklusive Technik-Setup.</p>
+            </div>
+            <div className="text-center sm:text-right shrink-0">
+              <p className="text-white font-bold text-xl">CHF 600 / Tag</p>
+              <p className="text-gray-400 text-xs mt-1">inkl. Tech-Infrastruktur</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <Link href="#kontakt" className="bg-[#F5821F] text-white font-bold rounded-lg hover:bg-orange-600 transition-colors inline-block text-center py-3.5 px-10 text-base shadow-lg shadow-orange-900/30">
+              Firmenlösung anfragen →
             </Link>
           </div>
         </div>
