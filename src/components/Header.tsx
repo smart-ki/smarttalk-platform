@@ -16,12 +16,13 @@ export default function Header() {
               <span className="text-[10px] text-[#F5821F] font-semibold uppercase tracking-widest leading-none mt-0.5">Future Skills</span>
             </div>
           </Link>
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-7">
             <Link href="/#ki-digital" className="text-gray-600 hover:text-[#F5821F] font-medium transition-colors">KI & Digital</Link>
-            <Link href="/#kommunikation" className="text-gray-600 hover:text-[#F5821F] font-medium transition-colors">Kommunikation</Link>
-            <Link href="/#ueber-uns" className="text-gray-600 hover:text-[#F5821F] font-medium transition-colors">Über uns</Link>
-            <Link href="/#kontakt" className="text-gray-600 hover:text-[#F5821F] font-medium transition-colors">Kontakt</Link>
-            <Link href="/#ki-digital" className="btn-primary text-sm py-2 px-5">Kurs finden</Link>
+            <Link href="/#kommunikation" className="text-gray-600 hover:text-[#7C3AED] font-medium transition-colors">Kommunikation</Link>
+            <Link href="/#beratung" className="text-gray-600 hover:text-[#0D9488] font-medium transition-colors">Beratung</Link>
+            <Link href="/#ueber-uns" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">Über uns</Link>
+            <Link href="/#kontakt" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">Kontakt</Link>
+            <Link href="/#ki-digital" className="btn-primary text-sm py-2 px-5">Angebot entdecken</Link>
           </nav>
           <button className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menü öffnen">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -34,9 +35,10 @@ export default function Header() {
             <nav className="flex flex-col gap-4">
               <Link href="/#ki-digital" className="text-gray-600 font-medium" onClick={() => setMenuOpen(false)}>KI & Digital</Link>
               <Link href="/#kommunikation" className="text-gray-600 font-medium" onClick={() => setMenuOpen(false)}>Kommunikation</Link>
+              <Link href="/#beratung" className="text-gray-600 font-medium" onClick={() => setMenuOpen(false)}>Beratung</Link>
               <Link href="/#ueber-uns" className="text-gray-600 font-medium" onClick={() => setMenuOpen(false)}>Über uns</Link>
               <Link href="/#kontakt" className="text-gray-600 font-medium" onClick={() => setMenuOpen(false)}>Kontakt</Link>
-              <Link href="/#ki-digital" className="btn-primary text-sm text-center" onClick={() => setMenuOpen(false)}>Kurs finden</Link>
+              <Link href="/#ki-digital" className="btn-primary text-sm text-center" onClick={() => setMenuOpen(false)}>Angebot entdecken</Link>
             </nav>
           </div>
         )}

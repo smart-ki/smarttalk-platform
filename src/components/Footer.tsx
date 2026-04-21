@@ -24,16 +24,17 @@ export default function Footer() {
               <li><Link href="/ki/ki-tools-vergleich" className="hover:text-[#F5821F] transition-colors">KI-Tools im Vergleich</Link></li>
               <li><Link href="/ki/prompts-die-funktionieren" className="hover:text-[#F5821F] transition-colors">Prompts die funktionieren</Link></li>
               <li><Link href="/ki/datenschutz-ethik" className="hover:text-[#F5821F] transition-colors">Datenschutz & Ethik</Link></li>
-              <li><Link href="/ki/ki-strategie" className="hover:text-[#F5821F] transition-colors">KI-Strategie</Link></li>
-              <li><Link href="/ki/ki-bildung" className="hover:text-[#F5821F] transition-colors">KI in der Bildung</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold text-white mb-4">Kommunikation</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/kommunikation/sicher-auftreten-meetings" className="hover:text-[#F5821F] transition-colors">Sicher auftreten in Meetings</Link></li>
-              <li><Link href="/kommunikation/kommunizieren-team-fuehrung" className="hover:text-[#F5821F] transition-colors">Kommunizieren im Team & als Führungsperson</Link></li>
-              <li><Link href="/kommunikation/sicher-sprechen-klar-kommunizieren" className="hover:text-[#F5821F] transition-colors">Sicher sprechen, klar kommunizieren</Link></li>
+              <li><Link href="/kommunikation/sicher-auftreten-meetings" className="hover:text-[#7C3AED] transition-colors">Sicher auftreten in Meetings</Link></li>
+              <li><Link href="/kommunikation/kommunizieren-team-fuehrung" className="hover:text-[#7C3AED] transition-colors">Kommunizieren im Team</Link></li>
+              <li><Link href="/kommunikation/sicher-sprechen-klar-kommunizieren" className="hover:text-[#7C3AED] transition-colors">Sicher sprechen, klar kommunizieren</Link></li>
+              <li className="pt-2 border-t border-gray-800">
+                <Link href="/#beratung" className="hover:text-[#0D9488] transition-colors text-[#0D9488] font-medium">Beratung & Strategie →</Link>
+              </li>
             </ul>
           </div>
           <div id="kontakt">
