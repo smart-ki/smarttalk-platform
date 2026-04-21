@@ -161,7 +161,7 @@ export default function HomePage() {
               <div className="bg-orange-50 rounded-2xl p-6 border border-orange-100">
                 <h3 className="font-bold text-gray-900 mb-2">Der Mensch im Mittelpunkt</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Wir glauben, dass KI nur dann Sinn macht, wenn sie Menschen besser macht – nicht ersetzt. In unseren Kursen steht immer die Frage im Vordergrund: Was hilft dir konkret, heute, in deinem Alltag?
+                  KI entfaltet ihren vollen Wert, wenn sie Menschen stärkt und wachsen lässt. In unseren Kursen steht stets die Frage im Vordergrund: Was hilft dir konkret, heute, in deinem Alltag?
                 </p>
               </div>
               <div className="bg-purple-50 rounded-2xl p-6 border border-purple-100">
@@ -173,7 +173,7 @@ export default function HomePage() {
               <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
                 <h3 className="font-bold text-gray-900 mb-2">Praxisnah, verständlich, wirksam</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Keine Theorie-Schlachten, keine Tech-Überwältigung. Unsere Kurse sind so aufgebaut, dass du nach jeder Lektion etwas Konkretes mitnimmst und sofort umsetzen kannst.
+                  Jede Lektion bringt konkreten Nutzen – direkt umsetzbar im Berufsalltag. Verständlich aufgebaut, praxisnah gestaltet und auf dein Tempo abgestimmt.
                 </p>
               </div>
             </div>
@@ -183,10 +183,10 @@ export default function HomePage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/logo.png" alt="SmartTalk" style={{ width: '64px', height: '64px', objectFit: 'contain' }} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Jeannine Germann</h3>
-              <p className="text-[#F5821F] font-semibold text-sm mb-4">Gründerin · SmartTalk</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">SmartTalk</h3>
+              <p className="text-[#F5821F] font-semibold text-sm mb-4">Bildungszentrum · Zentralschweiz · 100 Mitarbeitende</p>
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
-                Future Skills Trainerin aus der Zentralschweiz. Leidenschaft für Menschen, KI und echte Kommunikation. Weil beides zusammengehört.
+                Wir begleiten Menschen und Organisationen seit Jahren in ihrer Entwicklung – mit Leidenschaft für echte Kompetenz, digitale Werkzeuge und wirkungsvolle Kommunikation.
               </p>
               <div className="mt-6">
                 <a

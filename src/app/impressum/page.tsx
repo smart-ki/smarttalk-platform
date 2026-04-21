@@ -5,7 +5,7 @@ export default function ImpressumPage() {
       <div className="space-y-6 text-gray-600 leading-relaxed">
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">Anbieter</h2>
-          <p>SmartTalk<br />Jeannine Germann<br />Zentralschweiz, Schweiz</p>
+          <p>SmartTalk<br />Bildungszentrum<br />Zentralschweiz, Schweiz</p>
         </section>
         <section>
           <h2 className="text-xl font-bold text-gray-900 mb-3">Kontakt</h2>

@@ -16,6 +16,14 @@ export default function KommKursCard({ kurs }: { kurs: KommKurs }) {
           <span className="text-xs text-gray-400 font-medium">Kurs {kurs.nummer}</span>
         </div>
 
+        {/* Highlight-Banner (z.B. Kostenlos mit Bildungsgutschein) */}
+        {kurs.highlight && (
+          <div className={`text-xs font-semibold px-3 py-1.5 rounded-lg border mb-3 flex items-center gap-1.5 ${kurs.highlightFarbe}`}>
+            <span>✨</span>
+            {kurs.highlight}
+          </div>
+        )}
+
         {/* Format badge */}
         <div className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border bg-purple-50 border-purple-200 text-purple-700 mb-3 self-start">
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

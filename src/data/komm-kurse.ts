@@ -14,6 +14,8 @@ export interface KommKurs {
   dauer: string
   preisAb: string
   preisDetail?: string
+  highlight?: string
+  highlightFarbe?: string
   seoTitel: string
   metaBeschreibung: string
   keywords: string[]
@@ -62,9 +64,9 @@ export const kommKurse: KommKurs[] = [
     ausfuehrlicheBeschreibung: 'Ob Teamgespräch, Mitarbeitendengespräch oder Konfliktmoment: Wie du kommunizierst, prägt die Kultur. Dieser Tageskurs bringt dir die wichtigsten Werkzeuge für eine wirkungsvolle, menschliche Kommunikation – als Führungsperson und als Teammitglied. Wir arbeiten mit echten Situationen, üben aktiv und reflektieren gemeinsam.',
     lernziele: [
       'Gewaltfreie Kommunikation im Alltag anwenden',
-      'Aktiv zuhören – wirklich verstehen, nicht nur warten',
-      'Raum lassen: andere zu Wort kommen lassen',
-      'Gespräche führen, die verbinden statt trennen',
+      'Aktiv zuhören – wirklich verstehen und präsent sein',
+      'Raum geben: andere zu Wort kommen lassen und stärken',
+      'Gespräche führen, die verbinden und weiterbringen',
     ],
     inhalte: [
       'Grundlagen der gewaltfreien Kommunikation (GFK)',
@@ -89,13 +91,15 @@ export const kommKurse: KommKurs[] = [
     levelFarbe: 'bg-purple-100 text-purple-800',
     titel: 'Sicher sprechen, klar kommunizieren',
     untertitel: 'Ich-Botschaften, klare Sprache und das 4-Ohren-Modell.',
-    kurzbeschreibung: 'Missverständnisse entstehen nicht aus bösem Willen – sondern weil Botschaften unterschiedlich gehört werden. Dieser Halbtageskurs gibt dir ein solides Fundament: klare Sprache, Ich-Botschaften und das 4-Ohren-Modell als Werkzeuge für den Alltag.',
-    ausfuehrlicheBeschreibung: 'Sprechen tun wir alle. Aber wirklich klar kommunizieren ist eine Fähigkeit, die man lernen kann. In diesem Halbtageskurs arbeitest du mit dem bewährten 4-Ohren-Modell von Schulz von Thun, lernst Ich-Botschaften zu formulieren und trainierst eine Sprache, die ankommt – ohne Weichmacher, ohne Missverständnisse.',
+    highlight: 'Kostenlos mit Bildungsgutschein',
+    highlightFarbe: 'bg-purple-50 border-purple-200 text-purple-800',
+    kurzbeschreibung: 'Klare Kommunikation ist erlernbar. Dieser Halbtageskurs gibt dir ein solides Fundament: klare Sprache, Ich-Botschaften und das 4-Ohren-Modell als Werkzeuge für den Alltag – verständlich, direkt und sofort anwendbar.',
+    ausfuehrlicheBeschreibung: 'Sprechen tun wir alle – klar und wirkungsvoll kommunizieren ist eine Fähigkeit, die man gezielt trainieren kann. In diesem Halbtageskurs arbeitest du mit dem bewährten 4-Ohren-Modell von Schulz von Thun, lernst Ich-Botschaften zu formulieren und trainierst eine Sprache, die direkt ankommt. Dieser Kurs ist Teil des Grundkompetenzen-Angebots und kann mit dem Bildungsgutschein kostenlos besucht werden.',
     lernziele: [
-      'Das 4-Ohren-Modell verstehen und anwenden',
-      'Ich-Botschaften formulieren statt Du-Botschaften',
-      'Klar und direkt sprechen – ohne hart zu wirken',
-      'Missverständnisse erkennen und auflösen',
+      'Das 4-Ohren-Modell verstehen und im Alltag anwenden',
+      'Ich-Botschaften formulieren – konstruktiv und klar',
+      'Direkt und verständlich sprechen mit echter Wirkung',
+      'Kommunikationsmuster erkennen und gezielt verändern',
     ],
     inhalte: [
       'Das 4-Ohren-Modell (Schulz von Thun) – Theorie und Praxis',
@@ -107,10 +111,10 @@ export const kommKurse: KommKurs[] = [
     zielgruppe: 'Alle die klarer kommunizieren wollen – im Job und privat',
     format: 'Präsenz (Halbtag)',
     dauer: 'Halbtag (ca. 3.5h)',
-    preisAb: 'CHF 249',
-    preisDetail: 'CHF 249 / Person, Firmenkurse auf Anfrage',
+    preisAb: 'Kostenlos',
+    preisDetail: 'Kostenlos mit Bildungsgutschein (Kt. LU, ZG, AG, SZ, OW)',
     seoTitel: 'Sicher sprechen, klar kommunizieren – Kurs | SmartTalk',
-    metaBeschreibung: 'Ich-Botschaften, klare Sprache und 4-Ohren-Modell. Halbtageskurs für klare Kommunikation im Berufsalltag. Zentralschweiz.',
+    metaBeschreibung: 'Ich-Botschaften, klare Sprache und 4-Ohren-Modell. Kostenlos mit Bildungsgutschein. Halbtageskurs in der Zentralschweiz.',
     keywords: ['Kommunikationskurs', '4-Ohren-Modell', 'Ich-Botschaften', 'Klare Sprache Kurs Schweiz'],
   },
 ]
