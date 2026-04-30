@@ -23,6 +23,7 @@ export interface KiKurs {
   preisAb: string
   preisDetail?: string
   preisAbFirma?: string
+  isBundle?: boolean
   highlight?: string
   highlightFarbe?: string
   externerLink?: string
@@ -37,14 +38,14 @@ export const kiKurse: KiKurs[] = [
     nummer: 1,
     level: 'EINSTIEG',
     levelFarbe: 'bg-green-100 text-green-800',
-    titel: 'Schnupperkurs: KI einfach ausprobieren',
+    titel: 'KI einfach ausprobieren',
     untertitel: '90 Minuten, die alles verändern können.',
-    highlight: 'Nur CHF 49 – auch online',
+    highlight: 'Nur CHF 49 – der perfekte Einstieg',
     highlightFarbe: 'bg-green-50 border-green-200 text-green-800',
     kurzbeschreibung:
-      'Du hast von KI gehört, aber noch nie wirklich damit gearbeitet? In diesem kompakten Einstieg bekommst du einen ehrlichen Einblick: Was kann KI wirklich, was nicht – und was kannst du ab morgen damit machen?',
+      'Du hast von KI gehört, aber noch nie wirklich damit gearbeitet? In diesen 90 Minuten erlebst du KI live, probierst selbst aus und weisst danach, ob und wie KI etwas für dich sein kann.',
     ausfuehrlicheBeschreibung:
-      'Kein Vorwissen, kein Druck, keine Fachbegriffe. Dieser Kurs ist bewusst kurz gehalten – 90 Minuten, in denen du KI live erlebst und selbst ausprobierst. Du lernst, was Sprachmodelle sind, siehst live wie ChatGPT und Claude auf typische Büroaufgaben reagieren und formulierst deinen ersten eigenen Prompt. Du gehst nicht als KI-Experte nach Hause – aber du weisst, ob und wie KI etwas für dich sein kann.',
+      'Kein Vorwissen, kein Druck, keine Fachbegriffe. 90 Minuten, in denen du KI live erlebst und selbst ausprobierst. Du siehst, wie ChatGPT und Claude auf typische Aufgaben aus deinem Alltag reagieren – und formulierst deinen ersten eigenen Prompt. Du gehst nicht als KI-Expertin nach Hause, aber du weisst genau, was KI für dich leisten kann.',
     lernziele: [
       'KI live erleben – ohne Vorkenntnisse, ohne Hemmungen',
       'Den ersten eigenen Prompt selbst ausprobieren',
@@ -58,57 +59,26 @@ export const kiKurse: KiKurs[] = [
     minutenProSession: 90,
     preisAb: 'CHF 49',
     preisDetail: 'CHF 49 / Person',
-    seoTitel: 'KI Schnupperkurs Schweiz – Einstieg in 90 Minuten | SmartTalk',
+    seoTitel: 'KI einfach ausprobieren – 90 Min. Schnupperkurs | SmartTalk',
     metaBeschreibung:
-      'KI einfach ausprobieren: 90-Minuten Schnupperkurs für Einsteiger:innen. Online oder Präsenz, CHF 49. Zentralschweiz.',
+      'KI live erleben in 90 Minuten. Schnupperkurs für Einsteiger:innen, CHF 49. Online oder Präsenz. 2 Slots im Juni – jetzt anmelden.',
     keywords: ['KI Schnupperkurs', 'KI Einstieg', 'ChatGPT ausprobieren', 'KI für Anfänger Schweiz'],
   },
   {
-    slug: 'grundkompetenzen',
+    slug: 'prompting-ki-tools',
     nummer: 2,
-    level: 'GRUNDKURS',
-    levelFarbe: 'bg-blue-100 text-blue-800',
-    titel: 'Grundkompetenzen mit KI',
-    untertitel: 'Kostenlos mit Bildungsgutschein – für Kantone LU, ZG, AG, SZ und OW.',
-    highlight: 'Kostenlos mit Bildungsgutschein',
-    highlightFarbe: 'bg-blue-50 border-blue-200 text-blue-800',
+    level: 'AUFBAU',
+    levelFarbe: 'bg-orange-100 text-orange-800',
+    titel: 'Prompting & KI-Tools',
+    untertitel: 'Wer gut fragt, bekommt gute Antworten – und nutzt das richtige Tool.',
     kurzbeschreibung:
-      'Ein umfassender Einsteigerkurs für alle, die KI von Grund auf lernen wollen – praxisnah, verständlich und vollständig finanziert über den Bildungsgutschein für Einwohner:innen der Kantone Luzern, Zug, Aargau, Schwyz und Obwalden.',
+      'In 4 Lektionen à 90 Min. lernst du, wie du KI so anweist, dass sie wirklich liefert – und welches Tool für welche Aufgabe am besten geeignet ist. Von ChatGPT über Claude bis Microsoft Copilot.',
     ausfuehrlicheBeschreibung:
-      'Dieser Kurs ist unser umfassendstes Grundangebot: In 21 Lernstunden begleitest du uns durch alle wichtigen Themen – von den Grundlagen der KI über praktisches Prompting bis zu Datenschutz und sicherem Umgang. Bewusst auf das Tempo von Menschen ohne technischen Hintergrund ausgelegt. Kein Fachjargon, viele Übungen, viel Austausch.',
-    lernziele: [
-      'KI-Grundlagen solide verstehen – was steckt hinter ChatGPT, Claude & Co.',
-      'Eigene Prompts sicher und wirkungsvoll formulieren',
-      'KI für alltägliche Aufgaben wie E-Mails, Texte und Recherchen einsetzen',
-      'Datenschutz und sicheren Umgang mit KI-Tools kennen',
-      'KI-Anwendungen für den eigenen Berufsalltag identifizieren',
-    ],
-    zielgruppe: 'Alle Berufsleute – kein Vorwissen nötig',
-    format: 'Präsenzkurs',
-    dauer: '21 Stunden',
-    preisAb: 'Kostenlos*',
-    preisDetail: 'Kostenlos mit Bildungsgutschein (Kantone LU, ZG, AG, SZ, OW)',
-    externerLink: 'https://www.smarttalk.ch/grundkompetenzen',
-    seoTitel: 'KI Grundkompetenzen Kurs – Kostenlos mit Bildungsgutschein | SmartTalk',
-    metaBeschreibung:
-      'KI-Grundkurs kostenlos mit Bildungsgutschein für Kantone Luzern, Zug, Aargau, Schwyz und Obwalden. 21 Stunden, praxisnah, kein Vorwissen nötig.',
-    keywords: ['KI Bildungsgutschein', 'KI Kurs kostenlos Luzern', 'Grundkompetenzen KI', 'KI Kurs Zug Aargau Schwyz'],
-  },
-  {
-    slug: 'ki-tools-vergleich',
-    nummer: 3,
-    level: 'KOMPETENZ',
-    levelFarbe: 'bg-purple-100 text-purple-800',
-    titel: 'Welche KI kann was? Tools & Produktivität im Vergleich',
-    untertitel: 'Den Überblick behalten – und das richtige Tool für jede Aufgabe wählen.',
-    kurzbeschreibung:
-      'ChatGPT, Claude, Gemini, Copilot, Notion AI – die KI-Welt wächst rasant. In 4 Lektionen à 90 Min. lernst du die wichtigsten Tools kennen, vergleichst KI-Assistenten und Produktivitätstools und baust dir deine persönliche KI-Toolbox auf.',
-    ausfuehrlicheBeschreibung:
-      'Jeden Monat erscheinen neue KI-Tools – und es wird unübersichtlicher. Statt alles auszuprobieren, bekommst du hier einen strukturierten Überblick: In 4 Lektionen à 90 Minuten vergleichen wir die führenden Sprachmodelle sowie Produktivitätstools wie Microsoft Copilot und Notion AI. Du übst direkt mit eigenen Berufsaufgaben. Am Ende hast du deine persönliche KI-Toolbox – und weisst genau, was du wann einsetzt.',
+      'Prompting und Tool-Wahl entscheiden darüber, ob KI im Alltag wirklich hilft oder frustriert. In 4 wöchentlichen Lektionen à 90 Minuten lernst du die Kunst des Promptings – mit dem bewährten CARE-Prinzip – und vergleichst die führenden KI-Tools direkt miteinander. Alle Übungen basieren auf echten Berufsaufgaben: E-Mails schreiben, Texte strukturieren, Präsentationen erstellen, Meetings vorbereiten.',
     sessions: [
       {
         woche: 1,
-        titel: 'Überblick: ChatGPT, Claude, Gemini, Copilot – was steckt dahinter?',
+        titel: 'Tools im Überblick: ChatGPT, Claude, Gemini & Copilot',
         inhalt: [
           'Wie funktionieren Sprachmodelle? (einfach erklärt)',
           'ChatGPT, Claude, Gemini & Microsoft Copilot im Vergleich',
@@ -118,103 +88,30 @@ export const kiKurse: KiKurs[] = [
       },
       {
         woche: 2,
-        titel: 'Text-KI im Büroalltag: E-Mails, Berichte, Meetings',
+        titel: 'Prompting Grundlagen: Das CARE-Prinzip',
         inhalt: [
-          'KI für E-Mails: schneller, besser, persönlicher',
-          'Lange Dokumente in Sekunden zusammenfassen',
-          'Berichte und Protokolle mit KI erstellen',
-          'Microsoft Copilot in Word, Outlook & Teams',
+          'Warum der Prompt alles entscheidet',
+          'Das CARE-Prinzip: Kontext, Aufgabe, Rolle, Ergebnis-Format',
+          'Häufige Fehler und wie man sie vermeidet',
+          'Erste Prompts für Büroaufgaben schreiben',
         ],
       },
       {
         woche: 3,
-        titel: 'Produktivitäts-KI: Notion AI, Canva AI & Recherche-Tools',
+        titel: 'Produktivitäts-KI: Copilot, Notion AI & Recherche',
         inhalt: [
-          'Notion AI: Projekte, Notizen und Wissen organisieren',
-          'Canva AI: Präsentationen und Grafiken in Minuten',
-          'KI-Suche und Recherche: Perplexity & Co.',
-          'Was passt konkret zu meinem Berufsalltag?',
+          'Microsoft Copilot in Word, Outlook & Teams',
+          'Notion AI: Projekte, Notizen, Wissen organisieren',
+          'KI für Recherche und Zusammenfassungen',
+          'Prompts verbessern: Iteration und Rollen-Prompting',
         ],
       },
       {
         woche: 4,
         titel: 'Meine persönliche KI-Toolbox + Aktionsplan',
         inhalt: [
-          'Alles zusammenführen: Welche Tools für welche Aufgaben',
-          'Persönliche KI-Toolbox definieren und dokumentieren',
-          'Aktionsplan: Was setze ich ab nächster Woche um?',
-          'Fragen & Austausch in der Gruppe',
-        ],
-      },
-    ],
-    lernziele: [
-      'Die wichtigsten KI-Kategorien kennen: Text, Bild, Recherche, Produktivität',
-      'ChatGPT, Claude, Gemini, Copilot & Notion AI direkt vergleichen',
-      'Das richtige Tool für E-Mails, Texte, Recherche und Präsentationen wählen',
-      'Microsoft Copilot in Office-Anwendungen sinnvoll einsetzen',
-      'Eine persönliche KI-Toolbox für den eigenen Berufsalltag aufbauen',
-    ],
-    zielgruppe: 'Berufsleute mit ersten KI-Erfahrungen',
-    format: 'Online oder Präsenz · 1x pro Woche',
-    dauer: '4x 90 Min. · 4 Wochen',
-    anzahlSessions: 4,
-    minutenProSession: 90,
-    preisAb: 'CHF 249',
-    preisDetail: 'CHF 249 / Person | auf Anfrage als Firmenkurs',
-    preisAbFirma: 'CHF 320',
-    seoTitel: 'KI Tools Vergleich Kurs Schweiz – ChatGPT, Claude, Gemini | SmartTalk',
-    metaBeschreibung:
-      'Welche KI kann was? 4 Lektionen à 90 Min. zum Vergleich und gezielten Einsatz von KI-Tools. Für Berufsleute in der Zentralschweiz.',
-    keywords: ['KI Tools Vergleich Kurs', 'ChatGPT Claude Gemini', 'KI Überblick Schweiz', 'KI Werkzeuge Kurs'],
-  },
-  {
-    slug: 'prompts-die-funktionieren',
-    nummer: 4,
-    level: 'VERTIEFUNG',
-    levelFarbe: 'bg-orange-100 text-orange-800',
-    titel: 'Prompts die wirklich funktionieren',
-    untertitel: 'Wer gut fragt, bekommt gute Antworten – lern die Kunst des Promptings.',
-    kurzbeschreibung:
-      'Der Unterschied zwischen mittelmässigen und wirklich guten KI-Ergebnissen ist fast immer der Prompt. In 4 Lektionen à 90 Min. lernst du, wie du KI so anweist, dass sie liefert was du brauchst – für Büroalltag und darüber hinaus.',
-    ausfuehrlicheBeschreibung:
-      'Prompting ist keine Raketenwissenschaft – aber es gibt Techniken, die den Unterschied machen. In 4 wöchentlichen Lektionen à 90 Minuten lernst du Schritt für Schritt, wie ein guter Prompt aufgebaut ist, wie du Kontext und Rollen einsetzt und wie du mit eigenen Vorlagen dauerhaft Zeit sparst. Alle Übungen basieren auf echten Büroaufgaben: E-Mails schreiben, Texte strukturieren, Ideen entwickeln, Dokumente zusammenfassen.',
-    sessions: [
-      {
-        woche: 1,
-        titel: 'Was ist ein Prompt? Das CARE-Prinzip',
-        inhalt: [
-          'Warum der Prompt alles entscheidet',
-          'Das CARE-Prinzip: Kontext, Aufgabe, Rolle, Ergebnis-Format',
-          'Häufige Fehler und wie man sie vermeidet',
-          'Erste eigene Prompts schreiben und vergleichen',
-        ],
-      },
-      {
-        woche: 2,
-        titel: 'Prompting für den Büroalltag',
-        inhalt: [
-          'E-Mails verfassen, kürzen und verbessern',
-          'Berichte und Zusammenfassungen erstellen',
-          'Meetings vorbereiten und Protokolle schreiben',
-          'Übungen mit eigenen Aufgaben aus dem Job',
-        ],
-      },
-      {
-        woche: 3,
-        titel: 'Besser werden: Iteration, Rollen und Kontext',
-        inhalt: [
-          'Prompts verbessern: aus schwachen Antworten lernen',
-          'Rollen-Prompting: KI als Kollege, Coach oder Lektor',
-          'Mehrstufige Prompts für komplexe Aufgaben',
-          'KI für Ideen, Brainstorming und kreative Aufgaben',
-        ],
-      },
-      {
-        woche: 4,
-        titel: 'Eigene Prompt-Vorlagen + persönlicher Aktionsplan',
-        inhalt: [
-          'Wiederverwendbare Vorlagen für wiederkehrende Aufgaben',
-          'Persönliche Prompt-Bibliothek aufbauen',
+          'Wiederverwendbare Prompt-Vorlagen erstellen',
+          'Persönliche KI-Toolbox: Welches Tool für welche Aufgabe',
           'Aktionsplan: 3 Dinge, die ich ab morgen anders mache',
           'Fragen & Austausch in der Gruppe',
         ],
@@ -222,35 +119,35 @@ export const kiKurse: KiKurs[] = [
     ],
     lernziele: [
       'Das CARE-Prinzip anwenden: Kontext, Aufgabe, Rolle, Ergebnis-Format',
-      'Prompts für E-Mails, Berichte, Zusammenfassungen und Ideen erstellen',
-      'Aus schwachen Antworten lernen und Prompts verbessern',
+      'ChatGPT, Claude, Gemini, Copilot & Notion AI direkt vergleichen',
+      'Prompts für E-Mails, Berichte, Zusammenfassungen und Präsentationen erstellen',
+      'Microsoft Copilot in Office-Anwendungen sinnvoll einsetzen',
       'Eigene wiederverwendbare Prompt-Vorlagen entwickeln',
-      'KI dauerhaft effizienter im Alltag einsetzen',
     ],
-    zielgruppe: 'Berufsleute, die KI bereits kennen und mehr herausholen wollen',
+    zielgruppe: 'Berufsleute mit ersten KI-Erfahrungen oder nach dem Schnupperkurs',
     format: 'Online oder Präsenz · 1x pro Woche',
     dauer: '4x 90 Min. · 4 Wochen',
     anzahlSessions: 4,
     minutenProSession: 90,
-    preisAb: 'CHF 249',
-    preisDetail: 'CHF 249 / Person | auf Anfrage als Firmenkurs',
-    preisAbFirma: 'CHF 320',
-    seoTitel: 'Prompting Kurs Schweiz – Besser mit KI arbeiten | SmartTalk',
+    preisAb: 'CHF 450',
+    preisDetail: 'CHF 450 / Person | auch als Inhouse buchbar',
+    preisAbFirma: 'auf Anfrage',
+    seoTitel: 'Prompting & KI-Tools Kurs Schweiz – 4x 90 Min. | SmartTalk',
     metaBeschreibung:
-      'Prompts die wirklich funktionieren: 4 Lektionen à 90 Min. Lerne wie du KI richtig anweist. Für Berufsleute in der Zentralschweiz.',
-    keywords: ['Prompting Kurs Schweiz', 'ChatGPT Prompts', 'KI besser nutzen', 'Prompt Kurs Luzern'],
+      'Prompting und KI-Tools in einem Kurs: ChatGPT, Claude, Copilot & mehr. 4 Lektionen à 90 Min., CHF 450. Für Berufsleute in der Zentralschweiz.',
+    keywords: ['Prompting Kurs Schweiz', 'KI Tools Vergleich', 'ChatGPT Kurs', 'Microsoft Copilot Kurs'],
   },
   {
     slug: 'datenschutz-ethik',
-    nummer: 5,
+    nummer: 3,
     level: 'SICHERHEIT',
     levelFarbe: 'bg-red-100 text-red-800',
-    titel: 'KI, Datenschutz & Ethik: Verantwortungsvoll handeln',
-    untertitel: 'KI nutzen – aber richtig. Sicher, rechtskonform und fair.',
+    titel: 'KI verantwortungsvoll nutzen',
+    untertitel: 'Datenschutz, Ethik und sicherer Umgang – praxisnah und ohne Juristendeutsch.',
     kurzbeschreibung:
-      'Welche Daten darf ich einer KI weitergeben? Was sagt das Schweizer Datenschutzgesetz? In 2 Lektionen à 90 Min. bekommst du praxisnahe Antworten – ohne juristischen Fachjargon.',
+      'Welche Daten darf ich einer KI weitergeben? Was sagt das Schweizer Datenschutzgesetz? In diesem Halbtageskurs bekommst du praxisnahe Antworten – und nimmst eine einfache KI-Richtlinie für dein Team mit.',
     ausfuehrlicheBeschreibung:
-      'KI-Tools sind mächtig – und mit Macht kommt Verantwortung. In 2 kompakten Lektionen à 90 Minuten lernst du, was das Schweizer Datenschutzgesetz (DSG) und die DSGVO für deinen KI-Einsatz bedeuten, welche Daten du keiner KI anvertrauen darfst und wie du Bias und Diskriminierung erkennst. Du entwickelst eine einfache KI-Richtlinie für dein Team.',
+      'KI-Tools sind mächtig – und mit Macht kommt Verantwortung. In diesem kompakten Halbtageskurs lernst du, was das Schweizer Datenschutzgesetz (DSG) und die DSGVO für deinen KI-Einsatz bedeuten, welche Daten du keiner KI anvertrauen darfst und wie du Bias und Diskriminierung erkennst. Du entwickelst eine einfache KI-Richtlinie, die du direkt im Team einsetzen kannst.',
     sessions: [
       {
         woche: 1,
@@ -280,16 +177,14 @@ export const kiKurse: KiKurs[] = [
       'Eine einfache KI-Nutzungsrichtlinie für das eigene Team entwickeln',
     ],
     zielgruppe: 'Alle KI-Nutzenden, HR, Führungskräfte, Compliance',
-    format: 'Online oder Präsenz · 1x pro Woche',
-    dauer: '2x 90 Min. · 2 Wochen',
-    anzahlSessions: 2,
-    minutenProSession: 90,
-    preisAb: 'CHF 129',
-    preisDetail: 'CHF 129 / Person | auf Anfrage als Firmenkurs',
-    preisAbFirma: 'CHF 180',
+    format: 'Präsenz (Halbtag)',
+    dauer: 'Halbtag (ca. 3.5h)',
+    preisAb: 'CHF 230',
+    preisDetail: 'CHF 230 / Person | auch als Inhouse buchbar',
+    preisAbFirma: 'auf Anfrage',
     seoTitel: 'KI Datenschutz & Ethik Kurs Schweiz – DSG, DSGVO | SmartTalk',
     metaBeschreibung:
-      'KI sicher und rechtskonform einsetzen: DSG, DSGVO, EU AI Act. 2 Lektionen à 90 Min. Für Unternehmen und Mitarbeitende in der Zentralschweiz.',
+      'KI sicher und rechtskonform einsetzen: DSG, DSGVO, EU AI Act. Halbtageskurs CHF 230. Für Unternehmen und Mitarbeitende in der Zentralschweiz.',
     keywords: ['KI Datenschutz Kurs', 'DSGVO KI Schweiz', 'KI Ethik', 'DSG KI'],
   },
 ]

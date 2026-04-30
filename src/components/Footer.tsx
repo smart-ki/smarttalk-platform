@@ -19,21 +19,19 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">KI & Digital</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/ki/schnupperkurs" className="hover:text-[#F5821F] transition-colors">Schnupperkurs</Link></li>
-              <li><Link href="/ki/grundkompetenzen" className="hover:text-[#F5821F] transition-colors">Grundkompetenzen</Link></li>
-              <li><Link href="/ki/ki-tools-vergleich" className="hover:text-[#F5821F] transition-colors">KI-Tools im Vergleich</Link></li>
-              <li><Link href="/ki/prompts-die-funktionieren" className="hover:text-[#F5821F] transition-colors">Prompts die funktionieren</Link></li>
-              <li><Link href="/ki/datenschutz-ethik" className="hover:text-[#F5821F] transition-colors">Datenschutz & Ethik</Link></li>
+              <li><Link href="/ki/schnupperkurs" className="hover:text-[#F5821F] transition-colors">KI einfach ausprobieren</Link></li>
+              <li><Link href="/ki/prompting-ki-tools" className="hover:text-[#F5821F] transition-colors">Prompting & KI-Tools</Link></li>
+              <li><Link href="/ki/datenschutz-ethik" className="hover:text-[#F5821F] transition-colors">KI verantwortungsvoll nutzen</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold text-white mb-4">Kommunikation</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/kommunikation/sicher-auftreten-meetings" className="hover:text-[#7C3AED] transition-colors">Sicher auftreten in Meetings</Link></li>
-              <li><Link href="/kommunikation/kommunizieren-team-fuehrung" className="hover:text-[#7C3AED] transition-colors">Kommunizieren im Team</Link></li>
-              <li><Link href="/kommunikation/sicher-sprechen-klar-kommunizieren" className="hover:text-[#7C3AED] transition-colors">Sicher sprechen, klar kommunizieren</Link></li>
+              <li><Link href="/kommunikation/sicher-auftreten-praesentieren" className="hover:text-[#7C3AED] transition-colors">Sicher auftreten & präsentieren</Link></li>
+              <li><Link href="/kommunikation/kommunikation-team-fuehrung" className="hover:text-[#7C3AED] transition-colors">Kommunikation im Team & Führung</Link></li>
+              <li><Link href="/kommunikation/kommunikation-digital" className="hover:text-[#7C3AED] transition-colors">Kommunikation digital</Link></li>
               <li className="pt-2 border-t border-gray-800">
-                <Link href="/#beratung" className="hover:text-[#0D9488] transition-colors text-[#0D9488] font-medium">Beratung & Strategie →</Link>
+                <Link href="/#beratung" className="hover:text-[#0D9488] transition-colors text-[#0D9488] font-medium">Beratung & New Work →</Link>
               </li>
             </ul>
           </div>
