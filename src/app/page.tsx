@@ -34,13 +34,13 @@ export default function HomePage() {
           <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-4">Hier geht es direkt zu den Angeboten</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <Link href="#ki-digital" className="btn-primary text-base py-3.5 px-8 shadow-lg shadow-orange-200">
-              KI & Digital →
+              KI →
             </Link>
             <Link href="#kommunikation" className="bg-[#7C3AED] text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors inline-block text-center text-base py-3.5 px-8 shadow-lg shadow-purple-200">
-              Kommunikation & Führung →
+              Kommunikation →
             </Link>
             <Link href="#beratung" className="bg-[#0D9488] text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors inline-block text-center text-base py-3.5 px-8 shadow-lg shadow-teal-200">
-              Begleitung & Beratung →
+              Beratung →
             </Link>
           </div>
 
