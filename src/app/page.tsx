@@ -64,7 +64,7 @@ export default function HomePage() {
               Der Mensch im Zentrum.
             </h2>
             <p className="text-gray-500 text-sm max-w-2xl mx-auto">
-              Wir leben, wachsen und entwickeln in den 4 Kompetenzbereichen: Digitalität & KI, Kommunikation & Führung, Haltung & Ziele, Kritisches Denken & Agilität.
+              Wir leben, wachsen und entwickeln in den 4 Kompetenzbereichen.
             </p>
           </div>
 
