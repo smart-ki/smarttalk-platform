@@ -579,7 +579,7 @@ export default function HomePage() {
           {/* Haltung */}
           <div className="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
             <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI-Tools im Alltag, führt mit OKRs und glaubt daran, dass Unternehmen dann wirklich stark sind, wenn ihre Menschen stark sind.
+              Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI-Tools im Alltag, führt mit OKRs und glaubt daran, dass Unternehmen dann wirklich stark sind, wenn die Mitarbeitenden sich entwickeln können.
             </p>
           </div>
 
