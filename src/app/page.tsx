@@ -445,13 +445,14 @@ export default function HomePage() {
                 <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-2 block">Für Teams & Unternehmen</span>
                 <h3 className="font-bold text-white text-xl mb-2">Alle Kurse auch als Inhouse-Training</h3>
                 <p className="text-gray-300 text-sm max-w-lg">
-                  Sämtliche KI- und Kommunikationskurse sind als massgeschneiderte Inhouse-Trainings buchbar –
-                  angepasst an eure Prozesse, Tools und Branche. Teams ab 5 Personen.
+                  Sämtliche KI- und Kommunikationskurse sind als massgeschneiderte Inhouse-Trainings buchbar.
+                  Angepasst an eure Prozesse, Tools und Branche. Teams ab 5 Personen.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-4 text-xs text-gray-400">
                   <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">✓</span> KI-Kurse inhouse</span>
                   <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">✓</span> Kommunikationstrainings</span>
                   <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">✓</span> Kombinationspakete möglich</span>
+                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">✓</span> Ab CHF 1'800 / Gruppe</span>
                 </div>
               </div>
               <Link
