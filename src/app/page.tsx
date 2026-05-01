@@ -207,34 +207,33 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Kompakt-Tageskurs Bundle */}
-          <div className="bg-gradient-to-r from-orange-50 to-amber-50 border-2 border-[#F5821F]/40 rounded-2xl p-8">
+          {/* KI für Teams Firmenkurs */}
+          <div className="bg-[#1B2E4B] rounded-2xl p-8">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="bg-[#F5821F] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Alles in einem</span>
-                  <span className="bg-orange-100 text-orange-700 text-xs font-semibold px-3 py-1 rounded-full">2 Slots im Juni</span>
+                  <span className="bg-[#F5821F] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Firmenkurs</span>
+                  <span className="bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full">Ab 5 Personen</span>
                 </div>
-                <h3 className="font-extrabold text-gray-900 text-xl mb-2">KI Kompakt-Tageskurs</h3>
-                <p className="text-gray-600 text-sm max-w-lg leading-relaxed">
-                  Alle drei KI-Kurse in einem kompakten Tag: Einstieg, Prompting & Tools und verantwortungsvoller Umgang.
-                  Ideal für alle, die in einem Tag einen vollständigen Überblick gewinnen wollen.
+                <h3 className="font-extrabold text-white text-xl mb-2">KI für Teams einführen</h3>
+                <p className="text-gray-300 text-sm max-w-lg leading-relaxed">
+                  Euer Team arbeitet täglich mit Daten, Texten und Prozessen — KI kann dabei entlasten. Dieser Tageskurs bringt alle auf denselben Stand: Was ist KI, wie nutzen wir sie sicher, und wo fangen wir an? Massgeschneidert auf eure Branche und Tools.
                 </p>
-                <div className="flex flex-wrap gap-3 mt-4 text-xs text-gray-500">
-                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> KI einfach ausprobieren</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Prompting & KI-Tools</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Datenschutz & Ethik</span>
+                <div className="flex flex-wrap gap-3 mt-4 text-xs text-gray-400">
+                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Auf euren Alltag zugeschnitten</span>
+                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Datenschutz & Regeln für das Team</span>
+                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Direkt anwendbare Werkzeuge</span>
                 </div>
               </div>
               <div className="text-center sm:text-right shrink-0">
-                <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Ganztag</div>
-                <div className="text-3xl font-extrabold text-gray-900">CHF 450</div>
-                <div className="text-xs text-gray-500 mb-4">/ Person</div>
+                <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Ganztag · auf Anfrage</div>
+                <div className="text-3xl font-extrabold text-white">CHF 1'800</div>
+                <div className="text-xs text-gray-400 mb-4">/ Gruppe</div>
                 <Link
                   href="#kontakt"
-                  className="btn-primary text-sm py-2.5 px-6 whitespace-nowrap"
+                  className="bg-[#F5821F] text-white font-bold rounded-lg hover:bg-orange-600 transition-colors inline-block text-center py-2.5 px-6 text-sm whitespace-nowrap"
                 >
-                  Platz reservieren →
+                  Kurs anfragen →
                 </Link>
               </div>
             </div>
@@ -327,11 +326,43 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Stufe 2: Bestandesaufnahme */}
+          {/* Stufe 2: KI-Readiness Check */}
           <div className="bg-white border-2 border-[#0D9488]/30 rounded-2xl p-7 mb-5">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Stufe 2 · Diagnose</div>
+                  <span className="bg-teal-50 text-[#0D9488] text-xs font-semibold px-2 py-0.5 rounded-full">Sehr gefragt</span>
+                </div>
+                <h3 className="font-extrabold text-gray-900 text-xl mb-2">KI-Readiness Check</h3>
+                <p className="text-gray-600 text-sm max-w-lg">
+                  Wo steht euer Unternehmen beim Thema KI? Was ist sinnvoll, was zu früh, was dringend? In einem halben Tag analysieren wir eure Ausgangslage und liefern einen konkreten Aktionsplan mit klaren nächsten Schritten.
+                </p>
+                <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
+                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> KI-Potenziale in euren Prozessen sichtbar machen</span>
+                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Risiken und Spielregeln klären</span>
+                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Aktionsplan mit 3 konkreten nächsten Schritten</span>
+                </div>
+              </div>
+              <div className="text-center sm:text-right shrink-0">
+                <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Halbtag</div>
+                <div className="text-2xl font-extrabold text-gray-900">CHF 900</div>
+                <div className="text-xs text-gray-500 mb-4">/ Unternehmen</div>
+                <Link
+                  href="#kontakt"
+                  className="bg-[#0D9488] text-white font-bold rounded-lg hover:bg-teal-700 transition-colors inline-block text-center py-2.5 px-6 text-sm whitespace-nowrap shadow"
+                >
+                  Check buchen →
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Stufe 3: Bestandesaufnahme */}
+          <div className="bg-white border-2 border-gray-200 rounded-2xl p-7 mb-5">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
               <div>
-                <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-2">Stufe 2 · Diagnose</div>
+                <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Stufe 3 · Vertiefung</div>
                 <h3 className="font-extrabold text-gray-900 text-xl mb-2">Bestandesaufnahme — 1 Tag</h3>
                 <p className="text-gray-600 text-sm max-w-lg">
                   In einem eintägigen Workshop erkunden wir gemeinsam, wo eure Stärken liegen und welche Schritte den grössten Hebel haben. Output: ein konkreter Massnahmenplan.
@@ -351,7 +382,7 @@ export default function HomePage() {
 
           {/* Stufe 3: Massnahmen */}
           <div className="mb-5">
-            <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-4 px-1">Stufe 3 · Massnahmen: individuell nach Aufwand und Dauer</div>
+            <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-4 px-1">Stufe 4 · Massnahmen: individuell nach Aufwand und Dauer</div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
 
               {/* KI in Geschäftsprozessen */}
