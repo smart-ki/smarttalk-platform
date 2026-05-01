@@ -359,24 +359,31 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Stufe 3: Bestandesaufnahme */}
-          <div className="bg-white border-2 border-gray-200 rounded-2xl p-7 mb-5">
+          {/* Stufe 3: Future Skills Diagnose */}
+          <div className="bg-white border-2 border-[#0D9488]/30 rounded-2xl p-7 mb-5">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-              <div>
-                <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Stufe 3 · Vertiefung</div>
-                <h3 className="font-extrabold text-gray-900 text-xl mb-2">Bestandesaufnahme — 1 Tag</h3>
+              <div className="flex-1">
+                <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-2">Stufe 3 · Gesamtbild</div>
+                <h3 className="font-extrabold text-gray-900 text-xl mb-2">Future Skills Diagnose</h3>
                 <p className="text-gray-600 text-sm max-w-lg">
-                  In einem eintägigen Workshop erkunden wir gemeinsam, wo eure Stärken liegen und welche Schritte den grössten Hebel haben. Output: ein konkreter Massnahmenplan.
+                  Wo steht eure Organisation in allen vier Kompetenzbereichen? In einem eintägigen Workshop analysieren wir gemeinsam Digitales, Kommunikation, Selbstmanagement und kognitives Potenzial. Das Ergebnis ist ein klares Bild eurer Stärken und ein priorisierter Entwicklungsplan.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Status quo erfassen</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Potenziale identifizieren</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Massnahmenplan erstellen</span>
+                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Alle 4 Kompetenzbereiche einschätzen</span>
+                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Stärken und Entwicklungsfelder sichtbar machen</span>
+                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Priorisierter Entwicklungsplan als Output</span>
                 </div>
               </div>
               <div className="text-center sm:text-right shrink-0">
-                <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Tagessatz</div>
+                <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Ganztag</div>
                 <div className="text-2xl font-extrabold text-gray-900">CHF 1'600</div>
+                <div className="text-xs text-gray-500 mb-4">/ Unternehmen</div>
+                <Link
+                  href="#kontakt"
+                  className="bg-[#0D9488] text-white font-bold rounded-lg hover:bg-teal-700 transition-colors inline-block text-center py-2.5 px-6 text-sm whitespace-nowrap shadow"
+                >
+                  Diagnose anfragen →
+                </Link>
               </div>
             </div>
           </div>
