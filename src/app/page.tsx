@@ -91,7 +91,7 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-[#7C3AED] mb-1">Zwischenmenschliches</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Beziehungen & Teamarbeit</h3>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Teamarbeit & Führung</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Rollenmodellierung, Vertrauen aufbauen, Kollaboration, Konfliktfähigkeit</p>
               <div className="text-xs font-semibold text-[#7C3AED]">→ Kommunikationskurse</div>
             </div>
@@ -124,7 +124,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-center text-xs text-gray-400">
-            Quelle: McKinsey Global Institute, «Defining the skills citizens will need in the future world of work», 2021
+            In Anlehnung an: McKinsey Global Institute, «Defining the skills citizens will need in the future world of work», 2021
           </p>
         </div>
       </section>
