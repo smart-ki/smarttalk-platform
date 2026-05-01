@@ -139,7 +139,7 @@ export default function HomePage() {
               <div className="rounded-2xl overflow-hidden aspect-[3/4]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/jeannine-v3.jpg"
+                  src="/jeannine-v4.jpg"
                   alt="Jeannine Germann bei SmartTalk"
                   className="w-full h-full object-cover object-top"
                 />
