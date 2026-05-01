@@ -190,13 +190,13 @@ export default function HomePage() {
                 <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Bildung · KI & Digital</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">KI & Digital</h2>
-              <p className="text-gray-500 mt-2 max-w-lg">Online und Präsenz · 3 Kurse vom Einstieg bis zum verantwortungsvollen Umgang</p>
+              <p className="text-gray-500 mt-2 max-w-lg">Online und Präsenz · 3 Kurse vom Einstieg bis zum persönlichen KI-Arbeitsplatz</p>
             </div>
             <div className="flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-xl px-5 py-3 text-sm text-orange-700 font-medium self-start sm:self-auto">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
-              2 Slots im Juni verfügbar
+              Nächster Start: Juli 2026
             </div>
           </div>
 
