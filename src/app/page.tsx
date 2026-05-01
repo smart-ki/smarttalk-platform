@@ -20,19 +20,12 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-            <span className="text-[#F5821F]">Future Skills.</span>
-            <br />
-            Für eine Arbeitswelt, in der{' '}
-            <span className="text-[#7C3AED]">du wirklich zählst.</span>
+            <span className="text-[#F5821F]">Future Skills</span>{' '}
+            für die Arbeitswelt von heute.
           </h1>
 
-          <p className="text-lg sm:text-xl text-[#6B6B6B] max-w-2xl mx-auto mb-3 leading-relaxed">
-            Die Arbeitswelt entwickelt sich. Deine Kompetenzen entscheiden, wie wirksam du dabei bist.
-            Mit deinen Fähigkeiten, deiner Stimme und deiner Klarheit.
-          </p>
-          <p className="text-base text-gray-500 max-w-xl mx-auto mb-10">
-            Wir begleiten Menschen und Organisationen beim Aufbau der Kompetenzen,
-            die wirklich zählen: digital, menschlich und mit New Work Haltung.
+          <p className="text-lg sm:text-xl text-[#6B6B6B] max-w-2xl mx-auto mb-10 leading-relaxed">
+            Wir begleiten Menschen und Organisationen beim Aufbau zentraler Kompetenzen für die heutige Arbeitswelt.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
@@ -65,7 +58,7 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Das Fundament</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-3 mb-3">
-              Future Skills für die Arbeitswelt von morgen
+              Future Skills für die Arbeitswelt von heute
             </h2>
             <p className="text-gray-500 text-sm max-w-xl mx-auto">
               Vier Kompetenzbereiche definieren, was Menschen in der Zukunft brauchen.
