@@ -20,8 +20,8 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4">KI & Digital</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/ki/schnupperkurs" className="hover:text-[#F5821F] transition-colors">KI einfach ausprobieren</Link></li>
-              <li><Link href="/ki/prompting-ki-tools" className="hover:text-[#F5821F] transition-colors">Prompting & KI-Tools</Link></li>
-              <li><Link href="/ki/datenschutz-ethik" className="hover:text-[#F5821F] transition-colors">KI verantwortungsvoll nutzen</Link></li>
+              <li><Link href="/ki/ki-berufsalltag" className="hover:text-[#F5821F] transition-colors">KI konkret für meinen Berufsalltag</Link></li>
+              <li><Link href="/ki/ki-auf-dem-desktop" className="hover:text-[#F5821F] transition-colors">KI auf meinem Desktop</Link></li>
             </ul>
           </div>
           <div>
@@ -29,7 +29,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/kommunikation/sicher-auftreten-praesentieren" className="hover:text-[#7C3AED] transition-colors">Sicher auftreten & präsentieren</Link></li>
               <li><Link href="/kommunikation/kommunikation-team-fuehrung" className="hover:text-[#7C3AED] transition-colors">Kommunikation im Team & Führung</Link></li>
-              <li><Link href="/kommunikation/kommunikation-digital" className="hover:text-[#7C3AED] transition-colors">Kommunikation digital</Link></li>
+              <li><Link href="/kommunikation/fuehren-hybrid" className="hover:text-[#7C3AED] transition-colors">Führen in der hybriden Arbeitswelt</Link></li>
               <li className="pt-2 border-t border-gray-800">
                 <Link href="/#beratung" className="hover:text-[#0D9488] transition-colors text-[#0D9488] font-medium">Beratung & New Work →</Link>
               </li>
