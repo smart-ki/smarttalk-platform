@@ -217,7 +217,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-extrabold text-white text-xl mb-2">KI für Teams einführen</h3>
                 <p className="text-gray-300 text-sm max-w-lg leading-relaxed">
-                  Euer Team arbeitet täglich mit Daten, Texten und Prozessen — KI kann dabei entlasten. Dieser Tageskurs bringt alle auf denselben Stand: Was ist KI, wie nutzen wir sie sicher, und wo fangen wir an? Massgeschneidert auf eure Branche und Tools.
+                  Euer Team arbeitet täglich mit Daten, Texten und Prozessen. Könnte KI dabei entlasten? Dieser Tageskurs bringt alle auf denselben Stand: Was ist KI, wie nutzen wir sie sicher, und wo fangen wir an? Massgeschneidert auf eure Branche und Tools.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-4 text-xs text-gray-400">
                   <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Auf euren Alltag zugeschnitten</span>
