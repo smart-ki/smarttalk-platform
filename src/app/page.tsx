@@ -19,10 +19,13 @@ export default function HomePage() {
             Future Skills · Zentralschweiz
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-            Kompetenz ist{' '}
-            <span className="text-[#F5821F]">der Unterschied.</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+            <span className="text-[#F5821F]">Future Skills</span>
           </h1>
+
+          <p className="text-2xl sm:text-3xl font-bold text-gray-700 mb-6">
+            Kompetenz macht den Unterschied.
+          </p>
 
           <p className="text-lg sm:text-xl text-[#6B6B6B] max-w-2xl mx-auto mb-10 leading-relaxed">
             Wir begleiten Menschen und Organisationen beim Aufbau zentraler Kompetenzen für die heutige Arbeitswelt.
