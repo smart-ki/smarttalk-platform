@@ -476,58 +476,109 @@ export default function HomePage() {
 
       {/* ─── ÜBER UNS ─── */}
       <section id="ueber-uns" className="py-20 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+        <div className="max-w-6xl mx-auto">
+
+          {/* Titel */}
+          <div className="text-center mb-14">
             <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Über SmartTalk</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Unser Ansatz</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 mb-4">Das Team hinter SmartTalk</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto text-lg">
+              Gegründet 2016. Rund 100 Menschen in Kursleitung, Administration, Marketing und Geschäftsleitung.
+              Alle vereint durch eine Haltung: Kompetenz wächst, wenn Menschen wachsen dürfen.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div className="space-y-6">
-              <div className="bg-orange-50 rounded-2xl p-6 border border-orange-100">
-                <h3 className="font-bold text-gray-900 mb-2">Der Mensch im Mittelpunkt</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  KI entfaltet ihren vollen Wert, wenn sie Menschen stärkt und wachsen lässt. In unseren Kursen steht stets die Frage im Vordergrund: Was hilft dir konkret, heute, in deinem Alltag?
-                </p>
+          {/* Fakten-Bar */}
+          <div className="flex flex-wrap justify-center gap-8 mb-14 text-sm font-medium text-gray-500">
+            {[
+              { zahl: '2016', label: 'Gegründet' },
+              { zahl: '100+', label: 'Mitarbeitende' },
+              { zahl: '8 Jahre', label: 'Agile Führung' },
+              { zahl: 'Zentralschweiz', label: 'Unser Zuhause' },
+            ].map(({ zahl, label }) => (
+              <div key={label} className="text-center">
+                <div className="text-2xl font-extrabold text-gray-900">{zahl}</div>
+                <div className="text-xs uppercase tracking-widest text-gray-400 mt-0.5">{label}</div>
               </div>
-              <div className="bg-purple-50 rounded-2xl p-6 border border-purple-100">
-                <h3 className="font-bold text-gray-900 mb-2">Wir leben, was wir lehren</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  SmartTalk ist selbst ein Future Skills Unternehmen: digitale Prozesse, New Work Haltung, OKRs und agile Strukturen sind bei uns gelebter Alltag.
-                </p>
-              </div>
-              <div className="bg-teal-50 rounded-2xl p-6 border border-teal-100">
-                <h3 className="font-bold text-gray-900 mb-2">Beratung, die wirklich begleitet</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Vom kostenlosen Erstgespräch über die Bestandesaufnahme bis zur Umsetzung: Wir begleiten Organisationen nicht nur im Kursraum, sondern direkt in der Transformation.
-                </p>
-              </div>
-            </div>
+            ))}
+          </div>
 
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-white border-2 border-gray-100 shadow-lg mb-6">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/logo.png" alt="SmartTalk" style={{ width: '64px', height: '64px', objectFit: 'contain' }} />
+          {/* Team Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            {/* Florian */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mb-4">
+                <span className="text-[#F5821F] font-extrabold text-lg">F</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">SmartTalk</h3>
-              <p className="text-[#F5821F] font-semibold text-sm mb-4">Future Skills · Zentralschweiz</p>
-              <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
-                Wir begleiten Menschen und Organisationen in ihrer Entwicklung – mit Leidenschaft für echte Kompetenz,
-                digitale Werkzeuge und New Work Haltung. Fundiert durch akademische Forschung, erprobt in der Praxis.
+              <h3 className="font-bold text-gray-900 mb-0.5">Florian</h3>
+              <p className="text-xs font-semibold text-[#F5821F] uppercase tracking-wide mb-3">Inhaber & Geschäftsleiter</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung und zeitgemässe Führung. Florian baut SmartTalk seit der Gründung 2016 agil auf und lebt New Work als Haltung, nicht als Konzept.
               </p>
-              <div className="mt-6">
-                <a
-                  href="mailto:jeannine.germann@smarttalk.ch"
-                  className="inline-flex items-center gap-2 text-sm text-[#F5821F] font-semibold hover:underline"
-                >
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  jeannine.germann@smarttalk.ch
-                </a>
+              <div className="flex flex-wrap gap-1.5 mt-4">
+                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">KI & Prozesse</span>
+                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">New Work</span>
               </div>
             </div>
+
+            {/* Jeannine */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mb-4">
+                <span className="text-[#7C3AED] font-extrabold text-lg">J</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-0.5">Jeannine</h3>
+              <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-wide mb-3">Mitglied der Geschäftsleitung</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Bildungsdesignerin, Lerntherapeutin und Dozentin. Jeannine gestaltet Lernerfahrungen, die wirklich wirken, und verantwortet bei SmartTalk die Entwicklung des Future Skills Angebots.
+              </p>
+              <div className="flex flex-wrap gap-1.5 mt-4">
+                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Bildungsdesign</span>
+                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Lerntherapie</span>
+              </div>
+            </div>
+
+            {/* Chris */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center mb-4">
+                <span className="text-[#0D9488] font-extrabold text-lg">C</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-0.5">Chris</h3>
+              <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wide mb-3">Marketing & Teamentwicklung</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Spezialist für Teamentwicklung, New Work und Menschlichkeit in der Führung. Chris sorgt dafür, dass SmartTalk sichtbar wird und dass die Botschaft ankommt, bei wem sie ankommen soll.
+              </p>
+              <div className="flex flex-wrap gap-1.5 mt-4">
+                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Teamentwicklung</span>
+                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Marketing</span>
+              </div>
+            </div>
+
+            {/* Ruth */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-4">
+                <span className="text-gray-500 font-extrabold text-lg">R</span>
+              </div>
+              <h3 className="font-bold text-gray-900 mb-0.5">Ruth</h3>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">People & HR</p>
+              <p className="text-xs text-gray-500 leading-relaxed">
+                Ruth begleitet das SmartTalk-Team in seiner Entwicklung. Durch Partizipation, Projektarbeiten und echte Beteiligung sorgt sie dafür, dass das Team wächst und zusammenwächst.
+              </p>
+              <div className="flex flex-wrap gap-1.5 mt-4">
+                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">HR</span>
+                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Partizipation</span>
+              </div>
+            </div>
+
           </div>
+
+          {/* Haltung */}
+          <div className="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
+            <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI-Tools im Alltag, führt mit OKRs und glaubt daran, dass Unternehmen dann wirklich stark sind, wenn ihre Menschen stark sind.
+            </p>
+          </div>
+
         </div>
       </section>
 

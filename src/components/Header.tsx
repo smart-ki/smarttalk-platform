@@ -22,7 +22,7 @@ export default function Header() {
             <Link href="/#beratung" className="text-gray-600 hover:text-[#0D9488] font-medium transition-colors">Beratung</Link>
             <Link href="/#ueber-uns" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">Über uns</Link>
             <Link href="/#kontakt" className="text-gray-600 hover:text-gray-900 font-medium transition-colors">Kontakt</Link>
-            <Link href="/#ki-digital" className="btn-primary text-sm py-2 px-5">Angebot entdecken</Link>
+            <Link href="/#ki-digital" className="btn-primary text-sm py-2 px-5">Kurs buchen</Link>
           </nav>
           <button className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menü öffnen">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,7 +38,7 @@ export default function Header() {
               <Link href="/#beratung" className="text-gray-600 font-medium" onClick={() => setMenuOpen(false)}>Beratung</Link>
               <Link href="/#ueber-uns" className="text-gray-600 font-medium" onClick={() => setMenuOpen(false)}>Über uns</Link>
               <Link href="/#kontakt" className="text-gray-600 font-medium" onClick={() => setMenuOpen(false)}>Kontakt</Link>
-              <Link href="/#ki-digital" className="btn-primary text-sm text-center" onClick={() => setMenuOpen(false)}>Angebot entdecken</Link>
+              <Link href="/#ki-digital" className="btn-primary text-sm text-center" onClick={() => setMenuOpen(false)}>Kurs buchen</Link>
             </nav>
           </div>
         )}
