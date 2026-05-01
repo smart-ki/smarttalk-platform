@@ -80,7 +80,10 @@ export default function HomePage() {
               <div className="text-xs font-bold uppercase tracking-widest text-[#F5821F] mb-1">Digitales</div>
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Digitale Kompetenz & KI</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Digitale Kompetenz, KI-Kenntnisse, digitale Zusammenarbeit, Datenkompetenz</p>
-              <div className="text-xs font-semibold text-[#F5821F]">→ KI & Digital Kurse</div>
+              <div className="flex flex-wrap gap-1.5 mt-1">
+                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">KI & Digital Kurse</span>
+                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Beratung</span>
+              </div>
             </div>
 
             {/* Zwischenmenschliches */}
@@ -93,7 +96,10 @@ export default function HomePage() {
               <div className="text-xs font-bold uppercase tracking-widest text-[#7C3AED] mb-1">Zwischenmenschliches</div>
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Teamarbeit & Führung</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Rollenmodellierung, Vertrauen aufbauen, Kollaboration, Konfliktfähigkeit</p>
-              <div className="text-xs font-semibold text-[#7C3AED]">→ Kommunikationskurse</div>
+              <div className="flex flex-wrap gap-1.5 mt-1">
+                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Kommunikation & Führung Kurse</span>
+                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">New Work Beratung</span>
+              </div>
             </div>
 
             {/* Selbstmanagement */}
@@ -106,7 +112,9 @@ export default function HomePage() {
               <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-1">Selbstmanagement</div>
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Eigenverantwortung & Resilienz</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Selbstführung, Integrität, Unternehmertum, Leistungsorientierung</p>
-              <div className="text-xs font-semibold text-[#0D9488]">→ New Work Beratung</div>
+              <div className="flex flex-wrap gap-1.5 mt-1">
+                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Firmenkurs auf Anfrage</span>
+              </div>
             </div>
 
             {/* Kognitiv */}
@@ -119,7 +127,9 @@ export default function HomePage() {
               <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Kognitiv</div>
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Kritisches Denken & Agilität</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Problemlösung, Planung, geistige Beweglichkeit, Anpassungsfähigkeit</p>
-              <div className="text-xs font-semibold text-gray-400">→ Folgt in Kürze</div>
+              <div className="flex flex-wrap gap-1.5 mt-1">
+                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Firmenkurs auf Anfrage</span>
+              </div>
             </div>
           </div>
 
