@@ -78,7 +78,7 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-[#F5821F] mb-1">Digitales</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Digitale Mündigkeit & KI</h3>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Digitale Kompetenz & KI</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Digitale Kompetenz, KI-Kenntnisse, digitale Zusammenarbeit, Datenkompetenz</p>
               <div className="text-xs font-semibold text-[#F5821F]">→ KI & Digital Kurse</div>
             </div>
