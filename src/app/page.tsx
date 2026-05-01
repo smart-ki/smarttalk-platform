@@ -31,6 +31,7 @@ export default function HomePage() {
             Wir begleiten Menschen und Organisationen beim Aufbau zentraler Kompetenzen für die heutige Arbeitswelt.
           </p>
 
+          <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-4">Hier geht es direkt zu den Angeboten</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <Link href="#ki-digital" className="btn-primary text-base py-3.5 px-8 shadow-lg shadow-orange-200">
               KI & Digital →
