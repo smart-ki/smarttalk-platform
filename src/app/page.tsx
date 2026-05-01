@@ -61,11 +61,10 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Das Fundament</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-3 mb-3">
-              Future Skills für die Arbeitswelt von heute
+              Der Mensch im Zentrum.
             </h2>
-            <p className="text-gray-500 text-sm max-w-xl mx-auto">
-              Vier Kompetenzbereiche definieren, was Menschen in der Zukunft brauchen.
-              SmartTalk adressiert alle vier – heute mit Schwerpunkt auf Digitales, Kommunikation und New Work.
+            <p className="text-gray-500 text-sm max-w-2xl mx-auto">
+              Wir arbeiten an den 4 Kompetenzbereichen: Digitalität & KI, Kommunikation & Führung, Haltung & Ziele, Kritisches Denken & Agilität.
             </p>
           </div>
 
@@ -77,8 +76,8 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#F5821F] mb-1">Digitales</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Digitale Mündigkeit & KI</h3>
+              <div className="text-xs font-bold uppercase tracking-widest text-[#F5821F] mb-1">Digitalität & KI</div>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Digitalität & KI</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">KI verstehen, digitale Tools souverän nutzen, digitale Ethik</p>
               <div className="text-xs font-semibold text-[#F5821F]">→ KI & Digital Kurse</div>
             </div>
@@ -90,8 +89,8 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#7C3AED] mb-1">Zwischenmenschliches</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Kommunikation & Teamarbeit</h3>
+              <div className="text-xs font-bold uppercase tracking-widest text-[#7C3AED] mb-1">Kommunikation & Führung</div>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Kommunikation & Führung</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Klar kommunizieren, zuhören, Verbindung schaffen, auftreten</p>
               <div className="text-xs font-semibold text-[#7C3AED]">→ Kommunikationskurse</div>
             </div>
@@ -103,8 +102,8 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-1">Selbstmanagement</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">New Work & Ziele</h3>
+              <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-1">Haltung & Ziele</div>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Haltung & Ziele</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">OKRs leben, New Work Haltung, Unternehmertum, Resilienz</p>
               <div className="text-xs font-semibold text-[#0D9488]">→ New Work Beratung</div>
             </div>
@@ -116,7 +115,7 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Kognitiv</div>
+              <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Kritisches Denken & Agilität</div>
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Kritisches Denken & Agilität</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Strukturiert denken, agil arbeiten, Kreativität, Anpassungsfähigkeit</p>
               <div className="text-xs font-semibold text-gray-400">→ Folgt in Kürze</div>
