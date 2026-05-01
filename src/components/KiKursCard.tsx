@@ -76,31 +76,32 @@ export default function KiKursCard({ kurs }: { kurs: KiKurs }) {
         </div>
 
         {/* Price + CTA */}
-        <div className="flex items-center justify-between">
-          <div>
-            <span className="text-xs text-gray-400 uppercase tracking-wide">ab</span>
-            <span className="block text-xl font-bold text-gray-900">{kurs.preisAb}</span>
-            {kurs.preisAbFirma && (
-              <span className="text-xs text-gray-400">Firma: {kurs.preisAbFirma}</span>
-            )}
-            {kurs.slug === 'grundkompetenzen' && (
-              <span className="text-xs text-gray-400">*mit Bildungsgutschein</span>
+        <div className="mt-auto">
+          {/* Zusatzinfos oberhalb, damit der Hauptpreis immer am unteren Rand sitzt */}
+          <div className="text-xs text-gray-400 mb-2 space-y-0.5 min-h-[1rem]">
+            {kurs.preisAbFirma && <div>Firma: {kurs.preisAbFirma}</div>}
+            {kurs.slug === 'grundkompetenzen' && <div>*mit Bildungsgutschein</div>}
+          </div>
+          <div className="flex items-center justify-between">
+            <div>
+              <span className="text-xs text-gray-400 uppercase tracking-wide">ab</span>
+              <span className="block text-xl font-bold text-gray-900">{kurs.preisAb}</span>
+            </div>
+            {kurs.externerLink ? (
+              <a
+                href={kurs.externerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary text-sm py-2.5 px-5"
+              >
+                Zur Anmeldung →
+              </a>
+            ) : (
+              <Link href={`/ki/${kurs.slug}`} className="btn-primary text-sm py-2.5 px-5">
+                Mehr & Buchen
+              </Link>
             )}
           </div>
-          {kurs.externerLink ? (
-            <a
-              href={kurs.externerLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-sm py-2.5 px-5"
-            >
-              Zur Anmeldung →
-            </a>
-          ) : (
-            <Link href={`/ki/${kurs.slug}`} className="btn-primary text-sm py-2.5 px-5">
-              Mehr & Buchen
-            </Link>
-          )}
         </div>
       </div>
     </div>
