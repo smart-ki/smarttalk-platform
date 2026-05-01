@@ -146,10 +146,10 @@ export default function HomePage() {
 
             {/* Bild */}
             <div className="w-full md:w-2/5 shrink-0">
-              <div className="rounded-2xl overflow-hidden aspect-[20/9]">
+              <div className="rounded-2xl overflow-hidden aspect-[40/29]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/jeannine-v6.jpg"
+                  src="/jeannine-v7.jpg"
                   alt="Jeannine Germann bei SmartTalk"
                   className="w-full h-full object-cover object-top"
                 />
