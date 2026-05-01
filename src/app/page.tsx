@@ -591,9 +591,9 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Kontakt</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Sprich mit uns.</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Wir freuen uns über den Austausch.</h2>
             <p className="text-gray-500 mt-3 max-w-lg mx-auto">
-              Ob Kursfragen, Inhouse-Anfragen, Erstgespräch Beratung oder einfach ein erstes Hallo – wir freuen uns von dir zu hören.
+              Ob Kursfragen, Inhouse-Anfragen, Erstgespräch Beratung oder einfach ein erstes Hallo – jede Nachricht ist willkommen.
             </p>
           </div>
 
