@@ -76,8 +76,8 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#F5821F] mb-1">Digitalität & KI</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Digitalität & KI</h3>
+              <div className="text-xs font-bold uppercase tracking-widest text-[#F5821F] mb-1">KI & Digital</div>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">KI & Digital</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">KI verstehen, digitale Tools souverän nutzen, digitale Ethik</p>
               <div className="text-xs font-semibold text-[#F5821F]">→ KI & Digital Kurse</div>
             </div>
@@ -102,8 +102,8 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-1">Haltung & Ziele</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Haltung & Ziele</h3>
+              <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-1">Begleitung & Beratung</div>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Begleitung & Beratung</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">OKRs leben, New Work Haltung, Unternehmertum, Resilienz</p>
               <div className="text-xs font-semibold text-[#0D9488]">→ New Work Beratung</div>
             </div>
