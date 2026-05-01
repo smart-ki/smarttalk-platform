@@ -20,19 +20,19 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-            Der Mensch{' '}
-            <span className="text-[#7C3AED]">im Mittelpunkt.</span>
+            <span className="text-[#F5821F]">Future Skills.</span>
             <br />
-            <span className="text-[#F5821F]">Future Skills</span> für morgen.
+            Für eine Arbeitswelt, in der{' '}
+            <span className="text-[#7C3AED]">du wirklich zählst.</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-[#6B6B6B] max-w-2xl mx-auto mb-3 leading-relaxed">
-            Die Arbeitswelt verändert sich rasant. Was bleibt, bist du – mit deinen Fähigkeiten,
-            deiner Stimme, deiner Klarheit.
+            Die Arbeitswelt entwickelt sich. Deine Kompetenzen entscheiden, wie wirksam du dabei bist.
+            Mit deinen Fähigkeiten, deiner Stimme und deiner Klarheit.
           </p>
           <p className="text-base text-gray-500 max-w-xl mx-auto mb-10">
             Wir begleiten Menschen und Organisationen beim Aufbau der Kompetenzen,
-            die wirklich zählen – digital, menschlich und mit New Work Haltung.
+            die wirklich zählen: digital, menschlich und mit New Work Haltung.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
@@ -137,15 +137,15 @@ export default function HomePage() {
       <section className="bg-[#1B2E4B] py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-4">
-            Der Mensch steht im Zentrum.
+            Du bist das Herzstück.
           </p>
           <p className="text-lg sm:text-xl font-light text-gray-300 leading-relaxed mb-6">
-            Nicht die KI. Nicht die Technik. Nicht das Tool.{' '}
-            <span className="text-[#F5821F] font-semibold">Du.</span>
+            KI ist dein Werkzeug.{' '}
+            <span className="text-[#F5821F] font-semibold">Deine Stärken entscheiden.</span>
           </p>
           <p className="text-gray-400 text-base max-w-xl mx-auto">
             Future Skills bedeutet: digitale Werkzeuge souverän nutzen, klar und wirksam kommunizieren
-            – und Organisationen mit New Work Haltung auf die Zukunft ausrichten.
+            und Organisationen mit New Work Haltung auf die Zukunft ausrichten.
           </p>
         </div>
       </section>
@@ -289,8 +289,7 @@ export default function HomePage() {
                 <div className="text-xs font-bold uppercase tracking-widest text-teal-200 mb-2">Stufe 1 · Einstieg</div>
                 <h3 className="font-extrabold text-xl mb-2">Erstgespräch — kostenlos</h3>
                 <p className="text-teal-100 text-sm max-w-lg">
-                  Wir hören zu, verstehen eure Situation und zeigen, was möglich ist. Kein Verkaufsgespräch –
-                  ein ehrliches Kennenlernen. <span className="font-semibold text-white">4 freie Slots pro Monat.</span>
+                  Wir hören zu, verstehen eure Situation und zeigen, was möglich ist. Ein offenes Gespräch auf Augenhöhe. <span className="font-semibold text-white">4 freie Slots pro Monat.</span>
                 </p>
               </div>
               <Link
@@ -309,8 +308,7 @@ export default function HomePage() {
                 <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-2">Stufe 2 · Diagnose</div>
                 <h3 className="font-extrabold text-gray-900 text-xl mb-2">Bestandesaufnahme — 1 Tag</h3>
                 <p className="text-gray-600 text-sm max-w-lg">
-                  In einem eintägigen Workshop prüfen wir gemeinsam, wo eure Organisation steht, wo Hebel angesetzt werden können
-                  und in welcher Reihenfolge vorzugehen ist. Output: ein konkreter Massnahmenplan.
+                  In einem eintägigen Workshop erkunden wir gemeinsam, wo eure Stärken liegen und welche Schritte den grössten Hebel haben. Output: ein konkreter Massnahmenplan.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
                   <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Status quo erfassen</span>
@@ -327,7 +325,7 @@ export default function HomePage() {
 
           {/* Stufe 3: Massnahmen */}
           <div className="mb-5">
-            <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-4 px-1">Stufe 3 · Massnahmen — individuell nach Aufwand & Dauer</div>
+            <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-4 px-1">Stufe 3 · Massnahmen: individuell nach Aufwand und Dauer</div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
 
               {/* KI in Geschäftsprozessen */}
@@ -429,7 +427,7 @@ export default function HomePage() {
               <div className="bg-purple-50 rounded-2xl p-6 border border-purple-100">
                 <h3 className="font-bold text-gray-900 mb-2">Wir leben, was wir lehren</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  SmartTalk ist selbst ein Future Skills Unternehmen: digitale Prozesse, New Work Haltung, OKRs und agile Strukturen sind bei uns nicht Theorie – sie sind gelebter Alltag.
+                  SmartTalk ist selbst ein Future Skills Unternehmen: digitale Prozesse, New Work Haltung, OKRs und agile Strukturen sind bei uns gelebter Alltag.
                 </p>
               </div>
               <div className="bg-teal-50 rounded-2xl p-6 border border-teal-100">
@@ -472,7 +470,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Kontakt</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Fragen? Meld dich gerne.</h2>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Meld dich gerne.</h2>
             <p className="text-gray-500 mt-3 max-w-lg mx-auto">
               Ob Kursfragen, Inhouse-Anfragen, Erstgespräch Beratung oder einfach ein erstes Hallo – wir freuen uns von dir zu hören.
             </p>
@@ -507,7 +505,7 @@ export default function HomePage() {
               </div>
               <div className="bg-orange-50 rounded-2xl border border-orange-200 p-6">
                 <p className="text-sm font-semibold text-orange-800 mb-1">Schnelle Antwort</p>
-                <p className="text-sm text-orange-700">Wir melden uns innerhalb von 1–2 Werktagen bei dir.</p>
+                <p className="text-sm text-orange-700">Wir melden uns innerhalb von zwei Werktagen.</p>
               </div>
               <div className="bg-teal-50 rounded-2xl border border-teal-200 p-6">
                 <p className="text-sm font-semibold text-teal-800 mb-1">Beratungs-Erstgespräch</p>
