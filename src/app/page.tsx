@@ -20,8 +20,8 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-            <span className="text-[#F5821F]">Future Skills</span>{' '}
-            für die Arbeitswelt von heute.
+            Kompetenz ist{' '}
+            <span className="text-[#F5821F]">der Unterschied.</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-[#6B6B6B] max-w-2xl mx-auto mb-10 leading-relaxed">
