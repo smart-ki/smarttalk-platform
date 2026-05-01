@@ -113,7 +113,7 @@ export default function HomePage() {
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Eigenverantwortung & Resilienz</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Selbstführung, Integrität, Unternehmertum, Leistungsorientierung</p>
               <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Firmenkurs auf Anfrage</span>
+                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">Im KI Desktop-Kurs enthalten</span>
               </div>
             </div>
 
@@ -128,7 +128,8 @@ export default function HomePage() {
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Kritisches Denken & Agilität</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Problemlösung, Planung, geistige Beweglichkeit, Anpassungsfähigkeit</p>
               <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Firmenkurs auf Anfrage</span>
+                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">In Entwicklung</span>
+                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Kurs auf Anfrage</span>
               </div>
             </div>
           </div>
