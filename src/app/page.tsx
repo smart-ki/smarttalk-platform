@@ -46,7 +46,7 @@ export default function HomePage() {
 
           {/* Trust bar */}
           <div className="mt-14 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-            {['Mensch im Zentrum', 'Direkt anwendbar', 'Kleine Gruppen', 'Online & Präsenz', 'Inhouse buchbar', 'Zentralschweiz'].map((item) => (
+            {['Mensch im Zentrum', 'Direkt anwendbar', 'Online & Präsenz', 'Inhouse buchbar', 'Zentralschweiz'].map((item) => (
               <span key={item} className="flex items-center gap-2">
                 <span className="text-[#7C3AED]">✓</span>
                 {item}
