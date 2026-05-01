@@ -493,7 +493,7 @@ export default function HomePage() {
             {[
               { zahl: '2016', label: 'Gegründet' },
               { zahl: '100+', label: 'Mitarbeitende' },
-              { zahl: '8 Jahre', label: 'Agile Führung' },
+              { zahl: '10 Jahre', label: 'Agile Führung' },
               { zahl: 'Zentralschweiz', label: 'Unser Zuhause' },
             ].map(({ zahl, label }) => (
               <div key={label} className="text-center">
