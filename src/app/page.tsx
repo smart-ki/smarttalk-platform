@@ -78,8 +78,8 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-[#F5821F] mb-1">Digitales</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">KI & Digital</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">KI verstehen, digitale Tools souverän nutzen, digitale Ethik</p>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Digitale Mündigkeit & KI</h3>
+              <p className="text-xs text-gray-500 leading-relaxed mb-3">Digitale Kompetenz, KI-Kenntnisse, digitale Zusammenarbeit, Datenkompetenz</p>
               <div className="text-xs font-semibold text-[#F5821F]">→ KI & Digital Kurse</div>
             </div>
 
@@ -91,8 +91,8 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-[#7C3AED] mb-1">Zwischenmenschliches</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Kommunikation & Führung</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">Klar kommunizieren, zuhören, Verbindung schaffen, auftreten</p>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Beziehungen & Teamarbeit</h3>
+              <p className="text-xs text-gray-500 leading-relaxed mb-3">Rollenmodellierung, Vertrauen aufbauen, Kollaboration, Konfliktfähigkeit</p>
               <div className="text-xs font-semibold text-[#7C3AED]">→ Kommunikationskurse</div>
             </div>
 
@@ -104,8 +104,8 @@ export default function HomePage() {
                 </svg>
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-1">Selbstmanagement</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Begleitung & Beratung</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">OKRs leben, New Work Haltung, Unternehmertum, Resilienz</p>
+              <h3 className="font-bold text-gray-900 mb-2 text-sm">Eigenverantwortung & Resilienz</h3>
+              <p className="text-xs text-gray-500 leading-relaxed mb-3">Selbstführung, Integrität, Unternehmertum, Leistungsorientierung</p>
               <div className="text-xs font-semibold text-[#0D9488]">→ New Work Beratung</div>
             </div>
 
@@ -118,7 +118,7 @@ export default function HomePage() {
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Kognitiv</div>
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Kritisches Denken & Agilität</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">Strukturiert denken, agil arbeiten, Kreativität, Anpassungsfähigkeit</p>
+              <p className="text-xs text-gray-500 leading-relaxed mb-3">Problemlösung, Planung, geistige Beweglichkeit, Anpassungsfähigkeit</p>
               <div className="text-xs font-semibold text-gray-400">→ Folgt in Kürze</div>
             </div>
           </div>
@@ -139,7 +139,7 @@ export default function HomePage() {
               <div className="rounded-2xl overflow-hidden aspect-[3/4]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/jeannine-v2.jpg"
+                  src="/jeannine-v3.jpg"
                   alt="Jeannine Germann bei SmartTalk"
                   className="w-full h-full object-cover object-top"
                 />
