@@ -160,7 +160,7 @@ export const kiKurse: KiKurs[] = [
     anzahlSessions: 4,
     minutenProSession: 90,
     preisAb: 'CHF 450',
-    preisDetail: 'CHF 450 / Person. Auch als Inhouse buchbar.',
+    preisDetail: 'CHF 450 / Person. Auch als Inhouse-Training buchbar.',
     preisAbFirma: 'auf Anfrage',
     seoTitel: 'KI auf dem Desktop. Prompting und Tools für den Berufsalltag | SmartTalk',
     metaBeschreibung:
