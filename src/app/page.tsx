@@ -128,20 +128,40 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── MANIFEST BANNER ─── */}
+      {/* ─── ZITAT & BILD ─── */}
       <section className="bg-[#1B2E4B] py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-4">
-            Du bist das Herzstück.
-          </p>
-          <p className="text-lg sm:text-xl font-light text-gray-300 leading-relaxed mb-6">
-            KI ist dein Werkzeug.{' '}
-            <span className="text-[#F5821F] font-semibold">Deine Stärken entscheiden.</span>
-          </p>
-          <p className="text-gray-400 text-base max-w-xl mx-auto">
-            Future Skills bedeutet: digitale Werkzeuge souverän nutzen, klar und wirksam kommunizieren
-            und Organisationen mit New Work Haltung auf die Zukunft ausrichten.
-          </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+
+            {/* Bild */}
+            <div className="w-full md:w-2/5 shrink-0">
+              <div className="rounded-2xl overflow-hidden aspect-[4/3]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/jeannine.jpg"
+                  alt="Jeannine Germann bei SmartTalk"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+
+            {/* Zitat */}
+            <div className="flex-1">
+              <div className="text-[#F5821F] text-5xl font-serif leading-none mb-4">"</div>
+              <p className="text-xl sm:text-2xl font-light text-white leading-relaxed mb-6">
+                Ich glaube, dass jeder Mensch das Potenzial hat, mit den richtigen Kompetenzen
+                wirklich vorwärtszukommen. Genau dafür bin ich hier.
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="h-px w-10 bg-[#F5821F]" />
+                <div>
+                  <p className="text-white font-semibold text-sm">Jeannine Germann</p>
+                  <p className="text-gray-400 text-xs">Mitglied der Geschäftsleitung, SmartTalk</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
