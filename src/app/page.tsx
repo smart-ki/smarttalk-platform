@@ -514,7 +514,7 @@ export default function HomePage() {
               <h3 className="font-bold text-gray-900 mb-0.5">Florian</h3>
               <p className="text-xs font-semibold text-[#F5821F] uppercase tracking-wide mb-3">Inhaber & Geschäftsleiter</p>
               <p className="text-xs text-gray-500 leading-relaxed">
-                Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung und zeitgemässe Führung. Florian baut SmartTalk seit der Gründung 2016 agil auf, setzt KI täglich in Führung und Betrieb ein und lebt New Work als Haltung, nicht als Konzept.
+                Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung und zeitgemässe Führung. Florian baut SmartTalk seit der Gründung 2016 agil auf, setzt KI täglich in Führung und Betrieb ein und lebt New Work als Haltung.
               </p>
               <div className="flex flex-wrap gap-1.5 mt-4">
                 <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">KI & Prozesse</span>
