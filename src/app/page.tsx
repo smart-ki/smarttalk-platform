@@ -13,7 +13,9 @@ export default function HomePage() {
         <div className="absolute top-0 right-0 w-80 h-80 bg-orange-100 rounded-full opacity-40 blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-100 rounded-full opacity-40 blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
 
-        <div className="max-w-4xl mx-auto text-center relative">
+        <div className="max-w-6xl mx-auto relative">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div className="flex-1 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-white border border-gray-200 shadow-sm text-gray-600 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse" />
             Future Skills · Zentralschweiz
@@ -45,7 +47,7 @@ export default function HomePage() {
           </div>
 
           {/* Trust bar */}
-          <div className="mt-14 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+          <div className="mt-14 flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-gray-500">
             {['Mensch im Zentrum', 'Direkt anwendbar', 'Online & Präsenz', 'Inhouse buchbar', 'Zentralschweiz'].map((item) => (
               <span key={item} className="flex items-center gap-2">
                 <span className="text-[#7C3AED]">✓</span>
@@ -53,6 +55,21 @@ export default function HomePage() {
               </span>
             ))}
           </div>
+        </div>
+
+        {/* Hero-Bild */}
+        <div className="hidden lg:block w-full lg:w-2/5 shrink-0">
+          <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/hero-workshop.jpg"
+              alt="SmartTalk Workshop"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        </div>
         </div>
       </section>
 
@@ -508,8 +525,9 @@ export default function HomePage() {
 
             {/* Florian */}
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mb-4">
-                <span className="text-[#F5821F] font-extrabold text-lg">F</span>
+              <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/team-florian.jpg" alt="Florian" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-bold text-gray-900 mb-0.5">Florian</h3>
               <p className="text-xs font-semibold text-[#F5821F] uppercase tracking-wide mb-3">Inhaber & Geschäftsleiter</p>
@@ -525,8 +543,9 @@ export default function HomePage() {
 
             {/* Jeannine */}
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mb-4">
-                <span className="text-[#7C3AED] font-extrabold text-lg">J</span>
+              <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/jeannine-v7.jpg" alt="Jeannine" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-bold text-gray-900 mb-0.5">Jeannine</h3>
               <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-wide mb-3">Mitglied der Geschäftsleitung</p>
@@ -542,8 +561,8 @@ export default function HomePage() {
 
             {/* Chris */}
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center mb-4">
-                <span className="text-[#0D9488] font-extrabold text-lg">C</span>
+              <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
+                <img src="/team-chris.jpg" alt="Chris" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-bold text-gray-900 mb-0.5">Chris</h3>
               <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wide mb-3">Marketing & Teamentwicklung</p>
@@ -559,8 +578,8 @@ export default function HomePage() {
 
             {/* Ruth */}
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center mb-4">
-                <span className="text-gray-500 font-extrabold text-lg">R</span>
+              <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
+                <img src="/team-ruth.jpg" alt="Ruth" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-bold text-gray-900 mb-0.5">Ruth</h3>
               <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">People & HR</p>

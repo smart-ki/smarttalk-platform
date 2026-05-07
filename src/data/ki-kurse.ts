@@ -69,8 +69,8 @@ export const kiKurse: KiKurs[] = [
     nummer: 2,
     level: 'PRAXIS',
     levelFarbe: 'bg-orange-100 text-orange-800',
-    titel: 'KI konkret für meinen Berufsalltag',
-    untertitel: 'Du bringst deine Aufgaben mit. Wir lösen sie gemeinsam mit KI.',
+    titel: 'Meine Aufgaben mit KI lösen',
+    untertitel: 'Du bringst drei echte Aufgaben mit. Du nimmst fertige Lösungen nach Hause.',
     highlight: 'Ideal nach dem Einstiegskurs.',
     highlightFarbe: 'bg-orange-50 border-orange-200 text-orange-800',
     kurzbeschreibung:
@@ -89,9 +89,9 @@ export const kiKurse: KiKurs[] = [
     preisAb: 'CHF 149',
     preisDetail: 'CHF 149 / Person',
     preisAbFirma: 'auf Anfrage',
-    seoTitel: 'KI konkret für den Berufsalltag. Halbtageskurs | SmartTalk',
+    seoTitel: 'Meine Aufgaben mit KI lösen. Halbtageskurs | SmartTalk',
     metaBeschreibung:
-      'KI direkt auf eigene Berufsaufgaben anwenden. Halbtageskurs CHF 149. Mit fertigen Prompt-Vorlagen nach Hause. Zentralschweiz.',
+      'Eigene Aufgaben mitbringen, sofort mit KI lösen und fertige Prompt-Vorlagen mitnehmen. Halbtageskurs CHF 149. Zentralschweiz.',
     keywords: ['KI Berufsalltag', 'KI Praxiskurs Schweiz', 'Prompt Vorlagen', 'KI im Job'],
   },
   {
@@ -99,7 +99,7 @@ export const kiKurse: KiKurs[] = [
     nummer: 3,
     level: 'VERTIEFUNG',
     levelFarbe: 'bg-red-100 text-red-800',
-    titel: 'KI auf meinem Desktop',
+    titel: 'KI dauerhaft in den Alltag integrieren',
     untertitel: 'Prompting, Tools und dein persönlicher KI-Arbeitsplatz.',
     kurzbeschreibung:
       'Du weisst, was KI kann, und hast sie selbst ausprobiert. Jetzt richtest du sie ein. In vier Lektionen lernst du, wie du mit dem richtigen Prompt wirklich gute Ergebnisse bekommst, welches Tool für welche Aufgabe passt, und wie KI ein fester Bestandteil deines digitalen Arbeitsplatzes wird.',
@@ -162,7 +162,7 @@ export const kiKurse: KiKurs[] = [
     preisAb: 'CHF 450',
     preisDetail: 'CHF 450 / Person. Auch als Inhouse-Training buchbar.',
     preisAbFirma: 'auf Anfrage',
-    seoTitel: 'KI auf dem Desktop. Prompting und Tools für den Berufsalltag | SmartTalk',
+    seoTitel: 'KI dauerhaft integrieren. Prompting, Tools und KI-Arbeitsplatz | SmartTalk',
     metaBeschreibung:
       'KI optimal einsetzen: Prompting, Tools und persönlicher KI-Arbeitsplatz. 4x 90 Min., CHF 450. Für Berufsleute in der Zentralschweiz.',
     keywords: ['KI Desktop einrichten', 'Prompting Kurs Schweiz', 'Microsoft Copilot Kurs', 'KI Arbeitsplatz'],
