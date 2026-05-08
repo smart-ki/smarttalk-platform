@@ -197,6 +197,10 @@ export default function HomePage() {
       {/* ─── PILLAR 1: KI & DIGITAL ─── */}
       <section id="ki-digital" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
+          <div className="rounded-2xl overflow-hidden aspect-[16/9] mb-10">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/section-ki.jpg" alt="Teilnehmende lernen am Laptop" className="w-full h-full object-cover" />
+          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -267,6 +271,10 @@ export default function HomePage() {
       {/* ─── PILLAR 2: KOMMUNIKATION ─── */}
       <section id="kommunikation" className="py-20 px-4 bg-gradient-to-b from-white to-purple-50">
         <div className="max-w-6xl mx-auto">
+          <div className="rounded-2xl overflow-hidden aspect-[16/9] mb-10">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/section-kommunikation.jpg" alt="Trainerin im Gespräch mit Teilnehmenden" className="w-full h-full object-cover" />
+          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -304,6 +312,10 @@ export default function HomePage() {
       {/* ─── BERATUNG & NEW WORK ─── */}
       <section id="beratung" className="py-20 px-4 bg-gradient-to-b from-white to-teal-50">
         <div className="max-w-6xl mx-auto">
+          <div className="rounded-2xl overflow-hidden aspect-[16/9] mb-10">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/section-beratung.jpg" alt="Coaching-Situation am Flipchart" className="w-full h-full object-cover" />
+          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -545,7 +557,7 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/jeannine-v7.jpg" alt="Jeannine" className="w-full h-full object-cover object-top" />
+                <img src="/team-jeannine.jpg" alt="Jeannine" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-bold text-gray-900 mb-0.5">Jeannine</h3>
               <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-wide mb-3">Mitglied der Geschäftsleitung</p>
