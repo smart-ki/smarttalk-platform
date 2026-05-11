@@ -57,6 +57,49 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Hero-Visual: Future-Skills-Konstellation in den 4 Brand-Farben */}
+        <div className="hidden lg:block w-full lg:w-2/5 shrink-0">
+          <div className="relative aspect-square">
+            <svg viewBox="0 0 400 400" className="w-full h-full" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              {/* Verbindungslinien */}
+              <g stroke="#1B2E4B" strokeWidth="1.2" strokeOpacity="0.18" fill="none" strokeLinecap="round">
+                <line x1="200" y1="200" x2="110" y2="100" />
+                <line x1="200" y1="200" x2="310" y2="110" />
+                <line x1="200" y1="200" x2="300" y2="300" />
+                <line x1="200" y1="200" x2="100" y2="300" />
+                <line x1="110" y1="100" x2="310" y2="110" strokeDasharray="2 6" />
+                <line x1="310" y1="110" x2="300" y2="300" strokeDasharray="2 6" />
+                <line x1="300" y1="300" x2="100" y2="300" strokeDasharray="2 6" />
+                <line x1="100" y1="300" x2="110" y2="100" strokeDasharray="2 6" />
+              </g>
+              {/* Zentraler Knoten */}
+              <circle cx="200" cy="200" r="48" fill="#1B2E4B" />
+              <circle cx="200" cy="200" r="48" fill="none" stroke="#1B2E4B" strokeOpacity="0.15" strokeWidth="16" />
+              <text x="200" y="207" textAnchor="middle" fontFamily="ui-sans-serif, system-ui, sans-serif" fontSize="13" fontWeight="700" fill="#FAF7F2" letterSpacing="0.05em">SKILLS</text>
+              {/* 4 Kompetenz-Knoten */}
+              {/* Digital — Orange */}
+              <circle cx="110" cy="100" r="34" fill="#F5821F" />
+              <circle cx="110" cy="100" r="34" fill="none" stroke="#F5821F" strokeOpacity="0.20" strokeWidth="12" />
+              {/* Zwischenmenschliches — Lila */}
+              <circle cx="310" cy="110" r="34" fill="#7C3AED" />
+              <circle cx="310" cy="110" r="34" fill="none" stroke="#7C3AED" strokeOpacity="0.20" strokeWidth="12" />
+              {/* Selbstmanagement — Teal */}
+              <circle cx="300" cy="300" r="34" fill="#0D9488" />
+              <circle cx="300" cy="300" r="34" fill="none" stroke="#0D9488" strokeOpacity="0.20" strokeWidth="12" />
+              {/* Kognitives — Navy/Light */}
+              <circle cx="100" cy="300" r="34" fill="#1B2E4B" />
+              <circle cx="100" cy="300" r="34" fill="none" stroke="#1B2E4B" strokeOpacity="0.20" strokeWidth="12" />
+              {/* Floating dots als Deko */}
+              <circle cx="60" cy="200" r="3" fill="#F5821F" opacity="0.4" />
+              <circle cx="350" cy="200" r="4" fill="#7C3AED" opacity="0.4" />
+              <circle cx="200" cy="60" r="3" fill="#0D9488" opacity="0.4" />
+              <circle cx="200" cy="350" r="3" fill="#1B2E4B" opacity="0.4" />
+              <circle cx="350" cy="60" r="2" fill="#F5821F" opacity="0.5" />
+              <circle cx="50" cy="350" r="2" fill="#7C3AED" opacity="0.5" />
+            </svg>
+          </div>
+        </div>
+
         </div>
         </div>
       </section>
@@ -185,6 +228,36 @@ export default function HomePage() {
       {/* ─── PILLAR 1: KI & DIGITAL ─── */}
       <section id="ki-digital" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
+          {/* Sektions-Banner mit grossem Icon */}
+          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-orange-50 via-orange-50/60 to-white border border-orange-100 mb-12 aspect-[16/7]">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              {/* Dezente Deko-Punkte */}
+              <circle cx="80" cy="80" r="4" fill="#F5821F" opacity="0.30" />
+              <circle cx="140" cy="180" r="3" fill="#F5821F" opacity="0.40" />
+              <circle cx="60" cy="260" r="5" fill="#F5821F" opacity="0.25" />
+              <circle cx="720" cy="100" r="3" fill="#F5821F" opacity="0.40" />
+              <circle cx="680" cy="220" r="4" fill="#F5821F" opacity="0.30" />
+              <circle cx="740" cy="280" r="3" fill="#F5821F" opacity="0.35" />
+              <circle cx="220" cy="60" r="2" fill="#F5821F" opacity="0.45" />
+              <circle cx="580" cy="60" r="2" fill="#F5821F" opacity="0.45" />
+              {/* Gepunktete Linien */}
+              <line x1="100" y1="175" x2="280" y2="175" stroke="#F5821F" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
+              <line x1="520" y1="175" x2="700" y2="175" stroke="#F5821F" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
+              {/* Grosses Icon zentral — Laptop mit Sparkle */}
+              <g transform="translate(400 175)">
+                <circle r="78" fill="#FFFFFF" stroke="#F5821F" strokeOpacity="0.25" strokeWidth="2" />
+                <g transform="translate(-40 -28)" stroke="#F5821F" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="0" y="0" width="80" height="50" rx="4" />
+                  <line x1="-8" y1="56" x2="88" y2="56" />
+                </g>
+                {/* Sparkles */}
+                <g fill="#F5821F">
+                  <path d="M 30 -36 L 32 -30 L 38 -28 L 32 -26 L 30 -20 L 28 -26 L 22 -28 L 28 -30 Z" />
+                  <path d="M -38 22 L -36 26 L -32 28 L -36 30 L -38 34 L -40 30 L -44 28 L -40 26 Z" opacity="0.6" />
+                </g>
+              </g>
+            </svg>
+          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -255,6 +328,34 @@ export default function HomePage() {
       {/* ─── PILLAR 2: KOMMUNIKATION ─── */}
       <section id="kommunikation" className="py-20 px-4 bg-gradient-to-b from-white to-purple-50">
         <div className="max-w-6xl mx-auto">
+          {/* Sektions-Banner mit grossem Icon */}
+          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 via-purple-50/60 to-white border border-purple-100 mb-12 aspect-[16/7]">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="80" cy="80" r="4" fill="#7C3AED" opacity="0.30" />
+              <circle cx="140" cy="180" r="3" fill="#7C3AED" opacity="0.40" />
+              <circle cx="60" cy="260" r="5" fill="#7C3AED" opacity="0.25" />
+              <circle cx="720" cy="100" r="3" fill="#7C3AED" opacity="0.40" />
+              <circle cx="680" cy="220" r="4" fill="#7C3AED" opacity="0.30" />
+              <circle cx="740" cy="280" r="3" fill="#7C3AED" opacity="0.35" />
+              <circle cx="220" cy="60" r="2" fill="#7C3AED" opacity="0.45" />
+              <circle cx="580" cy="60" r="2" fill="#7C3AED" opacity="0.45" />
+              <line x1="100" y1="175" x2="280" y2="175" stroke="#7C3AED" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
+              <line x1="520" y1="175" x2="700" y2="175" stroke="#7C3AED" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
+              {/* Grosses Icon zentral — überlappende Sprechblasen */}
+              <g transform="translate(400 175)">
+                <circle r="78" fill="#FFFFFF" stroke="#7C3AED" strokeOpacity="0.25" strokeWidth="2" />
+                <g stroke="#7C3AED" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  {/* Linke Sprechblase */}
+                  <path d="M -42 -20 q 0 -20 20 -20 h 32 q 20 0 20 20 v 10 q 0 20 -20 20 h -22 l -16 12 v -12 q -14 0 -14 -14 z" />
+                  {/* Rechte Sprechblase (überlappt) */}
+                  <path d="M -4 6 q 0 -16 16 -16 h 30 q 16 0 16 16 v 8 q 0 16 -16 16 h -20 l -14 12 v -12 q -12 0 -12 -12 z" fill="#FFFFFF" />
+                </g>
+                <circle cx="-22" cy="-10" r="2" fill="#7C3AED" />
+                <circle cx="-10" cy="-10" r="2" fill="#7C3AED" />
+                <circle cx="2" cy="-10" r="2" fill="#7C3AED" />
+              </g>
+            </svg>
+          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -292,6 +393,34 @@ export default function HomePage() {
       {/* ─── BERATUNG & NEW WORK ─── */}
       <section id="beratung" className="py-20 px-4 bg-gradient-to-b from-white to-teal-50">
         <div className="max-w-6xl mx-auto">
+          {/* Sektions-Banner mit grossem Icon */}
+          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-teal-50 via-teal-50/60 to-white border border-teal-100 mb-12 aspect-[16/7]">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="80" cy="80" r="4" fill="#0D9488" opacity="0.30" />
+              <circle cx="140" cy="180" r="3" fill="#0D9488" opacity="0.40" />
+              <circle cx="60" cy="260" r="5" fill="#0D9488" opacity="0.25" />
+              <circle cx="720" cy="100" r="3" fill="#0D9488" opacity="0.40" />
+              <circle cx="680" cy="220" r="4" fill="#0D9488" opacity="0.30" />
+              <circle cx="740" cy="280" r="3" fill="#0D9488" opacity="0.35" />
+              <circle cx="220" cy="60" r="2" fill="#0D9488" opacity="0.45" />
+              <circle cx="580" cy="60" r="2" fill="#0D9488" opacity="0.45" />
+              <line x1="100" y1="175" x2="280" y2="175" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
+              <line x1="520" y1="175" x2="700" y2="175" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
+              {/* Grosses Icon zentral — Kompass / Wegweiser */}
+              <g transform="translate(400 175)">
+                <circle r="78" fill="#FFFFFF" stroke="#0D9488" strokeOpacity="0.25" strokeWidth="2" />
+                <circle r="48" fill="none" stroke="#0D9488" strokeOpacity="0.30" strokeWidth="1.5" strokeDasharray="3 4" />
+                {/* Kompass-Nadel */}
+                <g stroke="#0D9488" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M 0 -42 L 10 0 L 0 42 L -10 0 Z" />
+                </g>
+                <path d="M 0 -42 L 10 0 L 0 0 Z" fill="#0D9488" />
+                <circle r="5" fill="#0D9488" />
+                {/* N-Marker */}
+                <text x="0" y="-58" textAnchor="middle" fontFamily="ui-sans-serif, system-ui, sans-serif" fontSize="11" fontWeight="700" fill="#0D9488" opacity="0.7">N</text>
+              </g>
+            </svg>
+          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
