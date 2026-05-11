@@ -57,49 +57,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Hero-Visual: Future-Skills-Konstellation in den 4 Brand-Farben */}
-        <div className="hidden lg:block w-full lg:w-2/5 shrink-0">
-          <div className="relative aspect-square">
-            <svg viewBox="0 0 400 400" className="w-full h-full" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              {/* Verbindungslinien */}
-              <g stroke="#1B2E4B" strokeWidth="1.2" strokeOpacity="0.18" fill="none" strokeLinecap="round">
-                <line x1="200" y1="200" x2="110" y2="100" />
-                <line x1="200" y1="200" x2="310" y2="110" />
-                <line x1="200" y1="200" x2="300" y2="300" />
-                <line x1="200" y1="200" x2="100" y2="300" />
-                <line x1="110" y1="100" x2="310" y2="110" strokeDasharray="2 6" />
-                <line x1="310" y1="110" x2="300" y2="300" strokeDasharray="2 6" />
-                <line x1="300" y1="300" x2="100" y2="300" strokeDasharray="2 6" />
-                <line x1="100" y1="300" x2="110" y2="100" strokeDasharray="2 6" />
-              </g>
-              {/* Zentraler Knoten */}
-              <circle cx="200" cy="200" r="48" fill="#1B2E4B" />
-              <circle cx="200" cy="200" r="48" fill="none" stroke="#1B2E4B" strokeOpacity="0.15" strokeWidth="16" />
-              <text x="200" y="207" textAnchor="middle" fontFamily="ui-sans-serif, system-ui, sans-serif" fontSize="13" fontWeight="700" fill="#FAF7F2" letterSpacing="0.05em">SKILLS</text>
-              {/* 4 Kompetenz-Knoten */}
-              {/* Digital — Orange */}
-              <circle cx="110" cy="100" r="34" fill="#F5821F" />
-              <circle cx="110" cy="100" r="34" fill="none" stroke="#F5821F" strokeOpacity="0.20" strokeWidth="12" />
-              {/* Zwischenmenschliches — Lila */}
-              <circle cx="310" cy="110" r="34" fill="#7C3AED" />
-              <circle cx="310" cy="110" r="34" fill="none" stroke="#7C3AED" strokeOpacity="0.20" strokeWidth="12" />
-              {/* Selbstmanagement — Teal */}
-              <circle cx="300" cy="300" r="34" fill="#0D9488" />
-              <circle cx="300" cy="300" r="34" fill="none" stroke="#0D9488" strokeOpacity="0.20" strokeWidth="12" />
-              {/* Kognitives — Navy/Light */}
-              <circle cx="100" cy="300" r="34" fill="#1B2E4B" />
-              <circle cx="100" cy="300" r="34" fill="none" stroke="#1B2E4B" strokeOpacity="0.20" strokeWidth="12" />
-              {/* Floating dots als Deko */}
-              <circle cx="60" cy="200" r="3" fill="#F5821F" opacity="0.4" />
-              <circle cx="350" cy="200" r="4" fill="#7C3AED" opacity="0.4" />
-              <circle cx="200" cy="60" r="3" fill="#0D9488" opacity="0.4" />
-              <circle cx="200" cy="350" r="3" fill="#1B2E4B" opacity="0.4" />
-              <circle cx="350" cy="60" r="2" fill="#F5821F" opacity="0.5" />
-              <circle cx="50" cy="350" r="2" fill="#7C3AED" opacity="0.5" />
-            </svg>
-          </div>
-        </div>
-
         </div>
         </div>
       </section>
