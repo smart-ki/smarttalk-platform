@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-100 rounded-full opacity-40 blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
         {/* Verspielte Deko-Illustration */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/hero-illustration.jpg" alt="" aria-hidden="true" className="hidden lg:block absolute top-8 right-12 w-56 xl:w-64 -rotate-3 opacity-95 pointer-events-none" />
+        <img src="/hero-illustration.png" alt="" aria-hidden="true" className="hidden lg:block absolute top-8 right-12 w-56 xl:w-64 -rotate-3 opacity-95 pointer-events-none" />
 
         <div className="max-w-6xl mx-auto relative">
         <div className="flex flex-col items-center gap-12">
@@ -67,7 +67,7 @@ export default function HomePage() {
       {/* ─── FUTURE SKILLS FRAMEWORK ─── */}
       <section className="relative py-16 px-4 bg-gray-50 border-b border-gray-100 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/mensch-im-zentrum.jpg" alt="" aria-hidden="true" className="hidden md:block absolute top-4 right-4 lg:top-8 lg:right-8 w-44 lg:w-52 rotate-2 opacity-95 pointer-events-none" />
+        <img src="/mensch-im-zentrum.png" alt="" aria-hidden="true" className="hidden md:block absolute top-4 right-4 lg:top-8 lg:right-8 w-44 lg:w-52 rotate-2 opacity-95 pointer-events-none" />
         <div className="max-w-6xl mx-auto relative">
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Das Fundament</span>
@@ -190,7 +190,7 @@ export default function HomePage() {
       {/* ─── PILLAR 1: KI & DIGITAL ─── */}
       <section id="ki-digital" className="relative py-20 px-4 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/section-ki.jpg" alt="" aria-hidden="true" className="hidden md:block absolute top-6 right-4 lg:right-12 w-40 lg:w-48 -rotate-2 opacity-90 pointer-events-none" />
+        <img src="/section-ki.png" alt="" aria-hidden="true" className="hidden md:block absolute top-6 right-4 lg:right-12 w-40 lg:w-48 -rotate-2 opacity-90 pointer-events-none" />
         <div className="max-w-6xl mx-auto relative">
           <div className="flex flex-col items-center text-center mb-12 gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Bildung · KI & Digital</span>
@@ -253,7 +253,7 @@ export default function HomePage() {
       {/* ─── PILLAR 2: KOMMUNIKATION ─── */}
       <section id="kommunikation" className="relative py-20 px-4 bg-gradient-to-b from-white to-purple-50 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/section-kommunikation.jpg" alt="" aria-hidden="true" className="hidden md:block absolute top-6 left-4 lg:left-12 w-40 lg:w-48 rotate-3 opacity-90 pointer-events-none" />
+        <img src="/section-kommunikation.png" alt="" aria-hidden="true" className="hidden md:block absolute top-6 left-4 lg:left-12 w-40 lg:w-48 rotate-3 opacity-90 pointer-events-none" />
         <div className="max-w-6xl mx-auto relative">
           <div className="flex flex-col items-center text-center mb-12 gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-purple-600">Bildung · Kommunikation</span>
@@ -283,7 +283,7 @@ export default function HomePage() {
       {/* ─── BERATUNG & NEW WORK ─── */}
       <section id="beratung" className="relative py-20 px-4 bg-gradient-to-b from-white to-teal-50 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/section-beratung.jpg" alt="" aria-hidden="true" className="hidden md:block absolute top-6 right-4 lg:right-12 w-40 lg:w-48 -rotate-2 opacity-90 pointer-events-none" />
+        <img src="/section-beratung.png" alt="" aria-hidden="true" className="hidden md:block absolute top-6 right-4 lg:right-12 w-40 lg:w-48 -rotate-2 opacity-90 pointer-events-none" />
         <div className="max-w-6xl mx-auto relative">
           <div className="flex flex-col items-center text-center mb-12 gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Beratung & New Work</span>
