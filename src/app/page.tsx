@@ -185,50 +185,11 @@ export default function HomePage() {
       {/* ─── PILLAR 1: KI & DIGITAL ─── */}
       <section id="ki-digital" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Sektions-Banner mit grossem Icon */}
-          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-orange-50 via-orange-50/60 to-white border border-orange-100 mb-12 aspect-[16/7]">
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              {/* Dezente Deko-Punkte */}
-              <circle cx="80" cy="80" r="4" fill="#F5821F" opacity="0.30" />
-              <circle cx="140" cy="180" r="3" fill="#F5821F" opacity="0.40" />
-              <circle cx="60" cy="260" r="5" fill="#F5821F" opacity="0.25" />
-              <circle cx="720" cy="100" r="3" fill="#F5821F" opacity="0.40" />
-              <circle cx="680" cy="220" r="4" fill="#F5821F" opacity="0.30" />
-              <circle cx="740" cy="280" r="3" fill="#F5821F" opacity="0.35" />
-              <circle cx="220" cy="60" r="2" fill="#F5821F" opacity="0.45" />
-              <circle cx="580" cy="60" r="2" fill="#F5821F" opacity="0.45" />
-              {/* Gepunktete Linien */}
-              <line x1="100" y1="175" x2="280" y2="175" stroke="#F5821F" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
-              <line x1="520" y1="175" x2="700" y2="175" stroke="#F5821F" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
-              {/* Grosses Icon zentral — Laptop mit Sparkle */}
-              <g transform="translate(400 175)">
-                <circle r="78" fill="#FFFFFF" stroke="#F5821F" strokeOpacity="0.25" strokeWidth="2" />
-                <g transform="translate(-40 -28)" stroke="#F5821F" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="0" y="0" width="80" height="50" rx="4" />
-                  <line x1="-8" y1="56" x2="88" y2="56" />
-                </g>
-                {/* Sparkles */}
-                <g fill="#F5821F">
-                  <path d="M 30 -36 L 32 -30 L 38 -28 L 32 -26 L 30 -20 L 28 -26 L 22 -28 L 28 -30 Z" />
-                  <path d="M -38 22 L -36 26 L -32 28 L -36 30 L -38 34 L -40 30 L -44 28 L -40 26 Z" opacity="0.6" />
-                </g>
-              </g>
-            </svg>
-          </div>
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
-            <div>
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-[#F5821F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Bildung · KI & Digital</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">KI & Digital</h2>
-              <p className="text-gray-500 mt-2 max-w-lg">Online und Präsenz · 3 Kurse vom Einstieg bis zum persönlichen KI-Arbeitsplatz</p>
-            </div>
-            <div className="flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-xl px-5 py-3 text-sm text-orange-700 font-medium self-start sm:self-auto">
+          <div className="flex flex-col items-center text-center mb-12 gap-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Bildung · KI & Digital</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">KI & Digital</h2>
+            <p className="text-gray-500 max-w-lg">Online und Präsenz · 3 Kurse vom Einstieg bis zum persönlichen KI-Arbeitsplatz</p>
+            <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-xl px-5 py-2.5 text-sm text-orange-700 font-medium mt-2">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
@@ -285,48 +246,11 @@ export default function HomePage() {
       {/* ─── PILLAR 2: KOMMUNIKATION ─── */}
       <section id="kommunikation" className="py-20 px-4 bg-gradient-to-b from-white to-purple-50">
         <div className="max-w-6xl mx-auto">
-          {/* Sektions-Banner mit grossem Icon */}
-          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-purple-50 via-purple-50/60 to-white border border-purple-100 mb-12 aspect-[16/7]">
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="80" cy="80" r="4" fill="#7C3AED" opacity="0.30" />
-              <circle cx="140" cy="180" r="3" fill="#7C3AED" opacity="0.40" />
-              <circle cx="60" cy="260" r="5" fill="#7C3AED" opacity="0.25" />
-              <circle cx="720" cy="100" r="3" fill="#7C3AED" opacity="0.40" />
-              <circle cx="680" cy="220" r="4" fill="#7C3AED" opacity="0.30" />
-              <circle cx="740" cy="280" r="3" fill="#7C3AED" opacity="0.35" />
-              <circle cx="220" cy="60" r="2" fill="#7C3AED" opacity="0.45" />
-              <circle cx="580" cy="60" r="2" fill="#7C3AED" opacity="0.45" />
-              <line x1="100" y1="175" x2="280" y2="175" stroke="#7C3AED" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
-              <line x1="520" y1="175" x2="700" y2="175" stroke="#7C3AED" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
-              {/* Grosses Icon zentral — überlappende Sprechblasen */}
-              <g transform="translate(400 175)">
-                <circle r="78" fill="#FFFFFF" stroke="#7C3AED" strokeOpacity="0.25" strokeWidth="2" />
-                <g stroke="#7C3AED" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                  {/* Linke Sprechblase */}
-                  <path d="M -42 -20 q 0 -20 20 -20 h 32 q 20 0 20 20 v 10 q 0 20 -20 20 h -22 l -16 12 v -12 q -14 0 -14 -14 z" />
-                  {/* Rechte Sprechblase (überlappt) */}
-                  <path d="M -4 6 q 0 -16 16 -16 h 30 q 16 0 16 16 v 8 q 0 16 -16 16 h -20 l -14 12 v -12 q -12 0 -12 -12 z" fill="#FFFFFF" />
-                </g>
-                <circle cx="-22" cy="-10" r="2" fill="#7C3AED" />
-                <circle cx="-10" cy="-10" r="2" fill="#7C3AED" />
-                <circle cx="2" cy="-10" r="2" fill="#7C3AED" />
-              </g>
-            </svg>
-          </div>
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
-            <div>
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                  </svg>
-                </div>
-                <span className="text-xs font-bold uppercase tracking-widest text-purple-600">Bildung · Kommunikation</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Kommunikation & Auftreten</h2>
-              <p className="text-gray-500 mt-2 max-w-lg">Präsenz · 3 Tageskurse für mehr Wirkung, Klarheit und Verbindung</p>
-            </div>
-            <div className="flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-xl px-5 py-3 text-sm text-purple-700 font-medium self-start sm:self-auto">
+          <div className="flex flex-col items-center text-center mb-12 gap-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-purple-600">Bildung · Kommunikation</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Kommunikation & Auftreten</h2>
+            <p className="text-gray-500 max-w-lg">Präsenz · 3 Tageskurse für mehr Wirkung, Klarheit und Verbindung</p>
+            <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-xl px-5 py-2.5 text-sm text-purple-700 font-medium mt-2">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
@@ -350,48 +274,11 @@ export default function HomePage() {
       {/* ─── BERATUNG & NEW WORK ─── */}
       <section id="beratung" className="py-20 px-4 bg-gradient-to-b from-white to-teal-50">
         <div className="max-w-6xl mx-auto">
-          {/* Sektions-Banner mit grossem Icon */}
-          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-teal-50 via-teal-50/60 to-white border border-teal-100 mb-12 aspect-[16/7]">
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="80" cy="80" r="4" fill="#0D9488" opacity="0.30" />
-              <circle cx="140" cy="180" r="3" fill="#0D9488" opacity="0.40" />
-              <circle cx="60" cy="260" r="5" fill="#0D9488" opacity="0.25" />
-              <circle cx="720" cy="100" r="3" fill="#0D9488" opacity="0.40" />
-              <circle cx="680" cy="220" r="4" fill="#0D9488" opacity="0.30" />
-              <circle cx="740" cy="280" r="3" fill="#0D9488" opacity="0.35" />
-              <circle cx="220" cy="60" r="2" fill="#0D9488" opacity="0.45" />
-              <circle cx="580" cy="60" r="2" fill="#0D9488" opacity="0.45" />
-              <line x1="100" y1="175" x2="280" y2="175" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
-              <line x1="520" y1="175" x2="700" y2="175" stroke="#0D9488" strokeWidth="1.5" strokeDasharray="2 8" opacity="0.30" />
-              {/* Grosses Icon zentral — Kompass / Wegweiser */}
-              <g transform="translate(400 175)">
-                <circle r="78" fill="#FFFFFF" stroke="#0D9488" strokeOpacity="0.25" strokeWidth="2" />
-                <circle r="48" fill="none" stroke="#0D9488" strokeOpacity="0.30" strokeWidth="1.5" strokeDasharray="3 4" />
-                {/* Kompass-Nadel */}
-                <g stroke="#0D9488" strokeWidth="3.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M 0 -42 L 10 0 L 0 42 L -10 0 Z" />
-                </g>
-                <path d="M 0 -42 L 10 0 L 0 0 Z" fill="#0D9488" />
-                <circle r="5" fill="#0D9488" />
-                {/* N-Marker */}
-                <text x="0" y="-58" textAnchor="middle" fontFamily="ui-sans-serif, system-ui, sans-serif" fontSize="11" fontWeight="700" fill="#0D9488" opacity="0.7">N</text>
-              </g>
-            </svg>
-          </div>
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
-            <div>
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center">
-                  <svg className="w-5 h-5 text-[#0D9488]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Beratung & New Work</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Beratung & New Work</h2>
-              <p className="text-gray-500 mt-2 max-w-lg">Für Organisationen, die Future Skills leben wollen – mit Begleitung, die wirklich etwas bewegt</p>
-            </div>
-            <div className="flex items-center gap-2 bg-teal-50 border border-teal-200 rounded-xl px-5 py-3 text-sm text-teal-700 font-medium self-start sm:self-auto">
+          <div className="flex flex-col items-center text-center mb-12 gap-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Beratung & New Work</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Beratung & New Work</h2>
+            <p className="text-gray-500 max-w-lg">Für Organisationen, die Future Skills leben wollen – mit Begleitung, die wirklich etwas bewegt</p>
+            <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 rounded-xl px-5 py-2.5 text-sm text-teal-700 font-medium mt-2">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
