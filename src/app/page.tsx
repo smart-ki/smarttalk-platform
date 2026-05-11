@@ -197,10 +197,6 @@ export default function HomePage() {
       {/* ─── PILLAR 1: KI & DIGITAL ─── */}
       <section id="ki-digital" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl overflow-hidden aspect-[16/9] mb-10">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/section-ki.jpg" alt="Teilnehmende lernen am Laptop" className="w-full h-full object-cover" />
-          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
