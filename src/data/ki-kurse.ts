@@ -1,3 +1,5 @@
+import type { Termin } from './termin'
+
 export interface Session {
   woche: number
   titel: string
@@ -27,6 +29,7 @@ export interface KiKurs {
   highlight?: string
   highlightFarbe?: string
   externerLink?: string
+  termine?: Termin[]
   seoTitel: string
   metaBeschreibung: string
   keywords: string[]
@@ -59,6 +62,24 @@ export const kiKurse: KiKurs[] = [
     minutenProSession: 90,
     preisAb: 'CHF 49',
     preisDetail: 'CHF 49 / Person',
+    termine: [
+      // TODO: echte Termine eintragen. Format: YYYY-MM-DD. Status: 'offen' | 'wenige_plaetze' | 'ausgebucht' | 'abgesagt'.
+      {
+        datum: '2026-09-15',
+        uhrzeit: '18:30 – 20:00',
+        ort: 'Online via Zoom',
+        maxTeilnehmer: 12,
+        status: 'offen',
+      },
+      {
+        datum: '2026-11-04',
+        uhrzeit: '18:30 – 20:00',
+        ort: 'Luzern, SmartTalk-Räume',
+        maxTeilnehmer: 10,
+        status: 'wenige_plaetze',
+        bemerkung: 'Letzte Plätze',
+      },
+    ],
     seoTitel: 'KI einfach ausprobieren. 90 Min. Schnupperkurs | SmartTalk',
     metaBeschreibung:
       'KI live erleben in 90 Minuten. Schnupperkurs für Einsteiger, CHF 49. Online oder Präsenz. Jetzt anmelden.',

@@ -1,3 +1,5 @@
+import type { Termin } from './termin'
+
 export interface KommKurs {
   slug: string
   nummer: number
@@ -17,6 +19,7 @@ export interface KommKurs {
   preisAbFirma?: string
   highlight?: string
   highlightFarbe?: string
+  termine?: Termin[]
   seoTitel: string
   metaBeschreibung: string
   keywords: string[]
@@ -51,6 +54,17 @@ export const kommKurse: KommKurs[] = [
     preisAb: 'CHF 460',
     preisDetail: 'CHF 460 / Person | Inhouse ab CHF 1\'800 / Gruppe',
     preisAbFirma: 'ab CHF 1\'800 / Gruppe',
+    termine: [
+      // TODO: echte Termine eintragen.
+      {
+        datum: '2026-10-10',
+        uhrzeit: '09:00 – 17:00',
+        ort: 'Luzern, SmartTalk-Räume',
+        maxTeilnehmer: 8,
+        anmeldefrist: '2026-09-26',
+        status: 'offen',
+      },
+    ],
     seoTitel: 'Sicher auftreten & präsentieren – Tageskurs | SmartTalk',
     metaBeschreibung: 'Körpersprache, Stimme und Präsentation gezielt einsetzen. Tageskurs CHF 450, auch als Inhouse-Training buchbar. Zentralschweiz.',
     keywords: ['Auftrittskompetenz', 'Präsentationstraining Schweiz', 'Körpersprache Training', 'Kommunikationskurs'],

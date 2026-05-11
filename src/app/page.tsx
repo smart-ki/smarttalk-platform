@@ -536,72 +536,82 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
             {/* Florian */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+              <div className="aspect-[4/5] w-full bg-gray-100">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/team-florian.jpg" alt="Florian" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-0.5">Florian</h3>
-              <p className="text-xs font-semibold text-[#F5821F] uppercase tracking-wide mb-3">Inhaber & Geschäftsleiter</p>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung und zeitgemässe Führung. Florian baut SmartTalk seit der Gründung 2016 agil auf, setzt KI täglich in Führung und Betrieb ein und lebt New Work als Haltung.
-              </p>
-              <div className="flex flex-wrap gap-1.5 mt-4">
-                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">KI & Prozesse</span>
-                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">New Work</span>
-                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">Führung</span>
+              <div className="p-6 flex-1 flex flex-col">
+                <h3 className="font-bold text-gray-900 mb-0.5">Florian</h3>
+                <p className="text-xs font-semibold text-[#F5821F] uppercase tracking-wide mb-3">Inhaber & Geschäftsleiter</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung und zeitgemässe Führung. Florian baut SmartTalk seit der Gründung 2016 agil auf, setzt KI täglich in Führung und Betrieb ein und lebt New Work als Haltung.
+                </p>
+                <div className="flex flex-wrap gap-1.5 mt-4">
+                  <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">KI & Prozesse</span>
+                  <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">New Work</span>
+                  <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">Führung</span>
+                </div>
               </div>
             </div>
 
             {/* Jeannine */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+              <div className="aspect-[4/5] w-full bg-gray-100">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/team-jeannine.jpg" alt="Jeannine" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-0.5">Jeannine</h3>
-              <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-wide mb-3">Mitglied der Geschäftsleitung</p>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                Bildungsdesignerin, Lerntherapeutin und Dozentin. Jeannine gestaltet Lernerfahrungen, die wirklich wirken, unterrichtet KI in der sozialen Arbeit und verantwortet bei SmartTalk die Entwicklung des Future Skills Angebots.
-              </p>
-              <div className="flex flex-wrap gap-1.5 mt-4">
-                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Bildungsdesign</span>
-                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">KI in Sozialer Arbeit</span>
-                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Lerntherapie</span>
+              <div className="p-6 flex-1 flex flex-col">
+                <h3 className="font-bold text-gray-900 mb-0.5">Jeannine</h3>
+                <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-wide mb-3">Mitglied der Geschäftsleitung</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Bildungsdesignerin, Lerntherapeutin und Dozentin. Jeannine gestaltet Lernerfahrungen, die wirklich wirken, unterrichtet KI in der sozialen Arbeit und verantwortet bei SmartTalk die Entwicklung des Future Skills Angebots.
+                </p>
+                <div className="flex flex-wrap gap-1.5 mt-4">
+                  <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Bildungsdesign</span>
+                  <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">KI in Sozialer Arbeit</span>
+                  <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Lerntherapie</span>
+                </div>
               </div>
             </div>
 
             {/* Chris */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+              <div className="aspect-[4/5] w-full bg-gray-100">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/team-chris.jpg" alt="Chris" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-0.5">Chris</h3>
-              <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wide mb-3">Marketing & Teamentwicklung</p>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                Spezialist für Teamentwicklung, New Work und Menschlichkeit in der Führung. Chris setzt KI gezielt im Marketing ein und sorgt dafür, dass SmartTalk sichtbar wird und die Botschaft ankommt, bei wem sie ankommen soll.
-              </p>
-              <div className="flex flex-wrap gap-1.5 mt-4">
-                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Teamentwicklung</span>
-                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">KI im Marketing</span>
-                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">New Work</span>
+              <div className="p-6 flex-1 flex flex-col">
+                <h3 className="font-bold text-gray-900 mb-0.5">Chris</h3>
+                <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wide mb-3">Marketing & Teamentwicklung</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Spezialist für Teamentwicklung, New Work und Menschlichkeit in der Führung. Chris setzt KI gezielt im Marketing ein und sorgt dafür, dass SmartTalk sichtbar wird und die Botschaft ankommt, bei wem sie ankommen soll.
+                </p>
+                <div className="flex flex-wrap gap-1.5 mt-4">
+                  <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Teamentwicklung</span>
+                  <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">KI im Marketing</span>
+                  <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">New Work</span>
+                </div>
               </div>
             </div>
 
             {/* Ruth */}
-            <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 rounded-xl overflow-hidden mb-4">
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+              <div className="aspect-[4/5] w-full bg-gray-100">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/team-ruth.jpg" alt="Ruth" className="w-full h-full object-cover object-top" />
               </div>
-              <h3 className="font-bold text-gray-900 mb-0.5">Ruth</h3>
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">People & HR</p>
-              <p className="text-xs text-gray-500 leading-relaxed">
-                Ruth begleitet das SmartTalk-Team in seiner Entwicklung. Durch Partizipation, Projektarbeiten und echte Beteiligung sorgt sie dafür, dass das Team wächst und zusammenwächst. Auch sie nutzt KI täglich in ihrer Arbeit.
-              </p>
-              <div className="flex flex-wrap gap-1.5 mt-4">
-                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">HR</span>
-                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Partizipation</span>
-                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">KI im Alltag</span>
+              <div className="p-6 flex-1 flex flex-col">
+                <h3 className="font-bold text-gray-900 mb-0.5">Ruth</h3>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">People & HR</p>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  Ruth begleitet das SmartTalk-Team in seiner Entwicklung. Durch Partizipation, Projektarbeiten und echte Beteiligung sorgt sie dafür, dass das Team wächst und zusammenwächst. Auch sie nutzt KI täglich in ihrer Arbeit.
+                </p>
+                <div className="flex flex-wrap gap-1.5 mt-4">
+                  <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">HR</span>
+                  <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Partizipation</span>
+                  <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">KI im Alltag</span>
+                </div>
               </div>
             </div>
 
