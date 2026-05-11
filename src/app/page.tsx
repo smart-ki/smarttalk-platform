@@ -14,8 +14,8 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-100 rounded-full opacity-40 blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
 
         <div className="max-w-6xl mx-auto relative">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-        <div className="flex-1 text-center lg:text-left">
+        <div className="flex flex-col items-center gap-12">
+        <div className="flex-1 text-center">
           <div className="inline-flex items-center gap-2 bg-white border border-gray-200 shadow-sm text-gray-600 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse" />
             Future Skills · Zentralschweiz
@@ -47,7 +47,7 @@ export default function HomePage() {
           </div>
 
           {/* Trust bar */}
-          <div className="mt-14 flex flex-wrap justify-center lg:justify-start gap-6 text-sm text-gray-500">
+          <div className="mt-14 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
             {['Mensch im Zentrum', 'Direkt anwendbar', 'Online & Präsenz', 'Inhouse buchbar', 'Zentralschweiz'].map((item) => (
               <span key={item} className="flex items-center gap-2">
                 <span className="text-[#7C3AED]">✓</span>
