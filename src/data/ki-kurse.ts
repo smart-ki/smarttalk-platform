@@ -63,22 +63,13 @@ export const kiKurse: KiKurs[] = [
     preisAb: 'CHF 49',
     preisDetail: 'CHF 49 / Person',
     termine: [
-      // TODO: echte Termine eintragen. Format: YYYY-MM-DD. Status: 'offen' | 'wenige_plaetze' | 'ausgebucht' | 'abgesagt'.
-      {
-        datum: '2026-09-15',
-        uhrzeit: '18:30 – 20:00',
-        ort: 'Online via Zoom',
-        maxTeilnehmer: 12,
-        status: 'offen',
-      },
-      {
-        datum: '2026-11-04',
-        uhrzeit: '18:30 – 20:00',
-        ort: 'Luzern, SmartTalk-Räume',
-        maxTeilnehmer: 10,
-        status: 'wenige_plaetze',
-        bemerkung: 'Letzte Plätze',
-      },
+      // Monatlich ab Juli 2026: 1. Dienstag des Monats, alternierend Online/Luzern.
+      { datum: '2026-07-07', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom', maxTeilnehmer: 12, anmeldefrist: '2026-06-30', status: 'offen' },
+      { datum: '2026-08-04', uhrzeit: '18:30 – 20:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 12, anmeldefrist: '2026-07-28', status: 'offen' },
+      { datum: '2026-09-01', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom', maxTeilnehmer: 12, anmeldefrist: '2026-08-25', status: 'offen' },
+      { datum: '2026-10-06', uhrzeit: '18:30 – 20:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 12, anmeldefrist: '2026-09-29', status: 'offen' },
+      { datum: '2026-11-03', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom', maxTeilnehmer: 12, anmeldefrist: '2026-10-27', status: 'offen' },
+      { datum: '2026-12-01', uhrzeit: '18:30 – 20:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 12, anmeldefrist: '2026-11-24', status: 'offen' },
     ],
     seoTitel: 'KI einfach ausprobieren. 90 Min. Schnupperkurs | SmartTalk',
     metaBeschreibung:
@@ -110,6 +101,15 @@ export const kiKurse: KiKurs[] = [
     preisAb: 'CHF 149',
     preisDetail: 'CHF 149 / Person',
     preisAbFirma: 'auf Anfrage',
+    termine: [
+      // Monatlich ab Juli 2026: 2. Freitag des Monats, vormittags in Luzern.
+      { datum: '2026-07-10', uhrzeit: '09:00 – 12:30', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-06-26', status: 'offen' },
+      { datum: '2026-08-14', uhrzeit: '09:00 – 12:30', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-07-31', status: 'offen' },
+      { datum: '2026-09-11', uhrzeit: '09:00 – 12:30', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-08-28', status: 'offen' },
+      { datum: '2026-10-09', uhrzeit: '09:00 – 12:30', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-09-25', status: 'offen' },
+      { datum: '2026-11-13', uhrzeit: '09:00 – 12:30', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-10-30', status: 'offen' },
+      { datum: '2026-12-11', uhrzeit: '09:00 – 12:30', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-11-27', status: 'offen' },
+    ],
     seoTitel: 'Meine Aufgaben mit KI lösen. Halbtageskurs | SmartTalk',
     metaBeschreibung:
       'Eigene Aufgaben mitbringen, sofort mit KI lösen und fertige Prompt-Vorlagen mitnehmen. Halbtageskurs CHF 149. Zentralschweiz.',
@@ -183,6 +183,15 @@ export const kiKurse: KiKurs[] = [
     preisAb: 'CHF 450',
     preisDetail: 'CHF 450 / Person. Auch als Inhouse-Training buchbar.',
     preisAbFirma: 'auf Anfrage',
+    termine: [
+      // Monatlich ab Juli 2026: 4 wöchentliche Mittwoch-Abende, jeweils ab dem 1. Mittwoch des Monats. Online.
+      { datum: '2026-07-01', endDatum: '2026-07-22', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom (4 wöchentliche Sessions)', maxTeilnehmer: 10, anmeldefrist: '2026-06-21', status: 'offen' },
+      { datum: '2026-08-05', endDatum: '2026-08-26', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom (4 wöchentliche Sessions)', maxTeilnehmer: 10, anmeldefrist: '2026-07-26', status: 'offen' },
+      { datum: '2026-09-02', endDatum: '2026-09-23', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom (4 wöchentliche Sessions)', maxTeilnehmer: 10, anmeldefrist: '2026-08-23', status: 'offen' },
+      { datum: '2026-10-07', endDatum: '2026-10-28', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom (4 wöchentliche Sessions)', maxTeilnehmer: 10, anmeldefrist: '2026-09-27', status: 'offen' },
+      { datum: '2026-11-04', endDatum: '2026-11-25', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom (4 wöchentliche Sessions)', maxTeilnehmer: 10, anmeldefrist: '2026-10-25', status: 'offen' },
+      { datum: '2026-12-02', endDatum: '2026-12-23', uhrzeit: '18:30 – 20:00', ort: 'Online via Zoom (4 wöchentliche Sessions)', maxTeilnehmer: 10, anmeldefrist: '2026-11-22', status: 'offen' },
+    ],
     seoTitel: 'KI dauerhaft integrieren. Prompting, Tools und KI-Arbeitsplatz | SmartTalk',
     metaBeschreibung:
       'KI optimal einsetzen: Prompting, Tools und persönlicher KI-Arbeitsplatz. 4x 90 Min., CHF 450. Für Berufsleute in der Zentralschweiz.',

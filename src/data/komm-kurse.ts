@@ -55,15 +55,13 @@ export const kommKurse: KommKurs[] = [
     preisDetail: 'CHF 460 / Person | Inhouse ab CHF 1\'800 / Gruppe',
     preisAbFirma: 'ab CHF 1\'800 / Gruppe',
     termine: [
-      // TODO: echte Termine eintragen.
-      {
-        datum: '2026-10-10',
-        uhrzeit: '09:00 – 17:00',
-        ort: 'Luzern, SmartTalk-Räume',
-        maxTeilnehmer: 8,
-        anmeldefrist: '2026-09-26',
-        status: 'offen',
-      },
+      // Monatlich ab Juli 2026: 2. Donnerstag des Monats, ganztägig in Luzern.
+      { datum: '2026-07-09', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-06-25', status: 'offen' },
+      { datum: '2026-08-13', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-07-30', status: 'offen' },
+      { datum: '2026-09-10', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-08-27', status: 'offen' },
+      { datum: '2026-10-08', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-09-24', status: 'offen' },
+      { datum: '2026-11-12', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-10-29', status: 'offen' },
+      { datum: '2026-12-10', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-11-26', status: 'offen' },
     ],
     seoTitel: 'Sicher auftreten & präsentieren – Tageskurs | SmartTalk',
     metaBeschreibung: 'Körpersprache, Stimme und Präsentation gezielt einsetzen. Tageskurs CHF 450, auch als Inhouse-Training buchbar. Zentralschweiz.',
@@ -97,6 +95,15 @@ export const kommKurse: KommKurs[] = [
     preisAb: 'CHF 490',
     preisDetail: 'CHF 490 / Person | Inhouse ab CHF 1\'800 / Gruppe',
     preisAbFirma: 'ab CHF 1\'800 / Gruppe',
+    termine: [
+      // Monatlich ab Juli 2026: 3. Donnerstag des Monats, ganztägig in Luzern.
+      { datum: '2026-07-16', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-07-02', status: 'offen' },
+      { datum: '2026-08-20', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-08-06', status: 'offen' },
+      { datum: '2026-09-17', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-09-03', status: 'offen' },
+      { datum: '2026-10-15', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-10-01', status: 'offen' },
+      { datum: '2026-11-19', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-11-05', status: 'offen' },
+      { datum: '2026-12-17', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-12-03', status: 'offen' },
+    ],
     seoTitel: 'Kommunikation im Team & Führung – Tageskurs | SmartTalk',
     metaBeschreibung: 'Gewaltfreie Kommunikation, aktives Zuhören, Raum lassen. Tageskurs CHF 450, auch als Inhouse-Training buchbar. Zentralschweiz.',
     keywords: ['Kommunikationstraining Führung', 'Gewaltfreie Kommunikation Schweiz', 'Teamkommunikation', 'Führungskräftetraining'],
@@ -131,6 +138,15 @@ export const kommKurse: KommKurs[] = [
     preisAb: 'CHF 490',
     preisDetail: 'CHF 490 / Person | Inhouse ab CHF 1\'800 / Gruppe',
     preisAbFirma: 'ab CHF 1\'800 / Gruppe',
+    termine: [
+      // Monatlich ab Juli 2026: 4. Dienstag des Monats, ganztägig in Luzern.
+      { datum: '2026-07-28', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-07-14', status: 'offen' },
+      { datum: '2026-08-25', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-08-11', status: 'offen' },
+      { datum: '2026-09-22', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-09-08', status: 'offen' },
+      { datum: '2026-10-27', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-10-13', status: 'offen' },
+      { datum: '2026-11-24', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-11-10', status: 'offen' },
+      { datum: '2026-12-22', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-12-08', status: 'offen' },
+    ],
     seoTitel: 'Führen in der hybriden Arbeitswelt – Tageskurs | SmartTalk',
     metaBeschreibung: 'Hybride Teams führen, Vertrauen aufbauen, New Work leben. Tageskurs CHF 450 für Führungskräfte, auch als Inhouse-Training buchbar. Zentralschweiz.',
     keywords: ['Hybrides Führen Kurs', 'New Work Führung Schweiz', 'Remote Leadership Training', 'Hybride Teams führen'],
