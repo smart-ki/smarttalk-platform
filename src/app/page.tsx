@@ -57,18 +57,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Hero-Bild */}
-        <div className="hidden lg:block w-full lg:w-2/5 shrink-0">
-          <div className="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/hero-workshop.jpg"
-              alt="SmartTalk Workshop"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
         </div>
         </div>
       </section>
@@ -267,10 +255,6 @@ export default function HomePage() {
       {/* ─── PILLAR 2: KOMMUNIKATION ─── */}
       <section id="kommunikation" className="py-20 px-4 bg-gradient-to-b from-white to-purple-50">
         <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl overflow-hidden aspect-[16/9] mb-10">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/section-kommunikation.jpg" alt="Trainerin im Gespräch mit Teilnehmenden" className="w-full h-full object-cover" />
-          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -308,10 +292,6 @@ export default function HomePage() {
       {/* ─── BERATUNG & NEW WORK ─── */}
       <section id="beratung" className="py-20 px-4 bg-gradient-to-b from-white to-teal-50">
         <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl overflow-hidden aspect-[16/9] mb-10">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/section-beratung.jpg" alt="Coaching-Situation am Flipchart" className="w-full h-full object-cover" />
-          </div>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
