@@ -140,7 +140,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-center text-xs text-gray-400">
-            In Anlehnung an: OECD, «OECD Future of Education and Skills 2030», 2019
+            In Anlehnung an: OECD Skills Outlook 2019 und WEF Future of Jobs Report 2023
           </p>
         </div>
       </section>
