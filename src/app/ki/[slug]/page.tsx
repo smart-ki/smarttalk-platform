@@ -1,19 +1,20 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { getKursBySlug, kiKurse } from '@/data/ki-kurse'
+import { getKiKurse, getKiKursBySlug } from '@/lib/strapi'
 import BuchungsFormular from '@/components/BuchungsFormular'
 
 interface Props {
   params: { slug: string }
 }
 
-export function generateStaticParams() {
-  return kiKurse.map((k) => ({ slug: k.slug }))
+export async function generateStaticParams() {
+  const kurse = await getKiKurse()
+  return kurse.map((k) => ({ slug: k.slug }))
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const kurs = getKursBySlug(params.slug)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const kurs = await getKiKursBySlug(params.slug)
   if (!kurs) return {}
   return {
     title: kurs.seoTitel,
@@ -22,11 +23,12 @@ export function generateMetadata({ params }: Props): Metadata {
   }
 }
 
-export default function KiKursDetailPage({ params }: Props) {
-  const kurs = getKursBySlug(params.slug)
+export default async function KiKursDetailPage({ params }: Props) {
+  const kurs = await getKiKursBySlug(params.slug)
   if (!kurs) notFound()
 
-  const andere = kiKurse.filter((k) => k.slug !== kurs.slug).slice(0, 3)
+  const alleKurse = await getKiKurse()
+  const andere = alleKurse.filter((k) => k.slug !== kurs.slug).slice(0, 3)
 
   return (
     <>
@@ -48,7 +50,7 @@ export default function KiKursDetailPage({ params }: Props) {
             <span className={`text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider ${kurs.levelFarbe}`}>
               {kurs.level}
             </span>
-            <span className="text-sm text-gray-400">KI Kurs {kurs.nummer} von {kiKurse.length}</span>
+            <span className="text-sm text-gray-400">KI Kurs {kurs.nummer} von {alleKurse.length}</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-3">
             {kurs.titel}

@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "migrate:strapi": "tsx --env-file=.env.local scripts/migrate-to-strapi.ts"
   },
   "dependencies": {
     "next": "^14.2.0",
@@ -20,6 +21,7 @@
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

@@ -1,19 +1,20 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { getKommKursBySlug, kommKurse } from '@/data/komm-kurse'
+import { getKommKurse, getKommKursBySlug } from '@/lib/strapi'
 import BuchungsFormular from '@/components/BuchungsFormular'
 
 interface Props {
   params: { slug: string }
 }
 
-export function generateStaticParams() {
-  return kommKurse.map((k) => ({ slug: k.slug }))
+export async function generateStaticParams() {
+  const kurse = await getKommKurse()
+  return kurse.map((k) => ({ slug: k.slug }))
 }
 
-export function generateMetadata({ params }: Props): Metadata {
-  const kurs = getKommKursBySlug(params.slug)
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const kurs = await getKommKursBySlug(params.slug)
   if (!kurs) return {}
   return {
     title: kurs.seoTitel,
@@ -22,11 +23,12 @@ export function generateMetadata({ params }: Props): Metadata {
   }
 }
 
-export default function KommKursDetailPage({ params }: Props) {
-  const kurs = getKommKursBySlug(params.slug)
+export default async function KommKursDetailPage({ params }: Props) {
+  const kurs = await getKommKursBySlug(params.slug)
   if (!kurs) notFound()
 
-  const andere = kommKurse.filter((k) => k.slug !== kurs.slug)
+  const alleKurse = await getKommKurse()
+  const andere = alleKurse.filter((k) => k.slug !== kurs.slug)
 
   return (
     <>
@@ -48,7 +50,7 @@ export default function KommKursDetailPage({ params }: Props) {
             <span className={`text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider ${kurs.levelFarbe}`}>
               {kurs.level}
             </span>
-            <span className="text-sm text-gray-400">Kommunikation Kurs {kurs.nummer} von {kommKurse.length}</span>
+            <span className="text-sm text-gray-400">Kommunikation Kurs {kurs.nummer} von {alleKurse.length}</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-3">
             {kurs.titel}

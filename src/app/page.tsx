@@ -1,11 +1,11 @@
 import Link from 'next/link'
-import { kiKurse } from '@/data/ki-kurse'
-import { kommKurse } from '@/data/komm-kurse'
+import { getKiKurse, getKommKurse } from '@/lib/strapi'
 import KiKursCard from '@/components/KiKursCard'
 import KommKursCard from '@/components/KommKursCard'
 import KontaktFormular from '@/components/KontaktFormular'
 
-export default function HomePage() {
+export default async function HomePage() {
+  const [kiKurse, kommKurse] = await Promise.all([getKiKurse(), getKommKurse()])
   return (
     <>
       {/* ─── HERO ─── */}

@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { kiKurse } from '@/data/ki-kurse'
-import { kommKurse } from '@/data/komm-kurse'
+import { getKiKurse, getKommKurse } from '@/lib/strapi'
 import type { Termin } from '@/data/termin'
 import { formatTerminBereich, isVergangen, statusLabel } from '@/data/termin'
 
@@ -17,7 +16,8 @@ type Eintrag = {
   kursTyp: 'ki' | 'kommunikation'
 }
 
-function alleTermine(): Eintrag[] {
+async function alleTermine(): Promise<Eintrag[]> {
+  const [kiKurse, kommKurse] = await Promise.all([getKiKurse(), getKommKurse()])
   const eintraege: Eintrag[] = []
   for (const k of kiKurse) {
     for (const t of k.termine ?? []) {
@@ -41,8 +41,8 @@ function detailLink(e: Eintrag): string {
   return e.kursTyp === 'ki' ? `/ki/${e.kursSlug}` : `/kommunikation/${e.kursSlug}`
 }
 
-export default function TerminePage() {
-  const eintraege = alleTermine().filter((e) => !isVergangen(e.termin.datum))
+export default async function TerminePage() {
+  const eintraege = (await alleTermine()).filter((e) => !isVergangen(e.termin.datum))
 
   return (
     <>
