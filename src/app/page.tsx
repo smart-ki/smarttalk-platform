@@ -140,7 +140,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-center text-xs text-gray-400">
-            In Anlehnung an: McKinsey Global Institute, «Defining the skills citizens will need in the future world of work», 2021
+            In Anlehnung an: OECD, «OECD Future of Education and Skills 2030», 2019
           </p>
         </div>
       </section>
