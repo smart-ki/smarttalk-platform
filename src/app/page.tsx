@@ -70,7 +70,7 @@ export default function HomePage() {
               Der Mensch im Zentrum.
             </h2>
             <p className="text-gray-500 text-sm max-w-2xl mx-auto">
-              Wir leben, wachsen und entwickeln in den 4 Kompetenzbereichen.
+              Wir leben, wachsen und entwickeln uns in vier Kompetenzbereichen — ein Leben lang.
             </p>
           </div>
 
@@ -116,7 +116,7 @@ export default function HomePage() {
               </div>
               <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-1">Selbstmanagement</div>
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Eigenverantwortung & Resilienz</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">Selbstführung, Integrität, Unternehmertum, Leistungsorientierung</p>
+              <p className="text-xs text-gray-500 leading-relaxed mb-3">Selbstführung, lebenslanges Lernen, Resilienz, Eigenverantwortung</p>
               <div className="flex flex-wrap gap-1.5 mt-1">
                 <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">Im KI Desktop-Kurs enthalten</span>
               </div>
