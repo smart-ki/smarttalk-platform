@@ -118,7 +118,8 @@ export default function HomePage() {
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Eigenverantwortung & Resilienz</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Selbstführung, lebenslanges Lernen, Resilienz, Eigenverantwortung</p>
               <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">Im KI Desktop-Kurs enthalten</span>
+                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Führen hybrid</span>
+                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">New Work Beratung</span>
               </div>
             </div>
 
@@ -133,8 +134,8 @@ export default function HomePage() {
               <h3 className="font-bold text-gray-900 mb-2 text-sm">Kritisches Denken & Agilität</h3>
               <p className="text-xs text-gray-500 leading-relaxed mb-3">Problemlösung, Planung, geistige Beweglichkeit, Anpassungsfähigkeit</p>
               <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">In Entwicklung</span>
-                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Kurs auf Anfrage</span>
+                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Future Skills Workshop</span>
+                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Inhouse auf Anfrage</span>
               </div>
             </div>
           </div>
@@ -188,7 +189,7 @@ export default function HomePage() {
           <div className="flex flex-col items-center text-center mb-12 gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Bildung · KI & Digital</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">KI & Digital</h2>
-            <p className="text-gray-500 max-w-lg">Online und Präsenz · 3 Kurse vom Einstieg bis zum persönlichen KI-Arbeitsplatz</p>
+            <p className="text-gray-500 max-w-lg">Online und Präsenz · vom Einstieg bis zur praktischen Anwendung im Berufsalltag</p>
             <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-xl px-5 py-2.5 text-sm text-orange-700 font-medium mt-2">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
