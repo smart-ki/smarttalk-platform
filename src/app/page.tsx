@@ -12,9 +12,6 @@ export default function HomePage() {
       <section className="relative bg-gradient-to-br from-purple-50 via-white to-orange-50 py-24 px-4 overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-80 bg-orange-100 rounded-full opacity-40 blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-100 rounded-full opacity-40 blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
-        {/* Verspielte Deko-Illustration */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/hero-illustration.png" alt="" aria-hidden="true" className="hidden lg:block absolute top-16 right-[15%] xl:right-[18%] w-48 xl:w-56 -rotate-3 opacity-95 pointer-events-none" />
 
         <div className="max-w-6xl mx-auto relative">
         <div className="flex flex-col items-center gap-12">
@@ -65,10 +62,8 @@ export default function HomePage() {
       </section>
 
       {/* ─── FUTURE SKILLS FRAMEWORK ─── */}
-      <section className="relative py-16 px-4 bg-gray-50 border-b border-gray-100 overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/mensch-im-zentrum.png" alt="" aria-hidden="true" className="hidden md:block absolute top-8 right-[10%] lg:top-12 lg:right-[18%] w-36 lg:w-44 rotate-2 opacity-95 pointer-events-none" />
-        <div className="max-w-6xl mx-auto relative">
+      <section className="py-16 px-4 bg-gray-50 border-b border-gray-100">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Das Fundament</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-3 mb-3">
@@ -188,10 +183,8 @@ export default function HomePage() {
       </section>
 
       {/* ─── PILLAR 1: KI & DIGITAL ─── */}
-      <section id="ki-digital" className="relative py-20 px-4 overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/section-ki.png" alt="" aria-hidden="true" className="hidden md:block absolute top-12 right-[10%] lg:right-[18%] w-36 lg:w-44 -rotate-2 opacity-90 pointer-events-none" />
-        <div className="max-w-6xl mx-auto relative">
+      <section id="ki-digital" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center text-center mb-12 gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Bildung · KI & Digital</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">KI & Digital</h2>
@@ -251,10 +244,8 @@ export default function HomePage() {
       </div>
 
       {/* ─── PILLAR 2: KOMMUNIKATION ─── */}
-      <section id="kommunikation" className="relative py-20 px-4 bg-gradient-to-b from-white to-purple-50 overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/section-kommunikation.png" alt="" aria-hidden="true" className="hidden md:block absolute top-12 left-[10%] lg:left-[18%] w-36 lg:w-44 rotate-3 opacity-90 pointer-events-none" />
-        <div className="max-w-6xl mx-auto relative">
+      <section id="kommunikation" className="py-20 px-4 bg-gradient-to-b from-white to-purple-50">
+        <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center text-center mb-12 gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-purple-600">Bildung · Kommunikation</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Kommunikation & Auftreten</h2>
@@ -281,10 +272,8 @@ export default function HomePage() {
       </div>
 
       {/* ─── BERATUNG & NEW WORK ─── */}
-      <section id="beratung" className="relative py-20 px-4 bg-gradient-to-b from-white to-teal-50 overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/section-beratung.png" alt="" aria-hidden="true" className="hidden md:block absolute top-12 right-[10%] lg:right-[18%] w-36 lg:w-44 -rotate-2 opacity-90 pointer-events-none" />
-        <div className="max-w-6xl mx-auto relative">
+      <section id="beratung" className="py-20 px-4 bg-gradient-to-b from-white to-teal-50">
+        <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center text-center mb-12 gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Beratung & New Work</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Beratung & New Work</h2>
