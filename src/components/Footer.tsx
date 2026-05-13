@@ -23,6 +23,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li><Link href="/ki/schnupperkurs" className="hover:text-terracotta-300 transition-colors">Schnupperkurs</Link></li>
               <li><Link href="/ki/ki-berufsalltag" className="hover:text-terracotta-300 transition-colors">Berufsalltag</Link></li>
+              <li><Link href="/ki/ki-auf-dem-desktop" className="hover:text-terracotta-300 transition-colors">KI-Arbeitsplatz</Link></li>
             </ul>
           </div>
           <div className="md:col-span-3">
