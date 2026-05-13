@@ -130,7 +130,7 @@ export default async function HomePage() {
             </div>
             <div className="lg:col-span-5 lg:pt-10">
               <p className="text-lg text-ink-soft leading-relaxed font-serif mb-6">
-                Online und Präsenz. Vom Einstieg bis zur praktischen Anwendung im Berufsalltag.
+                Online und Präsenz. Drei Kurse vom Einstieg bis zum persönlichen KI-Arbeitsplatz.
               </p>
               <p className="text-sm text-terracotta-700 font-medium">→ Nächster Start: Juli 2026</p>
             </div>
