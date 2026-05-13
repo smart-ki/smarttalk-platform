@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="md:col-span-4">
             <div className="flex items-center gap-3 mb-6">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.png" alt="SmartTalk" style={{ width: '36px', height: '36px', objectFit: 'contain' }} />
+              <img src="/logo-v3-dark.svg" alt="SmartTalk" style={{ width: '36px', height: '36px', objectFit: 'contain' }} />
               <div className="flex flex-col leading-tight">
                 <span className="font-serif text-paper text-xl leading-none">SmartTalk</span>
                 <span className="text-[10px] text-paper/50 font-medium uppercase tracking-[0.2em] leading-none mt-1">Future Skills</span>

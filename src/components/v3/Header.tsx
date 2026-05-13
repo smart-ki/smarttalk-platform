@@ -10,7 +10,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           <Link href="/v3" className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo.png" alt="SmartTalk Logo" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
+            <img src="/logo-v3.svg" alt="SmartTalk Logo" style={{ width: '40px', height: '40px', objectFit: 'contain' }} />
             <div className="flex flex-col leading-tight">
               <span className="font-serif text-ink text-xl leading-none">SmartTalk</span>
               <span className="text-[10px] text-ink-soft font-medium uppercase tracking-[0.2em] leading-none mt-1">Future Skills</span>
