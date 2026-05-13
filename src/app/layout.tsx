@@ -1,10 +1,21 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Fraunces } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  display: 'swap',
+  axes: ['SOFT', 'opsz'],
+})
 
 export const metadata: Metadata = {
   title: { default: 'SmartTalk – Future Skills', template: '%s | SmartTalk' },
@@ -14,8 +25,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de">
-      <body className={`${inter.className} bg-white text-gray-900 antialiased`}>
+    <html lang="de" className={`${inter.variable} ${fraunces.variable}`}>
+      <body className="font-sans bg-cream text-ink antialiased">
         <Header />
         <main>{children}</main>
         <Footer />
