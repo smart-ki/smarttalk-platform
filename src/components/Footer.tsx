@@ -23,6 +23,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/ki/schnupperkurs" className="hover:text-apricot-400 transition-colors">KI einfach ausprobieren</Link></li>
               <li><Link href="/ki/ki-berufsalltag" className="hover:text-apricot-400 transition-colors">Meine Aufgaben mit KI lösen</Link></li>
+              <li><Link href="/ki/ki-auf-dem-desktop" className="hover:text-apricot-400 transition-colors">KI dauerhaft in den Alltag integrieren</Link></li>
             </ul>
           </div>
           <div>

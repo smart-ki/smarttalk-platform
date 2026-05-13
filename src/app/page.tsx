@@ -200,7 +200,7 @@ export default async function HomePage() {
               KI & <span className="italic text-apricot-600">Digital</span>
             </h2>
             <p className="text-ink-soft max-w-xl mx-auto text-lg">
-              Online und Präsenz · vom Einstieg bis zur praktischen Anwendung im Berufsalltag
+              Online und Präsenz · drei Kurse vom Einstieg bis zum persönlichen KI-Arbeitsplatz
             </p>
             <div className="inline-flex items-center gap-2 bg-apricot-100 text-apricot-700 text-sm font-medium px-5 py-2.5 rounded-full mt-6">
               <span className="w-1.5 h-1.5 rounded-full bg-apricot-500 animate-pulse" />
