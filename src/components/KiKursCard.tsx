@@ -14,7 +14,7 @@ export default function KiKursCard({ kurs }: { kurs: KiKurs }) {
 
       {/* Highlight */}
       {kurs.highlight && (
-        <p className="text-xs text-terracotta-700 italic font-serif mb-3">{kurs.highlight}</p>
+        <p className="text-xs text-terracotta-700 font-serif mb-3">{kurs.highlight}</p>
       )}
 
       {/* Title */}
@@ -23,7 +23,7 @@ export default function KiKursCard({ kurs }: { kurs: KiKurs }) {
       </h3>
 
       {/* Subtitle */}
-      <p className="text-base text-ink-soft font-serif italic mb-6 leading-snug">{kurs.untertitel}</p>
+      <p className="text-base text-ink-soft font-serif mb-6 leading-snug">{kurs.untertitel}</p>
 
       {/* Description */}
       <p className="text-sm text-ink-soft leading-relaxed font-serif flex-1 mb-6">

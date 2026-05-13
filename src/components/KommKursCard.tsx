@@ -12,14 +12,14 @@ export default function KommKursCard({ kurs }: { kurs: KommKurs }) {
       </div>
 
       {kurs.highlight && (
-        <p className="text-xs text-plum-700 italic font-serif mb-3">{kurs.highlight}</p>
+        <p className="text-xs text-plum-700 font-serif mb-3">{kurs.highlight}</p>
       )}
 
       <h3 className="font-serif text-3xl leading-[1.05] text-ink mb-3 group-hover:text-plum-600 transition-colors">
         {kurs.titel}
       </h3>
 
-      <p className="text-base text-ink-soft font-serif italic mb-6 leading-snug">{kurs.untertitel}</p>
+      <p className="text-base text-ink-soft font-serif mb-6 leading-snug">{kurs.untertitel}</p>
 
       <p className="text-sm text-ink-soft leading-relaxed font-serif mb-5">
         {kurs.kurzbeschreibung}
@@ -36,7 +36,7 @@ export default function KommKursCard({ kurs }: { kurs: KommKurs }) {
             </li>
           ))}
           {kurs.inhalte.length > 3 && (
-            <li className="text-xs text-ink-muted italic pl-4">+ {kurs.inhalte.length - 3} weitere</li>
+            <li className="text-xs text-ink-muted pl-4">+ {kurs.inhalte.length - 3} weitere</li>
           )}
         </ul>
       </div>

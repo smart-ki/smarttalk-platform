@@ -15,7 +15,7 @@ export default async function HomePage() {
 
           <h1 className="font-serif text-[12vw] sm:text-[10vw] lg:text-[8.5rem] leading-[0.92] tracking-tight mb-12 max-w-6xl">
             Kompetenz<br />
-            <span className="italic text-terracotta-500">macht den</span><br />
+            <span className="text-terracotta-500">macht den</span><br />
             Unterschied.
           </h1>
 
@@ -42,7 +42,7 @@ export default async function HomePage() {
             <div className="lg:col-span-5">
               <span className="eyebrow block mb-6">Das Fundament</span>
               <h2 className="font-serif text-5xl sm:text-6xl leading-[1.02] tracking-tight">
-                Der Mensch <span className="italic">im Zentrum.</span>
+                Der Mensch <span>im Zentrum.</span>
               </h2>
             </div>
             <div className="lg:col-span-7 lg:pt-8">
@@ -83,7 +83,7 @@ export default async function HomePage() {
             })}
           </div>
 
-          <p className="text-center text-xs text-ink-muted italic mt-10">
+          <p className="text-center text-xs text-ink-muted mt-10">
             In Anlehnung an: OECD Skills Outlook 2019 und WEF Future of Jobs Report 2023
           </p>
         </div>
@@ -101,7 +101,7 @@ export default async function HomePage() {
             </div>
             <div className="lg:col-span-8">
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-terracotta-300 mb-6 block">Haltung</span>
-              <blockquote className="font-serif text-3xl sm:text-4xl leading-[1.15] mb-8 italic">
+              <blockquote className="font-serif text-3xl sm:text-4xl leading-[1.15] mb-8">
                 „Ich glaube, dass jeder Mensch das Potenzial hat, mit den richtigen Kompetenzen wirklich vorwärtszukommen."
               </blockquote>
               <div className="flex items-center gap-4">
@@ -125,7 +125,7 @@ export default async function HomePage() {
             <div className="lg:col-span-7">
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-terracotta-600 mb-6 block">Bildung · Eine</span>
               <h2 className="font-serif text-6xl sm:text-7xl leading-[0.95] tracking-tight">
-                KI & <span className="italic text-terracotta-500">Digital.</span>
+                KI & <span className="text-terracotta-500">Digital.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pt-10">
@@ -175,7 +175,7 @@ export default async function HomePage() {
             <div className="lg:col-span-7">
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-plum-600 mb-6 block">Bildung · Zwei</span>
               <h2 className="font-serif text-6xl sm:text-7xl leading-[0.95] tracking-tight">
-                Kommunikation <br /><span className="italic text-plum-500">& Auftreten.</span>
+                Kommunikation <br /><span className="text-plum-500">& Auftreten.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pt-10">
@@ -201,7 +201,7 @@ export default async function HomePage() {
             <div className="lg:col-span-7">
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-sage-600 mb-6 block">Beratung · Drei</span>
               <h2 className="font-serif text-6xl sm:text-7xl leading-[0.95] tracking-tight">
-                Beratung <br /><span className="italic text-sage-500">& New Work.</span>
+                Beratung <br /><span className="text-sage-500">& New Work.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pt-10">
@@ -264,7 +264,7 @@ export default async function HomePage() {
             <div className="lg:col-span-5">
               <span className="eyebrow block mb-6">Über SmartTalk</span>
               <h2 className="font-serif text-5xl sm:text-6xl leading-[1.02] tracking-tight">
-                Das Team <br /><span className="italic">hinter SmartTalk.</span>
+                Das Team <br /><span>hinter SmartTalk.</span>
               </h2>
             </div>
             <div className="lg:col-span-7 lg:pt-8">
@@ -322,7 +322,7 @@ export default async function HomePage() {
           </div>
 
           <div className="mt-16 pt-12 border-t border-ink/15">
-            <p className="font-serif text-2xl text-ink leading-snug max-w-3xl italic">
+            <p className="font-serif text-2xl text-ink leading-snug max-w-3xl">
               „Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI im Alltag und glaubt daran, dass Unternehmen dann stark sind, wenn Mitarbeitende wachsen dürfen."
             </p>
           </div>
@@ -336,7 +336,7 @@ export default async function HomePage() {
             <div className="lg:col-span-6">
               <span className="eyebrow block mb-6">Kontakt</span>
               <h2 className="font-serif text-5xl sm:text-6xl leading-[1.02] tracking-tight">
-                Wir freuen uns auf <br /><span className="italic">den Austausch.</span>
+                Wir freuen uns auf <br /><span>den Austausch.</span>
               </h2>
             </div>
             <div className="lg:col-span-6 lg:pt-8">
