@@ -189,7 +189,7 @@ export default async function HomePage() {
           <div className="flex flex-col items-center text-center mb-12 gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Bildung · KI & Digital</span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">KI & Digital</h2>
-            <p className="text-gray-500 max-w-lg">Online und Präsenz · vom Einstieg bis zur praktischen Anwendung im Berufsalltag</p>
+            <p className="text-gray-500 max-w-lg">Online und Präsenz · drei Kurse vom Einstieg bis zum persönlichen KI-Arbeitsplatz</p>
             <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-xl px-5 py-2.5 text-sm text-orange-700 font-medium mt-2">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
