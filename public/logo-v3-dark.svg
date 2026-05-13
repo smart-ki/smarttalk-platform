@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-  <!-- Outer circle: transparent on dark, paper stroke -->
-  <circle cx="28" cy="28" r="26" fill="none" stroke="#FAF7F2" stroke-width="1.2"/>
-  <!-- Inner italic serif S in paper -->
-  <text x="28" y="40" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="500" font-size="32" fill="#FAF7F2">S</text>
-  <!-- Terracotta accent dot top-right -->
-  <circle cx="44" cy="14" r="3.5" fill="#DA8E6B"/>
-  <!-- Subtle thin line under S -->
-  <line x1="20" y1="43" x2="36" y2="43" stroke="#DA8E6B" stroke-width="1" opacity="0.7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Square frame (transparent fill on dark bg) -->
+  <rect x="2" y="2" width="60" height="60" fill="none" stroke="#FAF7F2" stroke-width="1.5"/>
+
+  <!-- Bold italic serif S in paper -->
+  <text x="28" y="46" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-style="italic" font-weight="700" font-size="42" fill="#FAF7F2">S</text>
+
+  <!-- Terracotta period — slightly lighter for dark bg -->
+  <circle cx="46" cy="42" r="3" fill="#DA8E6B"/>
 </svg>
