@@ -73,7 +73,7 @@ export default function KiKursCard({ kurs }: { kurs: KiKurs }) {
               <span className="text-xs text-ink-muted uppercase tracking-wide">ab</span>
               <span className="block font-serif text-2xl text-ink">{kurs.preisAb}</span>
             </div>
-            <Link href={`/ki/${kurs.slug}`} className="btn-v2-primary text-sm py-2.5 px-5 whitespace-nowrap">
+            <Link href={`/v2/ki/${kurs.slug}`} className="btn-v2-primary text-sm py-2.5 px-5 whitespace-nowrap">
               Mehr & Buchen
             </Link>
           </div>

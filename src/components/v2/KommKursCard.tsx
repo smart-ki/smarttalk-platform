@@ -77,7 +77,7 @@ export default function KommKursCard({ kurs }: { kurs: KommKurs }) {
               <span className="text-xs text-ink-muted uppercase tracking-wide">ab</span>
               <span className="block font-serif text-2xl text-ink">{kurs.preisAb}</span>
             </div>
-            <Link href={`/kommunikation/${kurs.slug}`} className="btn-v2-mauve text-sm py-2.5 px-5 whitespace-nowrap">
+            <Link href={`/v2/kommunikation/${kurs.slug}`} className="btn-v2-mauve text-sm py-2.5 px-5 whitespace-nowrap">
               Mehr & Buchen
             </Link>
           </div>

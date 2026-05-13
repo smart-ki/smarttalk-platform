@@ -4,7 +4,7 @@ import KiKursCard from '@/components/v2/KiKursCard'
 import KommKursCard from '@/components/v2/KommKursCard'
 import KontaktFormular from '@/components/KontaktFormular'
 
-export default async function HomePage() {
+export default async function V2HomePage() {
   const [kiKurse, kommKurse] = await Promise.all([getKiKurse(), getKommKurse()])
   return (
     <>
@@ -20,27 +20,25 @@ export default async function HomePage() {
                 Future Skills · Zentralschweiz
               </div>
 
-              <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-ink leading-[1.05] tracking-tight mb-8">
-                Lernen,<br />
-                <span className="text-apricot-600">das bleibt.</span>
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-ink leading-[1.05] tracking-tight mb-8">
+                <span className="text-apricot-600">Future Skills.</span><br />
+                Kompetenz macht <br />den Unterschied.
               </h1>
 
-              <p className="text-xl sm:text-2xl text-ink-soft leading-relaxed mb-12 max-w-xl">
-                Wir begleiten Menschen und Organisationen beim Aufbau zentraler Kompetenzen — warm, klar und mit echtem Praxisbezug.
+              <p className="text-lg sm:text-xl text-ink-soft leading-relaxed mb-12 max-w-xl">
+                Wir begleiten Menschen und Organisationen beim Aufbau zentraler Kompetenzen für die heutige Arbeitswelt.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/v2#angebote" className="btn-v2-primary text-base py-4 px-8">
-                  Angebote ansehen
-                </Link>
-                <Link href="/v2#kontakt" className="btn-v2-outline text-base py-4 px-8">
-                  Gespräch anfragen
-                </Link>
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ink-muted mb-4">Hier geht es direkt zu den Angeboten</p>
+              <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
+                <Link href="/v2#ki-digital" className="btn-v2-primary text-sm py-3 px-6">KI →</Link>
+                <Link href="/v2#kommunikation" className="btn-v2-mauve text-sm py-3 px-6">Kommunikation →</Link>
+                <Link href="/v2#beratung" className="btn-v2-eucalyptus text-sm py-3 px-6">Beratung →</Link>
               </div>
 
               {/* Trust-Zeile */}
               <div className="mt-16 flex flex-wrap gap-x-8 gap-y-3 text-sm text-ink-muted">
-                {['Mensch im Zentrum', 'Direkt anwendbar', 'Online & Präsenz', 'Zentralschweiz'].map((item) => (
+                {['Mensch im Zentrum', 'Direkt anwendbar', 'Online & Präsenz', 'Inhouse buchbar', 'Zentralschweiz'].map((item) => (
                   <span key={item} className="flex items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-ink-muted" />
                     {item}
@@ -71,7 +69,7 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-medium uppercase tracking-[0.2em] text-ink-muted">Das Fundament</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5 leading-tight">
-              Der Mensch <span>im Zentrum.</span>
+              Der Mensch im Zentrum.
             </h2>
             <p className="text-ink-soft text-lg max-w-2xl mx-auto leading-relaxed">
               Wir leben, wachsen und entwickeln uns in vier Kompetenzbereichen — ein Leben lang.
@@ -89,10 +87,10 @@ export default async function HomePage() {
               <div className="text-xs font-semibold uppercase tracking-widest text-apricot-700 mb-2">Digitales</div>
               <h3 className="font-serif text-xl text-ink mb-2">Digitale Kompetenz & KI</h3>
               <p className="text-sm text-ink-soft leading-relaxed mb-4">
-                Digitale Kompetenz, KI-Kenntnisse, digitale Zusammenarbeit, Datenkompetenz
+                Digitale Kompetenz, KI-Kenntnisse, digitale Zusammenarbeit, Datenkompetenz.
               </p>
               <div className="flex flex-wrap gap-1.5">
-                <span className="text-xs bg-white/60 text-apricot-700 font-medium px-2.5 py-1 rounded-full">KI-Kurse</span>
+                <span className="text-xs bg-white/60 text-apricot-700 font-medium px-2.5 py-1 rounded-full">KI & Digital Kurse</span>
                 <span className="text-xs bg-white/60 text-eucalyptus-700 font-medium px-2.5 py-1 rounded-full">Beratung</span>
               </div>
             </div>
@@ -107,7 +105,7 @@ export default async function HomePage() {
               <div className="text-xs font-semibold uppercase tracking-widest text-mauve-700 mb-2">Zwischenmenschliches</div>
               <h3 className="font-serif text-xl text-ink mb-2">Teamarbeit & Führung</h3>
               <p className="text-sm text-ink-soft leading-relaxed mb-4">
-                Rollenmodellierung, Vertrauen aufbauen, Kollaboration, Konfliktfähigkeit
+                Rollenmodellierung, Vertrauen aufbauen, Kollaboration, Konfliktfähigkeit.
               </p>
               <div className="flex flex-wrap gap-1.5">
                 <span className="text-xs bg-white/60 text-mauve-700 font-medium px-2.5 py-1 rounded-full">Kommunikation</span>
@@ -123,9 +121,9 @@ export default async function HomePage() {
                 </svg>
               </div>
               <div className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-700 mb-2">Selbstmanagement</div>
-              <h3 className="font-serif text-xl text-ink mb-2">Eigenverantwortung</h3>
+              <h3 className="font-serif text-xl text-ink mb-2">Eigenverantwortung & Resilienz</h3>
               <p className="text-sm text-ink-soft leading-relaxed mb-4">
-                Selbstführung, lebenslanges Lernen, Resilienz, Eigenverantwortung
+                Selbstführung, lebenslanges Lernen, Resilienz, Eigenverantwortung.
               </p>
               <div className="flex flex-wrap gap-1.5">
                 <span className="text-xs bg-white/60 text-mauve-700 font-medium px-2.5 py-1 rounded-full">Führen hybrid</span>
@@ -141,12 +139,12 @@ export default async function HomePage() {
                 </svg>
               </div>
               <div className="text-xs font-semibold uppercase tracking-widest text-ink-soft mb-2">Kognitiv</div>
-              <h3 className="font-serif text-xl text-ink mb-2">Kritisches Denken</h3>
+              <h3 className="font-serif text-xl text-ink mb-2">Kritisches Denken & Agilität</h3>
               <p className="text-sm text-ink-soft leading-relaxed mb-4">
-                Problemlösung, Planung, geistige Beweglichkeit, Anpassungsfähigkeit
+                Problemlösung, Planung, geistige Beweglichkeit, Anpassungsfähigkeit.
               </p>
               <div className="flex flex-wrap gap-1.5">
-                <span className="text-xs bg-white/60 text-eucalyptus-700 font-medium px-2.5 py-1 rounded-full">Workshop</span>
+                <span className="text-xs bg-white/60 text-eucalyptus-700 font-medium px-2.5 py-1 rounded-full">Future Skills Workshop</span>
                 <span className="text-xs bg-white/60 text-ink-soft font-medium px-2.5 py-1 rounded-full">Auf Anfrage</span>
               </div>
             </div>
@@ -173,7 +171,7 @@ export default async function HomePage() {
             <div className="flex-1">
               <div className="font-serif text-apricot-400 text-7xl leading-none mb-6">"</div>
               <p className="font-serif text-2xl sm:text-3xl text-cream leading-snug mb-8">
-                Ich glaube, dass jeder Mensch das Potenzial hat, mit den richtigen Kompetenzen wirklich vorwärtszukommen.
+                Ich glaube, dass jeder Mensch das Potenzial hat, mit den richtigen Kompetenzen wirklich vorwärtszukommen. Genau dafür bin ich hier.
               </p>
               <div className="flex items-center gap-4">
                 <div className="h-px w-12 bg-apricot-400" />
@@ -186,9 +184,6 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ─── ANGEBOTE-ANKER ─── */}
-      <div id="angebote" />
 
       {/* ─── PILLAR 1: KI & DIGITAL ─── */}
       <section id="ki-digital" className="relative py-24 px-4 overflow-hidden">
@@ -225,12 +220,12 @@ export default async function HomePage() {
                 </div>
                 <h3 className="font-serif text-2xl text-cream mb-3">KI für Teams einführen</h3>
                 <p className="text-cream/80 text-sm max-w-xl leading-relaxed">
-                  Euer Team arbeitet täglich mit Daten, Texten und Prozessen. KI kann dabei entlasten. Dieser Tageskurs bringt alle auf denselben Stand — massgeschneidert auf eure Branche und Tools.
+                  Euer Team arbeitet täglich mit Daten, Texten und Prozessen. KI kann dabei entlasten. Dieser Tageskurs bringt alle auf denselben Stand: Was ist KI, wie nutzen wir sie sicher, und wo fangen wir an? Massgeschneidert auf eure Branche und Tools.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-5 text-xs text-cream/60">
                   <span className="flex items-center gap-1.5"><span className="text-apricot-400">✓</span> Auf euren Alltag zugeschnitten</span>
-                  <span className="flex items-center gap-1.5"><span className="text-apricot-400">✓</span> Datenschutz & Spielregeln</span>
-                  <span className="flex items-center gap-1.5"><span className="text-apricot-400">✓</span> Direkt anwendbar</span>
+                  <span className="flex items-center gap-1.5"><span className="text-apricot-400">✓</span> Datenschutz & Regeln für das Team</span>
+                  <span className="flex items-center gap-1.5"><span className="text-apricot-400">✓</span> Direkt anwendbare Werkzeuge</span>
                 </div>
               </div>
               <div className="text-left sm:text-right shrink-0">
@@ -238,7 +233,7 @@ export default async function HomePage() {
                 <div className="text-3xl font-serif text-cream">CHF 1'800</div>
                 <div className="text-xs text-cream/50 mb-5">/ Gruppe</div>
                 <Link href="/v2#kontakt" className="btn-v2-primary py-3 px-6 text-sm">
-                  Anfragen →
+                  Kurs anfragen →
                 </Link>
               </div>
             </div>
@@ -253,10 +248,10 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-mauve-600">Bildung · Kommunikation</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              Kommunikation <span className="text-mauve-600">& Auftreten</span>
+              Kommunikation & <span className="text-mauve-600">Auftreten</span>
             </h2>
             <p className="text-ink-soft max-w-xl mx-auto text-lg">
-              Präsenz · drei Tageskurse für mehr Wirkung, Klarheit und Verbindung
+              Präsenz · 3 Tageskurse für mehr Wirkung, Klarheit und Verbindung
             </p>
             <div className="inline-flex items-center gap-2 bg-white/60 text-mauve-700 text-sm font-medium px-5 py-2.5 rounded-full mt-6">
               <span className="w-1.5 h-1.5 rounded-full bg-mauve-500" />
@@ -279,10 +274,10 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-eucalyptus-600">Beratung & New Work</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              Beratung <span className="text-eucalyptus-600">& New Work</span>
+              Beratung & <span className="text-eucalyptus-600">New Work</span>
             </h2>
             <p className="text-ink-soft max-w-xl mx-auto text-lg">
-              Für Organisationen, die Future Skills leben wollen — mit Begleitung, die wirklich etwas bewegt.
+              Für Organisationen, die Future Skills leben wollen – mit Begleitung, die wirklich etwas bewegt.
             </p>
             <div className="inline-flex items-center gap-2 bg-white/60 text-eucalyptus-700 text-sm font-medium px-5 py-2.5 rounded-full mt-6">
               <span className="w-1.5 h-1.5 rounded-full bg-eucalyptus-500" />
@@ -295,7 +290,7 @@ export default async function HomePage() {
             <div className="absolute top-0 right-0 w-48 h-48 blob bg-white opacity-10 blur-2xl pointer-events-none" />
             <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
               <div>
-                <div className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-100 mb-2">Stufe 1 · Einstieg</div>
+                <div className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-100 mb-2">Stufe 01 · Einstieg</div>
                 <h3 className="font-serif text-2xl mb-2">Erstgespräch — kostenlos</h3>
                 <p className="text-eucalyptus-50 text-sm max-w-xl">
                   Wir hören zu, verstehen eure Situation und zeigen, was möglich ist. Ein offenes Gespräch auf Augenhöhe.
@@ -313,12 +308,12 @@ export default async function HomePage() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-600">Stufe 2 · Diagnose</span>
+                  <span className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-600">Stufe 02 · Diagnose</span>
                   <span className="bg-eucalyptus-100 text-eucalyptus-700 text-xs font-medium px-2.5 py-1 rounded-full">Sehr gefragt</span>
                 </div>
                 <h3 className="font-serif text-2xl text-ink mb-2">KI-Readiness Check</h3>
                 <p className="text-ink-soft text-sm max-w-xl leading-relaxed">
-                  Wo steht euer Unternehmen beim Thema KI? Was ist sinnvoll, was zu früh? In einem halben Tag analysieren wir eure Ausgangslage und liefern einen konkreten Aktionsplan.
+                  Wo steht euer Unternehmen beim Thema KI? Was ist sinnvoll, was zu früh, was dringend? In einem halben Tag analysieren wir eure Ausgangslage und liefern einen konkreten Aktionsplan mit klaren nächsten Schritten.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-4 text-xs text-ink-muted">
                   <span className="flex items-center gap-1.5"><span className="text-eucalyptus-500">›</span> KI-Potenziale sichtbar machen</span>
@@ -341,10 +336,10 @@ export default async function HomePage() {
           <div className="bg-cream rounded-4xl p-8 mb-5 shadow-soft">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
               <div className="flex-1">
-                <div className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-600 mb-2">Stufe 3 · Gesamtbild</div>
+                <div className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-600 mb-2">Stufe 03 · Gesamtbild</div>
                 <h3 className="font-serif text-2xl text-ink mb-2">Future Skills Diagnose</h3>
                 <p className="text-ink-soft text-sm max-w-xl leading-relaxed">
-                  Wo steht eure Organisation in allen vier Kompetenzbereichen? In einem eintägigen Workshop analysieren wir gemeinsam Digitales, Kommunikation, Selbstmanagement und kognitives Potenzial.
+                  Wo steht eure Organisation in allen vier Kompetenzbereichen? In einem eintägigen Workshop analysieren wir gemeinsam Digitales, Kommunikation, Selbstmanagement und kognitives Potenzial. Das Ergebnis ist ein klares Bild eurer Stärken und ein priorisierter Entwicklungsplan.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-4 text-xs text-ink-muted">
                   <span className="flex items-center gap-1.5"><span className="text-eucalyptus-500">›</span> Alle 4 Kompetenzbereiche</span>
@@ -357,7 +352,7 @@ export default async function HomePage() {
                 <div className="text-3xl font-serif text-ink">CHF 1'600</div>
                 <div className="text-xs text-ink-muted mb-4">/ Unternehmen</div>
                 <Link href="/v2#kontakt" className="btn-v2-eucalyptus py-3 px-6 text-sm">
-                  Anfragen →
+                  Diagnose anfragen →
                 </Link>
               </div>
             </div>
@@ -365,12 +360,12 @@ export default async function HomePage() {
 
           {/* Stufe 4: Massnahmen */}
           <div className="mt-12">
-            <div className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-600 mb-5 px-1">Stufe 4 · Massnahmen</div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-600 mb-5 px-1">Stufe 04 · Massnahmen: individuell nach Aufwand und Dauer</div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               {[
-                { titel: 'KI in Geschäftsprozessen', text: 'KI-Tools in bestehende Abläufe integrieren, Automatisierungspotenziale nutzen und Teams befähigen — mit klaren Prioritäten und messbaren Ergebnissen.' },
-                { titel: 'New Work: OKRs & Lohnmodelle', text: 'OKRs einführen, Lohnmodelle überdenken, agile Strukturen etablieren — New Work nicht nur als Konzept, sondern gelebt in der Organisation.' },
-                { titel: 'Mitarbeitende schulen', text: 'Inhouse-Trainings zu KI, Kommunikation und Future Skills — massgeschneidert auf eure Prozesse, Tools und Branche.' },
+                { titel: 'KI in Geschäftsprozessen', text: 'KI-Tools in bestehende Abläufe integrieren, Automatisierungspotenziale nutzen und Teams befähigen – mit klaren Prioritäten und messbaren Ergebnissen.' },
+                { titel: 'New Work: OKRs & Lohnmodelle', text: 'OKRs einführen, Lohnmodelle überdenken, agile Strukturen etablieren – New Work nicht nur als Konzept, sondern gelebt in der Organisation.' },
+                { titel: 'Mitarbeitende schulen', text: 'Inhouse-Trainings zu KI, Kommunikation und Future Skills – massgeschneidert auf eure Prozesse, Tools und Branche.' },
               ].map(({ titel, text }) => (
                 <div key={titel} className="bg-cream rounded-3xl p-6 shadow-soft hover:shadow-soft-lg transition-shadow flex flex-col">
                   <div className="w-10 h-1 bg-eucalyptus-400 rounded-full mb-5" />
@@ -378,6 +373,29 @@ export default async function HomePage() {
                   <p className="text-sm text-ink-soft leading-relaxed">{text}</p>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Inhouse Banner */}
+          <div className="bg-ink rounded-4xl p-10 mt-10 text-cream relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 blob bg-eucalyptus-500 opacity-20 blur-2xl pointer-events-none" />
+            <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+              <div>
+                <div className="text-xs font-semibold uppercase tracking-widest text-eucalyptus-300 mb-3">Für Teams & Unternehmen</div>
+                <h3 className="font-serif text-2xl text-cream mb-3">Alle Kurse auch als Inhouse-Training</h3>
+                <p className="text-cream/80 text-sm max-w-xl leading-relaxed">
+                  Sämtliche KI- und Kommunikationskurse sind als massgeschneiderte Inhouse-Trainings buchbar. Angepasst an eure Prozesse, Tools und Branche. Teams ab 5 Personen.
+                </p>
+                <div className="flex flex-wrap gap-4 mt-4 text-xs text-cream/60">
+                  <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> KI-Kurse inhouse</span>
+                  <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> Kommunikationstrainings</span>
+                  <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> Kombinationspakete</span>
+                  <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> Ab CHF 1'800 / Gruppe</span>
+                </div>
+              </div>
+              <Link href="/v2#kontakt" className="btn-v2-eucalyptus py-3 px-7 text-sm whitespace-nowrap shrink-0">
+                Inhouse anfragen →
+              </Link>
             </div>
           </div>
         </div>
@@ -389,7 +407,7 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-apricot-600">Über SmartTalk</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              Das Team <span>hinter SmartTalk</span>
+              Das Team hinter SmartTalk
             </h2>
             <p className="text-ink-soft max-w-2xl mx-auto text-lg leading-relaxed">
               Gegründet 2016. Rund 100 Menschen in Kursleitung, Administration, Marketing und Geschäftsleitung. Alle vereint durch eine Haltung: Kompetenz wächst, wenn Menschen wachsen dürfen.
@@ -412,10 +430,10 @@ export default async function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { slug: 'florian', name: 'Florian', rolle: 'Inhaber & Geschäftsleiter', accent: 'apricot', bio: 'Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung und zeitgemässe Führung. Baut SmartTalk seit der Gründung 2016 agil auf.', tags: ['KI & Prozesse', 'New Work', 'Führung'] },
-              { slug: 'jeannine', name: 'Jeannine', rolle: 'Mitglied der Geschäftsleitung', accent: 'mauve', bio: 'Bildungsdesignerin, Lerntherapeutin und Dozentin. Gestaltet Lernerfahrungen, die wirklich wirken, und verantwortet das Future Skills Angebot.', tags: ['Bildungsdesign', 'KI in Sozialer Arbeit', 'Lerntherapie'] },
-              { slug: 'chris', name: 'Chris', rolle: 'Marketing & Teamentwicklung', accent: 'eucalyptus', bio: 'Spezialist für Teamentwicklung und Menschlichkeit in der Führung. Setzt KI gezielt im Marketing ein und sorgt für Sichtbarkeit.', tags: ['Teamentwicklung', 'KI im Marketing', 'New Work'] },
-              { slug: 'ruth', name: 'Ruth', rolle: 'People & HR', accent: 'cream', bio: 'Begleitet das SmartTalk-Team in seiner Entwicklung. Durch Partizipation und echte Beteiligung sorgt sie dafür, dass das Team wächst und zusammenwächst.', tags: ['HR', 'Partizipation', 'KI im Alltag'] },
+              { slug: 'florian', name: 'Florian', rolle: 'Inhaber & Geschäftsleiter', accent: 'apricot', bio: 'Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung und zeitgemässe Führung. Florian baut SmartTalk seit der Gründung 2016 agil auf, setzt KI täglich in Führung und Betrieb ein und lebt New Work als Haltung.', tags: ['KI & Prozesse', 'New Work', 'Führung'] },
+              { slug: 'jeannine', name: 'Jeannine', rolle: 'Mitglied der Geschäftsleitung', accent: 'mauve', bio: 'Bildungsdesignerin, Lerntherapeutin und Dozentin. Jeannine gestaltet Lernerfahrungen, die wirklich wirken, unterrichtet KI in der sozialen Arbeit und verantwortet bei SmartTalk die Entwicklung des Future Skills Angebots.', tags: ['Bildungsdesign', 'KI in Sozialer Arbeit', 'Lerntherapie'] },
+              { slug: 'chris', name: 'Chris', rolle: 'Marketing & Teamentwicklung', accent: 'eucalyptus', bio: 'Spezialist für Teamentwicklung, New Work und Menschlichkeit in der Führung. Chris setzt KI gezielt im Marketing ein und sorgt dafür, dass SmartTalk sichtbar wird und die Botschaft ankommt, bei wem sie ankommen soll.', tags: ['Teamentwicklung', 'KI im Marketing', 'New Work'] },
+              { slug: 'ruth', name: 'Ruth', rolle: 'People & HR', accent: 'cream', bio: 'Ruth begleitet das SmartTalk-Team in seiner Entwicklung. Durch Partizipation, Projektarbeiten und echte Beteiligung sorgt sie dafür, dass das Team wächst und zusammenwächst. Auch sie nutzt KI täglich in ihrer Arbeit.', tags: ['HR', 'Partizipation', 'KI im Alltag'] },
             ].map(({ slug, name, rolle, accent, bio, tags }) => {
               const colors: Record<string, { text: string; bg: string }> = {
                 apricot: { text: 'text-apricot-700', bg: 'bg-apricot-100' },
@@ -446,8 +464,8 @@ export default async function HomePage() {
           </div>
 
           <div className="mt-16 bg-cream-200 rounded-4xl p-10 text-center">
-            <p className="font-serif text-xl text-ink-soft leading-relaxed max-w-2xl mx-auto">
-              „Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI im Alltag und glaubt daran, dass Unternehmen dann stark sind, wenn Mitarbeitende wachsen dürfen."
+            <p className="font-serif text-xl text-ink-soft leading-relaxed max-w-3xl mx-auto">
+              Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI-Tools im Alltag, führt mit OKRs und glaubt daran, dass Unternehmen dann wirklich stark sind, wenn die Mitarbeitenden sich entwickeln können.
             </p>
           </div>
         </div>
@@ -459,10 +477,10 @@ export default async function HomePage() {
           <div className="text-center mb-14">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-apricot-600">Kontakt</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              Wir freuen uns auf <span>den Austausch.</span>
+              Wir freuen uns über den Austausch.
             </h2>
             <p className="text-ink-soft max-w-lg mx-auto text-lg">
-              Ob Kursfragen, Inhouse-Anfragen, Erstgespräch Beratung oder einfach ein erstes Hallo — jede Nachricht ist willkommen.
+              Ob Kursfragen, Inhouse-Anfragen, Erstgespräch Beratung oder einfach ein erstes Hallo – jede Nachricht ist willkommen.
             </p>
           </div>
 
@@ -498,7 +516,7 @@ export default async function HomePage() {
                 <p className="text-sm text-apricot-700/80">Wir melden uns innerhalb von zwei Werktagen.</p>
               </div>
               <div className="bg-eucalyptus-100 rounded-3xl p-6">
-                <p className="font-serif text-base text-eucalyptus-700 mb-1">Erstgespräch Beratung</p>
+                <p className="font-serif text-base text-eucalyptus-700 mb-1">Beratungs-Erstgespräch</p>
                 <p className="text-sm text-eucalyptus-700/80">Kostenlos · 4 freie Slots pro Monat</p>
               </div>
             </div>
