@@ -21,17 +21,17 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-xs uppercase tracking-[0.25em] text-paper/50 mb-5">KI</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/ki/schnupperkurs" className="hover:text-terracotta-300 transition-colors">Schnupperkurs</Link></li>
-              <li><Link href="/ki/ki-berufsalltag" className="hover:text-terracotta-300 transition-colors">Berufsalltag</Link></li>
-              <li><Link href="/ki/ki-auf-dem-desktop" className="hover:text-terracotta-300 transition-colors">KI-Arbeitsplatz</Link></li>
+              <li><Link href="/v3/ki/schnupperkurs" className="hover:text-terracotta-300 transition-colors">Schnupperkurs</Link></li>
+              <li><Link href="/v3/ki/ki-berufsalltag" className="hover:text-terracotta-300 transition-colors">Berufsalltag</Link></li>
+              <li><Link href="/v3/ki/ki-auf-dem-desktop" className="hover:text-terracotta-300 transition-colors">KI-Arbeitsplatz</Link></li>
             </ul>
           </div>
           <div className="md:col-span-3">
             <h3 className="text-xs uppercase tracking-[0.25em] text-paper/50 mb-5">Kommunikation</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link href="/kommunikation/sicher-auftreten-praesentieren" className="hover:text-plum-300 transition-colors">Sicher auftreten</Link></li>
-              <li><Link href="/kommunikation/kommunikation-team-fuehrung" className="hover:text-plum-300 transition-colors">Team & Führung</Link></li>
-              <li><Link href="/kommunikation/fuehren-hybrid" className="hover:text-plum-300 transition-colors">Hybrid führen</Link></li>
+              <li><Link href="/v3/kommunikation/sicher-auftreten-praesentieren" className="hover:text-plum-300 transition-colors">Sicher auftreten</Link></li>
+              <li><Link href="/v3/kommunikation/kommunikation-team-fuehrung" className="hover:text-plum-300 transition-colors">Team & Führung</Link></li>
+              <li><Link href="/v3/kommunikation/fuehren-hybrid" className="hover:text-plum-300 transition-colors">Hybrid führen</Link></li>
             </ul>
           </div>
           <div className="md:col-span-3">
@@ -40,7 +40,7 @@ export default function Footer() {
               <li><a href="mailto:jeannine.germann@smarttalk.ch" className="hover:text-terracotta-300 transition-colors">jeannine.germann@smarttalk.ch</a></li>
               <li className="text-paper/50">Zentralschweiz</li>
               <li className="pt-3 mt-3 border-t border-paper/10">
-                <Link href="/#beratung" className="text-sage-300 hover:text-sage-200 transition-colors">Beratung & New Work →</Link>
+                <Link href="/v3#beratung" className="text-sage-300 hover:text-sage-200 transition-colors">Beratung & New Work →</Link>
               </li>
             </ul>
           </div>
@@ -48,8 +48,8 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs text-paper/40">
           <p>&copy; {new Date().getFullYear()} SmartTalk. Alle Rechte vorbehalten.</p>
           <div className="flex gap-6">
-            <Link href="/datenschutz" className="hover:text-terracotta-300 transition-colors">Datenschutz</Link>
-            <Link href="/impressum" className="hover:text-terracotta-300 transition-colors">Impressum</Link>
+            <Link href="/v3/datenschutz" className="hover:text-terracotta-300 transition-colors">Datenschutz</Link>
+            <Link href="/v3/impressum" className="hover:text-terracotta-300 transition-colors">Impressum</Link>
           </div>
         </div>
       </div>

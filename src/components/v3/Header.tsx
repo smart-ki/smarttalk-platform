@@ -17,12 +17,12 @@ export default function Header() {
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/#ki-digital" className="text-ink text-sm hover:text-terracotta-500 transition-colors">KI & Digital</Link>
-            <Link href="/#kommunikation" className="text-ink text-sm hover:text-plum-500 transition-colors">Kommunikation</Link>
-            <Link href="/#beratung" className="text-ink text-sm hover:text-sage-500 transition-colors">Beratung</Link>
-            <Link href="/termine" className="text-ink text-sm hover:text-terracotta-500 transition-colors">Termine</Link>
-            <Link href="/#ueber-uns" className="text-ink text-sm hover:text-terracotta-500 transition-colors">Über uns</Link>
-            <Link href="/termine" className="btn-v3-primary text-sm py-2.5 px-6">Kurs buchen</Link>
+            <Link href="/v3#ki-digital" className="text-ink text-sm hover:text-terracotta-500 transition-colors">KI & Digital</Link>
+            <Link href="/v3#kommunikation" className="text-ink text-sm hover:text-plum-500 transition-colors">Kommunikation</Link>
+            <Link href="/v3#beratung" className="text-ink text-sm hover:text-sage-500 transition-colors">Beratung</Link>
+            <Link href="/v3/termine" className="text-ink text-sm hover:text-terracotta-500 transition-colors">Termine</Link>
+            <Link href="/v3#ueber-uns" className="text-ink text-sm hover:text-terracotta-500 transition-colors">Über uns</Link>
+            <Link href="/v3/termine" className="btn-v3-primary text-sm py-2.5 px-6">Kurs buchen</Link>
           </nav>
           <button className="md:hidden p-2 text-ink" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menü öffnen">
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -33,13 +33,13 @@ export default function Header() {
         {menuOpen && (
           <div className="md:hidden py-6 border-t border-ink/10">
             <nav className="flex flex-col gap-4">
-              <Link href="/#ki-digital" className="text-ink" onClick={() => setMenuOpen(false)}>KI & Digital</Link>
-              <Link href="/#kommunikation" className="text-ink" onClick={() => setMenuOpen(false)}>Kommunikation</Link>
-              <Link href="/#beratung" className="text-ink" onClick={() => setMenuOpen(false)}>Beratung</Link>
-              <Link href="/termine" className="text-ink" onClick={() => setMenuOpen(false)}>Termine</Link>
-              <Link href="/#ueber-uns" className="text-ink" onClick={() => setMenuOpen(false)}>Über uns</Link>
-              <Link href="/#kontakt" className="text-ink" onClick={() => setMenuOpen(false)}>Kontakt</Link>
-              <Link href="/termine" className="btn-v3-primary text-sm text-center py-2.5 px-6" onClick={() => setMenuOpen(false)}>Kurs buchen</Link>
+              <Link href="/v3#ki-digital" className="text-ink" onClick={() => setMenuOpen(false)}>KI & Digital</Link>
+              <Link href="/v3#kommunikation" className="text-ink" onClick={() => setMenuOpen(false)}>Kommunikation</Link>
+              <Link href="/v3#beratung" className="text-ink" onClick={() => setMenuOpen(false)}>Beratung</Link>
+              <Link href="/v3/termine" className="text-ink" onClick={() => setMenuOpen(false)}>Termine</Link>
+              <Link href="/v3#ueber-uns" className="text-ink" onClick={() => setMenuOpen(false)}>Über uns</Link>
+              <Link href="/v3#kontakt" className="text-ink" onClick={() => setMenuOpen(false)}>Kontakt</Link>
+              <Link href="/v3/termine" className="btn-v3-primary text-sm text-center py-2.5 px-6" onClick={() => setMenuOpen(false)}>Kurs buchen</Link>
             </nav>
           </div>
         )}
