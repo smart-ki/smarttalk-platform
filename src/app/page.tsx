@@ -9,257 +9,184 @@ export default async function HomePage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative bg-gradient-to-br from-purple-50 via-white to-orange-50 py-24 px-4 overflow-hidden">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-orange-100 rounded-full opacity-40 blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-100 rounded-full opacity-40 blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
+      <section className="bg-paper pt-20 sm:pt-28 pb-20 sm:pb-32 px-6">
+        <div className="max-w-7xl mx-auto">
+          <span className="eyebrow block mb-10">Future Skills · Zentralschweiz · Seit 2016</span>
 
-        <div className="max-w-6xl mx-auto relative">
-        <div className="flex flex-col items-center gap-12">
-        <div className="flex-1 text-center">
-          <div className="inline-flex items-center gap-2 bg-white border border-gray-200 shadow-sm text-gray-600 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse" />
-            Future Skills · Zentralschweiz
-          </div>
-
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
-            <span className="text-[#F5821F]">Future Skills</span>
+          <h1 className="font-serif text-[12vw] sm:text-[10vw] lg:text-[8.5rem] leading-[0.92] tracking-tight mb-12 max-w-6xl">
+            Kompetenz<br />
+            <span className="italic text-terracotta-500">macht den</span><br />
+            Unterschied.
           </h1>
 
-          <p className="text-2xl sm:text-3xl font-bold text-gray-700 mb-6">
-            Kompetenz macht den Unterschied.
-          </p>
-
-          <p className="text-lg sm:text-xl text-[#6B6B6B] max-w-2xl mx-auto mb-10 leading-relaxed">
-            Wir begleiten Menschen und Organisationen beim Aufbau zentraler Kompetenzen für die heutige Arbeitswelt.
-          </p>
-
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-4">Hier geht es direkt zu den Angeboten</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
-            <Link href="#ki-digital" className="btn-primary text-base py-3.5 px-8 shadow-lg shadow-orange-200">
-              KI →
-            </Link>
-            <Link href="#kommunikation" className="bg-[#7C3AED] text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors inline-block text-center text-base py-3.5 px-8 shadow-lg shadow-purple-200">
-              Kommunikation →
-            </Link>
-            <Link href="#beratung" className="bg-[#0D9488] text-white font-semibold rounded-lg hover:bg-teal-700 transition-colors inline-block text-center text-base py-3.5 px-8 shadow-lg shadow-teal-200">
-              Beratung →
-            </Link>
+          <div className="grid lg:grid-cols-12 gap-10 items-end pt-6 border-t border-ink/10">
+            <p className="lg:col-span-7 text-xl sm:text-2xl text-ink leading-snug max-w-2xl font-serif">
+              Wir begleiten Menschen und Organisationen beim Aufbau zentraler Kompetenzen — mit Tiefgang, klarem Auftrag und echtem Praxisbezug.
+            </p>
+            <div className="lg:col-span-5 flex flex-col sm:flex-row gap-4 lg:justify-end">
+              <Link href="#angebote" className="btn-primary text-base py-4 px-8">
+                Angebote ansehen
+              </Link>
+              <Link href="#kontakt" className="btn-outline text-base py-4">
+                Gespräch anfragen →
+              </Link>
+            </div>
           </div>
-
-          {/* Trust bar */}
-          <div className="mt-14 flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-            {['Mensch im Zentrum', 'Direkt anwendbar', 'Online & Präsenz', 'Inhouse buchbar', 'Zentralschweiz'].map((item) => (
-              <span key={item} className="flex items-center gap-2">
-                <span className="text-[#7C3AED]">✓</span>
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        </div>
         </div>
       </section>
 
-      {/* ─── FUTURE SKILLS FRAMEWORK ─── */}
-      <section className="py-16 px-4 bg-gray-50 border-b border-gray-100">
+      {/* ─── DER MENSCH IM ZENTRUM ─── */}
+      <section className="bg-paper-200 py-24 sm:py-32 px-6 border-y border-ink/10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Das Fundament</span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-3 mb-3">
-              Der Mensch im Zentrum.
-            </h2>
-            <p className="text-gray-500 text-sm max-w-2xl mx-auto">
-              Wir leben, wachsen und entwickeln uns in vier Kompetenzbereichen — ein Leben lang.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            {/* Digitales */}
-            <div className="bg-white rounded-2xl border-2 border-[#F5821F]/30 p-6 hover:border-[#F5821F]/60 transition-colors">
-              <div className="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center mb-4">
-                <svg className="w-5 h-5 text-[#F5821F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#F5821F] mb-1">Digitales</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Digitale Kompetenz & KI</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">Digitale Kompetenz, KI-Kenntnisse, digitale Zusammenarbeit, Datenkompetenz</p>
-              <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">KI & Digital Kurse</span>
-                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Beratung</span>
-              </div>
+          <div className="grid lg:grid-cols-12 gap-12 mb-16">
+            <div className="lg:col-span-5">
+              <span className="eyebrow block mb-6">Das Fundament</span>
+              <h2 className="font-serif text-5xl sm:text-6xl leading-[1.02] tracking-tight">
+                Der Mensch <span className="italic">im Zentrum.</span>
+              </h2>
             </div>
-
-            {/* Zwischenmenschliches */}
-            <div className="bg-white rounded-2xl border-2 border-[#7C3AED]/30 p-6 hover:border-[#7C3AED]/60 transition-colors">
-              <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center mb-4">
-                <svg className="w-5 h-5 text-[#7C3AED]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                </svg>
-              </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#7C3AED] mb-1">Zwischenmenschliches</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Teamarbeit & Führung</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">Rollenmodellierung, Vertrauen aufbauen, Kollaboration, Konfliktfähigkeit</p>
-              <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Kommunikation & Führung Kurse</span>
-                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">New Work Beratung</span>
-              </div>
-            </div>
-
-            {/* Selbstmanagement */}
-            <div className="bg-white rounded-2xl border-2 border-[#0D9488]/30 p-6 hover:border-[#0D9488]/60 transition-colors">
-              <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-4">
-                <svg className="w-5 h-5 text-[#0D9488]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-1">Selbstmanagement</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Eigenverantwortung & Resilienz</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">Selbstführung, lebenslanges Lernen, Resilienz, Eigenverantwortung</p>
-              <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Führen hybrid</span>
-                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">New Work Beratung</span>
-              </div>
-            </div>
-
-            {/* Kognitiv */}
-            <div className="bg-white rounded-2xl border-2 border-gray-200 p-6 hover:border-gray-300 transition-colors">
-              <div className="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center mb-4">
-                <svg className="w-5 h-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <div className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-1">Kognitiv</div>
-              <h3 className="font-bold text-gray-900 mb-2 text-sm">Kritisches Denken & Agilität</h3>
-              <p className="text-xs text-gray-500 leading-relaxed mb-3">Problemlösung, Planung, geistige Beweglichkeit, Anpassungsfähigkeit</p>
-              <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Future Skills Workshop</span>
-                <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Inhouse auf Anfrage</span>
-              </div>
+            <div className="lg:col-span-7 lg:pt-8">
+              <p className="text-lg text-ink-soft leading-relaxed max-w-xl font-serif">
+                Wir leben, wachsen und entwickeln uns in vier Kompetenzbereichen — ein Leben lang. Jede Säule braucht ihre eigene Aufmerksamkeit. Erst gemeinsam ergeben sie die Wirkung, die Future Skills bedeutet.
+              </p>
             </div>
           </div>
 
-          <p className="text-center text-xs text-gray-400">
+          <div className="border-t border-ink/10">
+            {[
+              { num: '01', name: 'Digitales', sub: 'Digitale Kompetenz & KI', body: 'Digitale Kompetenz, KI-Kenntnisse, digitale Zusammenarbeit, Datenkompetenz.', tags: ['KI-Kurse', 'Beratung'], color: 'terracotta' },
+              { num: '02', name: 'Zwischenmenschliches', sub: 'Teamarbeit & Führung', body: 'Rollenmodellierung, Vertrauen aufbauen, Kollaboration, Konfliktfähigkeit.', tags: ['Kommunikation', 'New Work'], color: 'plum' },
+              { num: '03', name: 'Selbstmanagement', sub: 'Eigenverantwortung & Resilienz', body: 'Selbstführung, lebenslanges Lernen, Resilienz, Eigenverantwortung.', tags: ['Führen hybrid', 'New Work'], color: 'sage' },
+              { num: '04', name: 'Kognitiv', sub: 'Kritisches Denken & Agilität', body: 'Problemlösung, Planung, geistige Beweglichkeit, Anpassungsfähigkeit.', tags: ['Workshop', 'Auf Anfrage'], color: 'ink' },
+            ].map(({ num, name, sub, body, tags, color }) => {
+              const colorClasses: Record<string, string> = {
+                terracotta: 'text-terracotta-500',
+                plum: 'text-plum-500',
+                sage: 'text-sage-500',
+                ink: 'text-ink',
+              }
+              return (
+                <div key={num} className="grid grid-cols-12 gap-6 py-10 border-b border-ink/10 items-start">
+                  <div className={`col-span-2 sm:col-span-1 font-serif text-3xl ${colorClasses[color]}`}>{num}</div>
+                  <div className="col-span-10 sm:col-span-3">
+                    <span className={`eyebrow ${colorClasses[color]}`}>{name}</span>
+                    <h3 className="font-serif text-2xl mt-2 leading-tight">{sub}</h3>
+                  </div>
+                  <p className="col-span-12 sm:col-span-5 text-ink-soft leading-relaxed sm:pt-6">{body}</p>
+                  <div className="col-span-12 sm:col-span-3 flex flex-wrap gap-2 sm:pt-6">
+                    {tags.map((tag) => (
+                      <span key={tag} className="text-xs font-medium px-3 py-1 border border-ink/15 rounded-full text-ink-soft">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          <p className="text-center text-xs text-ink-muted italic mt-10">
             In Anlehnung an: OECD Skills Outlook 2019 und WEF Future of Jobs Report 2023
           </p>
         </div>
       </section>
 
-      {/* ─── ZITAT & BILD ─── */}
-      <section className="bg-[#1B2E4B] py-16 px-4">
+      {/* ─── ZITAT ─── */}
+      <section className="bg-ink text-paper py-24 sm:py-32 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-
-            {/* Bild */}
-            <div className="w-full md:w-2/5 shrink-0">
-              <div className="rounded-2xl overflow-hidden aspect-[40/29]">
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-4">
+              <div className="overflow-hidden aspect-[4/5]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/jeannine-v7.jpg"
-                  alt="Jeannine Germann bei SmartTalk"
-                  className="w-full h-full object-cover object-top"
-                />
+                <img src="/jeannine-v7.jpg" alt="Jeannine Germann bei SmartTalk" className="w-full h-full object-cover object-top grayscale" />
               </div>
             </div>
-
-            {/* Zitat */}
-            <div className="flex-1">
-              <div className="text-[#F5821F] text-5xl font-serif leading-none mb-4">"</div>
-              <p className="text-xl sm:text-2xl font-light text-white leading-relaxed mb-6">
-                Ich glaube, dass jeder Mensch das Potenzial hat, mit den richtigen Kompetenzen
-                wirklich vorwärtszukommen. Genau dafür bin ich hier.
-              </p>
+            <div className="lg:col-span-8">
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-terracotta-300 mb-6 block">Haltung</span>
+              <blockquote className="font-serif text-3xl sm:text-4xl leading-[1.15] mb-8 italic">
+                „Ich glaube, dass jeder Mensch das Potenzial hat, mit den richtigen Kompetenzen wirklich vorwärtszukommen."
+              </blockquote>
               <div className="flex items-center gap-4">
-                <div className="h-px w-10 bg-[#F5821F]" />
+                <div className="h-px w-12 bg-terracotta-400" />
                 <div>
-                  <p className="text-white font-semibold text-sm">Jeannine Germann</p>
-                  <p className="text-gray-400 text-xs">Mitglied der Geschäftsleitung, SmartTalk</p>
+                  <p className="text-paper font-medium">Jeannine Germann</p>
+                  <p className="text-paper/60 text-sm">Mitglied der Geschäftsleitung, SmartTalk</p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* ─── PILLAR 1: KI & DIGITAL ─── */}
-      <section id="ki-digital" className="py-20 px-4">
+      <div id="angebote" />
+
+      {/* ─── KI & DIGITAL ─── */}
+      <section id="ki-digital" className="bg-terracotta-50 py-24 sm:py-32 px-6 border-b border-ink/10">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col items-center text-center mb-12 gap-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Bildung · KI & Digital</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">KI & Digital</h2>
-            <p className="text-gray-500 max-w-lg">Online und Präsenz · vom Einstieg bis zur praktischen Anwendung im Berufsalltag</p>
-            <div className="inline-flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-xl px-5 py-2.5 text-sm text-orange-700 font-medium mt-2">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              Nächster Start: Juli 2026
+          <div className="grid lg:grid-cols-12 gap-10 mb-16 pb-8 border-b border-ink/10">
+            <div className="lg:col-span-7">
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-terracotta-600 mb-6 block">Bildung · Eine</span>
+              <h2 className="font-serif text-6xl sm:text-7xl leading-[0.95] tracking-tight">
+                KI & <span className="italic text-terracotta-500">Digital.</span>
+              </h2>
+            </div>
+            <div className="lg:col-span-5 lg:pt-10">
+              <p className="text-lg text-ink-soft leading-relaxed font-serif mb-6">
+                Online und Präsenz. Vom Einstieg bis zur praktischen Anwendung im Berufsalltag.
+              </p>
+              <p className="text-sm text-terracotta-700 font-medium">→ Nächster Start: Juli 2026</p>
             </div>
           </div>
 
-          {/* KI Course grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-ink/10">
             {kiKurse.map((kurs) => (
               <KiKursCard key={kurs.slug} kurs={kurs} />
             ))}
           </div>
 
-          {/* KI für Teams Firmenkurs */}
-          <div className="bg-[#1B2E4B] rounded-2xl p-8">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="bg-[#F5821F] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Firmenkurs</span>
-                  <span className="bg-white/10 text-white text-xs font-semibold px-3 py-1 rounded-full">Ab 5 Personen</span>
-                </div>
-                <h3 className="font-extrabold text-white text-xl mb-2">KI für Teams einführen</h3>
-                <p className="text-gray-300 text-sm max-w-lg leading-relaxed">
-                  Euer Team arbeitet täglich mit Daten, Texten und Prozessen. KI kann dabei entlasten. Dieser Tageskurs bringt alle auf denselben Stand: Was ist KI, wie nutzen wir sie sicher, und wo fangen wir an? Massgeschneidert auf eure Branche und Tools.
+          {/* Firmenkurs */}
+          <div className="mt-16 pt-12 border-t-2 border-ink/15">
+            <div className="grid lg:grid-cols-12 gap-10">
+              <div className="lg:col-span-8">
+                <span className="text-xs font-semibold uppercase tracking-[0.25em] text-terracotta-600 mb-4 block">Firmenkurs · Ab 5 Personen</span>
+                <h3 className="font-serif text-4xl mb-5 leading-tight">KI für Teams einführen</h3>
+                <p className="text-ink-soft leading-relaxed font-serif text-lg mb-6 max-w-xl">
+                  Euer Team arbeitet täglich mit Daten, Texten und Prozessen. KI kann dabei entlasten. Dieser Tageskurs bringt alle auf denselben Stand — massgeschneidert auf eure Branche und Tools.
                 </p>
-                <div className="flex flex-wrap gap-3 mt-4 text-xs text-gray-400">
-                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Auf euren Alltag zugeschnitten</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Datenschutz & Regeln für das Team</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#F5821F]">✓</span> Direkt anwendbare Werkzeuge</span>
+                <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink-soft">
+                  <span className="flex items-center gap-2"><span className="text-terracotta-500">›</span> Auf euren Alltag zugeschnitten</span>
+                  <span className="flex items-center gap-2"><span className="text-terracotta-500">›</span> Datenschutz & Spielregeln</span>
+                  <span className="flex items-center gap-2"><span className="text-terracotta-500">›</span> Direkt anwendbar</span>
                 </div>
               </div>
-              <div className="text-center sm:text-right shrink-0">
-                <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Ganztag · auf Anfrage</div>
-                <div className="text-3xl font-extrabold text-white">CHF 1'800</div>
-                <div className="text-xs text-gray-400 mb-4">/ Gruppe</div>
-                <Link
-                  href="#kontakt"
-                  className="bg-[#F5821F] text-white font-bold rounded-lg hover:bg-orange-600 transition-colors inline-block text-center py-2.5 px-6 text-sm whitespace-nowrap"
-                >
-                  Kurs anfragen →
-                </Link>
+              <div className="lg:col-span-4 lg:border-l lg:border-ink/15 lg:pl-10">
+                <p className="text-xs uppercase tracking-widest text-ink-muted mb-2">Ganztag · auf Anfrage</p>
+                <p className="font-serif text-5xl text-ink mb-1">CHF 1'800</p>
+                <p className="text-sm text-ink-muted mb-6">/ Gruppe</p>
+                <Link href="#kontakt" className="btn-accent py-4 px-8">Anfragen →</Link>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── DIVIDER ─── */}
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
-      </div>
-
-      {/* ─── PILLAR 2: KOMMUNIKATION ─── */}
-      <section id="kommunikation" className="py-20 px-4 bg-gradient-to-b from-white to-purple-50">
+      {/* ─── KOMMUNIKATION ─── */}
+      <section id="kommunikation" className="bg-plum-50 py-24 sm:py-32 px-6 border-b border-ink/10">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col items-center text-center mb-12 gap-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-purple-600">Bildung · Kommunikation</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Kommunikation & Auftreten</h2>
-            <p className="text-gray-500 max-w-lg">Präsenz · 3 Tageskurse für mehr Wirkung, Klarheit und Verbindung</p>
-            <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-xl px-5 py-2.5 text-sm text-purple-700 font-medium mt-2">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-              Auch als Inhouse-Training buchbar
+          <div className="grid lg:grid-cols-12 gap-10 mb-16 pb-8 border-b border-ink/10">
+            <div className="lg:col-span-7">
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-plum-600 mb-6 block">Bildung · Zwei</span>
+              <h2 className="font-serif text-6xl sm:text-7xl leading-[0.95] tracking-tight">
+                Kommunikation <br /><span className="italic text-plum-500">& Auftreten.</span>
+              </h2>
+            </div>
+            <div className="lg:col-span-5 lg:pt-10">
+              <p className="text-lg text-ink-soft leading-relaxed font-serif mb-6">
+                Präsenz. Drei Tageskurse für mehr Wirkung, Klarheit und Verbindung.
+              </p>
+              <p className="text-sm text-plum-600 font-medium">→ Auch als Inhouse-Training</p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-ink/10">
             {kommKurse.map((kurs) => (
               <KommKursCard key={kurs.slug} kurs={kurs} />
             ))}
@@ -267,363 +194,166 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ─── DIVIDER ─── */}
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
-      </div>
-
       {/* ─── BERATUNG & NEW WORK ─── */}
-      <section id="beratung" className="py-20 px-4 bg-gradient-to-b from-white to-teal-50">
+      <section id="beratung" className="bg-sage-50 py-24 sm:py-32 px-6 border-b border-ink/10">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col items-center text-center mb-12 gap-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Beratung & New Work</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Beratung & New Work</h2>
-            <p className="text-gray-500 max-w-lg">Für Organisationen, die Future Skills leben wollen – mit Begleitung, die wirklich etwas bewegt</p>
-            <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 rounded-xl px-5 py-2.5 text-sm text-teal-700 font-medium mt-2">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              4 freie Slots pro Monat
+          <div className="grid lg:grid-cols-12 gap-10 mb-16 pb-8 border-b border-ink/10">
+            <div className="lg:col-span-7">
+              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-sage-600 mb-6 block">Beratung · Drei</span>
+              <h2 className="font-serif text-6xl sm:text-7xl leading-[0.95] tracking-tight">
+                Beratung <br /><span className="italic text-sage-500">& New Work.</span>
+              </h2>
+            </div>
+            <div className="lg:col-span-5 lg:pt-10">
+              <p className="text-lg text-ink-soft leading-relaxed font-serif mb-6">
+                Für Organisationen, die Future Skills leben wollen. Vier Stufen, ein Weg.
+              </p>
+              <p className="text-sm text-sage-600 font-medium">→ 4 freie Slots pro Monat</p>
             </div>
           </div>
 
-          {/* Stufe 1: Erstgespräch */}
-          <div className="bg-[#0D9488] rounded-2xl p-7 mb-5 text-white">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-              <div>
-                <div className="text-xs font-bold uppercase tracking-widest text-teal-200 mb-2">Stufe 1 · Einstieg</div>
-                <h3 className="font-extrabold text-xl mb-2">Erstgespräch — kostenlos</h3>
-                <p className="text-teal-100 text-sm max-w-lg">
-                  Wir hören zu, verstehen eure Situation und zeigen, was möglich ist. Ein offenes Gespräch auf Augenhöhe. <span className="font-semibold text-white">4 freie Slots pro Monat.</span>
-                </p>
-              </div>
-              <Link
-                href="#kontakt"
-                className="bg-white text-[#0D9488] font-bold rounded-lg hover:bg-teal-50 transition-colors inline-block text-center py-3 px-7 text-sm whitespace-nowrap shadow"
-              >
-                Gespräch anfragen →
-              </Link>
-            </div>
-          </div>
-
-          {/* Stufe 2: KI-Readiness Check */}
-          <div className="bg-white border-2 border-[#0D9488]/30 rounded-2xl p-7 mb-5">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488]">Stufe 2 · Diagnose</div>
-                  <span className="bg-teal-50 text-[#0D9488] text-xs font-semibold px-2 py-0.5 rounded-full">Sehr gefragt</span>
+          {/* Stufen */}
+          <div className="space-y-0 border-t border-ink/10">
+            {[
+              { stufe: 'Stufe 01', titel: 'Erstgespräch', untertitel: 'Wir hören zu, verstehen eure Situation und zeigen, was möglich ist. Ein offenes Gespräch auf Augenhöhe.', preis: 'kostenlos', preisDetail: '4 Slots / Monat', cta: 'Gespräch anfragen', highlight: true },
+              { stufe: 'Stufe 02', titel: 'KI-Readiness Check', untertitel: 'Wo steht euer Unternehmen beim Thema KI? In einem halben Tag analysieren wir eure Ausgangslage und liefern einen konkreten Aktionsplan.', preis: 'CHF 900', preisDetail: 'Halbtag', cta: 'Check buchen' },
+              { stufe: 'Stufe 03', titel: 'Future Skills Diagnose', untertitel: 'Wo steht eure Organisation in allen vier Kompetenzbereichen? In einem eintägigen Workshop analysieren wir gemeinsam.', preis: 'CHF 1\'600', preisDetail: 'Ganztag', cta: 'Diagnose anfragen' },
+            ].map(({ stufe, titel, untertitel, preis, preisDetail, cta, highlight }) => (
+              <div key={titel} className={`grid lg:grid-cols-12 gap-8 py-12 border-b border-ink/10 ${highlight ? 'bg-sage-100/50' : ''} ${highlight ? '-mx-6 px-6' : ''}`}>
+                <div className="lg:col-span-2">
+                  <span className="text-xs font-semibold uppercase tracking-[0.25em] text-sage-600">{stufe}</span>
                 </div>
-                <h3 className="font-extrabold text-gray-900 text-xl mb-2">KI-Readiness Check</h3>
-                <p className="text-gray-600 text-sm max-w-lg">
-                  Wo steht euer Unternehmen beim Thema KI? Was ist sinnvoll, was zu früh, was dringend? In einem halben Tag analysieren wir eure Ausgangslage und liefern einen konkreten Aktionsplan mit klaren nächsten Schritten.
-                </p>
-                <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> KI-Potenziale in euren Prozessen sichtbar machen</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Risiken und Spielregeln klären</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Aktionsplan mit 3 konkreten nächsten Schritten</span>
+                <div className="lg:col-span-6">
+                  <h3 className="font-serif text-3xl mb-3 leading-tight">{titel}</h3>
+                  <p className="text-ink-soft leading-relaxed font-serif max-w-xl">{untertitel}</p>
                 </div>
-              </div>
-              <div className="text-center sm:text-right shrink-0">
-                <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Halbtag</div>
-                <div className="text-2xl font-extrabold text-gray-900">CHF 900</div>
-                <div className="text-xs text-gray-500 mb-4">/ Unternehmen</div>
-                <Link
-                  href="#kontakt"
-                  className="bg-[#0D9488] text-white font-bold rounded-lg hover:bg-teal-700 transition-colors inline-block text-center py-2.5 px-6 text-sm whitespace-nowrap shadow"
-                >
-                  Check buchen →
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Stufe 3: Future Skills Diagnose */}
-          <div className="bg-white border-2 border-[#0D9488]/30 rounded-2xl p-7 mb-5">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-              <div className="flex-1">
-                <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-2">Stufe 3 · Gesamtbild</div>
-                <h3 className="font-extrabold text-gray-900 text-xl mb-2">Future Skills Diagnose</h3>
-                <p className="text-gray-600 text-sm max-w-lg">
-                  Wo steht eure Organisation in allen vier Kompetenzbereichen? In einem eintägigen Workshop analysieren wir gemeinsam Digitales, Kommunikation, Selbstmanagement und kognitives Potenzial. Das Ergebnis ist ein klares Bild eurer Stärken und ein priorisierter Entwicklungsplan.
-                </p>
-                <div className="flex flex-wrap gap-4 mt-4 text-xs text-gray-500">
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Alle 4 Kompetenzbereiche einschätzen</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Stärken und Entwicklungsfelder sichtbar machen</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">›</span> Priorisierter Entwicklungsplan als Output</span>
-                </div>
-              </div>
-              <div className="text-center sm:text-right shrink-0">
-                <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Ganztag</div>
-                <div className="text-2xl font-extrabold text-gray-900">CHF 1'600</div>
-                <div className="text-xs text-gray-500 mb-4">/ Unternehmen</div>
-                <Link
-                  href="#kontakt"
-                  className="bg-[#0D9488] text-white font-bold rounded-lg hover:bg-teal-700 transition-colors inline-block text-center py-2.5 px-6 text-sm whitespace-nowrap shadow"
-                >
-                  Diagnose anfragen →
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Stufe 3: Massnahmen */}
-          <div className="mb-5">
-            <div className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-4 px-1">Stufe 4 · Massnahmen: individuell nach Aufwand und Dauer</div>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-
-              {/* KI in Geschäftsprozessen */}
-              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
-                <div className="h-1.5 bg-[#0D9488]" />
-                <div className="p-6 flex flex-col flex-1">
-                  <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-4">
-                    <svg className="w-5 h-5 text-[#0D9488]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
-                    </svg>
+                <div className="lg:col-span-4 flex flex-col items-start lg:items-end justify-between gap-4">
+                  <div className="lg:text-right">
+                    <p className="font-serif text-3xl text-ink">{preis}</p>
+                    <p className="text-sm text-ink-muted">{preisDetail}</p>
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2 group-hover:text-[#0D9488] transition-colors">KI in Geschäftsprozessen</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed flex-1">
-                    KI-Tools in bestehende Abläufe integrieren, Automatisierungspotenziale nutzen und Teams befähigen –
-                    mit klaren Prioritäten und messbaren Ergebnissen.
-                  </p>
+                  <Link href="#kontakt" className="btn-outline text-sm py-2">{cta} →</Link>
                 </div>
               </div>
-
-              {/* New Work: OKRs & Lohnmodelle */}
-              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
-                <div className="h-1.5 bg-[#0D9488]" />
-                <div className="p-6 flex flex-col flex-1">
-                  <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-4">
-                    <svg className="w-5 h-5 text-[#0D9488]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-2 group-hover:text-[#0D9488] transition-colors">New Work: OKRs & Lohnmodelle</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed flex-1">
-                    OKRs einführen, Lohnmodelle überdenken, agile Strukturen etablieren –
-                    New Work nicht nur als Konzept, sondern gelebt in der Organisation.
-                  </p>
-                </div>
-              </div>
-
-              {/* Mitarbeitende schulen */}
-              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
-                <div className="h-1.5 bg-[#0D9488]" />
-                <div className="p-6 flex flex-col flex-1">
-                  <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center mb-4">
-                    <svg className="w-5 h-5 text-[#0D9488]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <h3 className="font-bold text-gray-900 mb-2 group-hover:text-[#0D9488] transition-colors">Mitarbeitende schulen</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed flex-1">
-                    Inhouse-Trainings zu KI, Kommunikation und Future Skills – massgeschneidert auf eure Prozesse,
-                    Tools und Branche. Direkt aus der Bildung in die Beratung.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
 
-          {/* Inhouse Training Banner */}
-          <div className="bg-[#1B2E4B] rounded-2xl p-8 mb-6">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#0D9488] mb-2 block">Für Teams & Unternehmen</span>
-                <h3 className="font-bold text-white text-xl mb-2">Alle Kurse auch als Inhouse-Training</h3>
-                <p className="text-gray-300 text-sm max-w-lg">
-                  Sämtliche KI- und Kommunikationskurse sind als massgeschneiderte Inhouse-Trainings buchbar.
-                  Angepasst an eure Prozesse, Tools und Branche. Teams ab 5 Personen.
-                </p>
-                <div className="flex flex-wrap gap-3 mt-4 text-xs text-gray-400">
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">✓</span> KI-Kurse inhouse</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">✓</span> Kommunikationstrainings</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">✓</span> Kombinationspakete möglich</span>
-                  <span className="flex items-center gap-1.5"><span className="text-[#0D9488]">✓</span> Ab CHF 1'800 / Gruppe</span>
+          {/* Stufe 4: Massnahmen */}
+          <div className="mt-16">
+            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-sage-600 mb-6 block">Stufe 04 · Massnahmen</span>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 border-t border-ink/10">
+              {[
+                { titel: 'KI in Geschäftsprozessen', text: 'KI-Tools in bestehende Abläufe integrieren, Automatisierungspotenziale nutzen und Teams befähigen.' },
+                { titel: 'New Work', text: 'OKRs einführen, Lohnmodelle überdenken, agile Strukturen etablieren — gelebt in der Organisation.' },
+                { titel: 'Inhouse-Trainings', text: 'Massgeschneidert auf eure Prozesse, Tools und Branche — KI, Kommunikation und Future Skills.' },
+              ].map(({ titel, text }) => (
+                <div key={titel} className="border-b sm:border-b-0 sm:border-r border-ink/10 last:border-r-0 py-8 sm:px-8 sm:first:pl-0 sm:last:pr-0">
+                  <h4 className="font-serif text-2xl mb-3 leading-tight">{titel}</h4>
+                  <p className="text-sm text-ink-soft leading-relaxed font-serif">{text}</p>
                 </div>
-              </div>
-              <Link
-                href="#kontakt"
-                className="bg-[#0D9488] text-white font-bold rounded-lg hover:bg-teal-700 transition-colors inline-block text-center py-3 px-7 text-sm whitespace-nowrap shadow-lg"
-              >
-                Inhouse anfragen →
-              </Link>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* ─── ÜBER UNS ─── */}
-      <section id="ueber-uns" className="py-20 px-4 bg-white">
+      <section id="ueber-uns" className="bg-paper py-24 sm:py-32 px-6 border-b border-ink/10">
         <div className="max-w-6xl mx-auto">
-
-          {/* Titel */}
-          <div className="text-center mb-14">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Über SmartTalk</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3 mb-4">Das Team hinter SmartTalk</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto text-lg">
-              Gegründet 2016. Rund 100 Menschen in Kursleitung, Administration, Marketing und Geschäftsleitung.
-              Alle vereint durch eine Haltung: Kompetenz wächst, wenn Menschen wachsen dürfen.
-            </p>
+          <div className="grid lg:grid-cols-12 gap-10 mb-16">
+            <div className="lg:col-span-5">
+              <span className="eyebrow block mb-6">Über SmartTalk</span>
+              <h2 className="font-serif text-5xl sm:text-6xl leading-[1.02] tracking-tight">
+                Das Team <br /><span className="italic">hinter SmartTalk.</span>
+              </h2>
+            </div>
+            <div className="lg:col-span-7 lg:pt-8">
+              <p className="text-lg text-ink-soft leading-relaxed max-w-xl font-serif">
+                Gegründet 2016. Rund 100 Menschen in Kursleitung, Administration, Marketing und Geschäftsleitung. Alle vereint durch eine Haltung: Kompetenz wächst, wenn Menschen wachsen dürfen.
+              </p>
+            </div>
           </div>
 
-          {/* Fakten-Bar */}
-          <div className="flex flex-wrap justify-center gap-8 mb-14 text-sm font-medium text-gray-500">
+          {/* Fakten als horizontale Linie */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 border-y border-ink/15 mb-16">
             {[
               { zahl: '2016', label: 'Gegründet' },
               { zahl: '100+', label: 'Mitarbeitende' },
               { zahl: '10 Jahre', label: 'Agile Führung' },
-              { zahl: 'Zentralschweiz', label: 'Unser Zuhause' },
+              { zahl: 'CH', label: 'Zentralschweiz' },
             ].map(({ zahl, label }) => (
-              <div key={label} className="text-center">
-                <div className="text-2xl font-extrabold text-gray-900">{zahl}</div>
-                <div className="text-xs uppercase tracking-widest text-gray-400 mt-0.5">{label}</div>
+              <div key={label} className="py-8 sm:py-10 px-4 border-r last:border-r-0 sm:[&:nth-child(2)]:border-r border-ink/15 [&:nth-child(2)]:border-b sm:[&:nth-child(2)]:border-b-0 [&:nth-child(1)]:border-b sm:[&:nth-child(1)]:border-b-0">
+                <p className="font-serif text-4xl mb-1">{zahl}</p>
+                <p className="text-xs uppercase tracking-widest text-ink-muted">{label}</p>
               </div>
             ))}
           </div>
 
-          {/* Team Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-            {/* Florian */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-              <div className="aspect-[4/5] w-full bg-gray-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/team-florian.jpg" alt="Florian" className="w-full h-full object-cover object-top" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="font-bold text-gray-900 mb-0.5">Florian</h3>
-                <p className="text-xs font-semibold text-[#F5821F] uppercase tracking-wide mb-3">Inhaber & Geschäftsleiter</p>
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung und zeitgemässe Führung. Florian baut SmartTalk seit der Gründung 2016 agil auf, setzt KI täglich in Führung und Betrieb ein und lebt New Work als Haltung.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mt-4">
-                  <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">KI & Prozesse</span>
-                  <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">New Work</span>
-                  <span className="text-xs bg-orange-50 text-[#F5821F] font-semibold px-2 py-0.5 rounded-full">Führung</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-ink/10">
+            {[
+              { slug: 'florian', name: 'Florian', rolle: 'Inhaber & Geschäftsleiter', accent: 'terracotta', bio: 'Wirtschaftsinformatiker und Informatiker mit Leidenschaft für Prozessoptimierung. Baut SmartTalk seit 2016 agil auf.', tags: ['KI & Prozesse', 'New Work', 'Führung'] },
+              { slug: 'jeannine', name: 'Jeannine', rolle: 'Mitglied der Geschäftsleitung', accent: 'plum', bio: 'Bildungsdesignerin, Lerntherapeutin und Dozentin. Gestaltet Lernerfahrungen, die wirklich wirken.', tags: ['Bildungsdesign', 'KI', 'Lerntherapie'] },
+              { slug: 'chris', name: 'Chris', rolle: 'Marketing & Teamentwicklung', accent: 'sage', bio: 'Spezialist für Teamentwicklung und Menschlichkeit in der Führung. Setzt KI gezielt im Marketing ein.', tags: ['Teams', 'Marketing', 'New Work'] },
+              { slug: 'ruth', name: 'Ruth', rolle: 'People & HR', accent: 'ink', bio: 'Begleitet das SmartTalk-Team. Durch Partizipation sorgt sie dafür, dass das Team wächst und zusammenwächst.', tags: ['HR', 'Partizipation', 'KI im Alltag'] },
+            ].map(({ slug, name, rolle, accent, bio, tags }) => {
+              const accentText: Record<string, string> = {
+                terracotta: 'text-terracotta-600',
+                plum: 'text-plum-600',
+                sage: 'text-sage-600',
+                ink: 'text-ink',
+              }
+              return (
+                <div key={slug} className="border-b sm:border-b-0 lg:border-r border-ink/10 last:border-r-0 py-6 sm:py-8 sm:px-6 first:sm:pl-0">
+                  <div className="aspect-[4/5] w-full bg-paper-200 mb-5 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/team-${slug}.jpg`} alt={name} className="w-full h-full object-cover object-top grayscale" />
+                  </div>
+                  <h3 className="font-serif text-2xl mb-1">{name}</h3>
+                  <p className={`text-xs font-semibold uppercase tracking-widest mb-4 ${accentText[accent]}`}>{rolle}</p>
+                  <p className="text-sm text-ink-soft leading-relaxed font-serif mb-4">{bio}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {tags.map((tag) => (
+                      <span key={tag} className="text-xs px-2 py-0.5 border border-ink/15 rounded-full text-ink-muted">{tag}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Jeannine */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-              <div className="aspect-[4/5] w-full bg-gray-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/team-jeannine.jpg" alt="Jeannine" className="w-full h-full object-cover object-top" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="font-bold text-gray-900 mb-0.5">Jeannine</h3>
-                <p className="text-xs font-semibold text-[#7C3AED] uppercase tracking-wide mb-3">Mitglied der Geschäftsleitung</p>
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  Bildungsdesignerin, Lerntherapeutin und Dozentin. Jeannine gestaltet Lernerfahrungen, die wirklich wirken, unterrichtet KI in der sozialen Arbeit und verantwortet bei SmartTalk die Entwicklung des Future Skills Angebots.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mt-4">
-                  <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Bildungsdesign</span>
-                  <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">KI in Sozialer Arbeit</span>
-                  <span className="text-xs bg-purple-50 text-[#7C3AED] font-semibold px-2 py-0.5 rounded-full">Lerntherapie</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Chris */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-              <div className="aspect-[4/5] w-full bg-gray-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/team-chris.jpg" alt="Chris" className="w-full h-full object-cover object-top" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="font-bold text-gray-900 mb-0.5">Chris</h3>
-                <p className="text-xs font-semibold text-[#0D9488] uppercase tracking-wide mb-3">Marketing & Teamentwicklung</p>
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  Spezialist für Teamentwicklung, New Work und Menschlichkeit in der Führung. Chris setzt KI gezielt im Marketing ein und sorgt dafür, dass SmartTalk sichtbar wird und die Botschaft ankommt, bei wem sie ankommen soll.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mt-4">
-                  <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">Teamentwicklung</span>
-                  <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">KI im Marketing</span>
-                  <span className="text-xs bg-teal-50 text-[#0D9488] font-semibold px-2 py-0.5 rounded-full">New Work</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Ruth */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">
-              <div className="aspect-[4/5] w-full bg-gray-100">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/team-ruth.jpg" alt="Ruth" className="w-full h-full object-cover object-top" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="font-bold text-gray-900 mb-0.5">Ruth</h3>
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">People & HR</p>
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  Ruth begleitet das SmartTalk-Team in seiner Entwicklung. Durch Partizipation, Projektarbeiten und echte Beteiligung sorgt sie dafür, dass das Team wächst und zusammenwächst. Auch sie nutzt KI täglich in ihrer Arbeit.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mt-4">
-                  <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">HR</span>
-                  <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">Partizipation</span>
-                  <span className="text-xs bg-gray-100 text-gray-500 font-semibold px-2 py-0.5 rounded-full">KI im Alltag</span>
-                </div>
-              </div>
-            </div>
-
+              )
+            })}
           </div>
 
-          {/* Haltung */}
-          <div className="mt-12 bg-gray-50 rounded-2xl p-8 text-center">
-            <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
-              Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI-Tools im Alltag, führt mit OKRs und glaubt daran, dass Unternehmen dann wirklich stark sind, wenn die Mitarbeitenden sich entwickeln können.
+          <div className="mt-16 pt-12 border-t border-ink/15">
+            <p className="font-serif text-2xl text-ink leading-snug max-w-3xl italic">
+              „Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI im Alltag und glaubt daran, dass Unternehmen dann stark sind, wenn Mitarbeitende wachsen dürfen."
             </p>
           </div>
-
         </div>
       </section>
 
       {/* ─── KONTAKT ─── */}
-      <section id="kontakt" className="py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#F5821F]">Kontakt</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Wir freuen uns über den Austausch.</h2>
-            <p className="text-gray-500 mt-3 max-w-lg mx-auto">
-              Ob Kursfragen, Inhouse-Anfragen, Erstgespräch Beratung oder einfach ein erstes Hallo – jede Nachricht ist willkommen.
-            </p>
+      <section id="kontakt" className="bg-paper-200 py-24 sm:py-32 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-12 gap-10 mb-16 pb-8 border-b border-ink/15">
+            <div className="lg:col-span-6">
+              <span className="eyebrow block mb-6">Kontakt</span>
+              <h2 className="font-serif text-5xl sm:text-6xl leading-[1.02] tracking-tight">
+                Wir freuen uns auf <br /><span className="italic">den Austausch.</span>
+              </h2>
+            </div>
+            <div className="lg:col-span-6 lg:pt-8">
+              <p className="text-lg text-ink-soft leading-relaxed font-serif mb-6">
+                Ob Kursfragen, Inhouse-Anfragen, Erstgespräch Beratung oder einfach ein erstes Hallo — jede Nachricht ist willkommen.
+              </p>
+              <div className="space-y-2 text-sm">
+                <a href="mailto:jeannine.germann@smarttalk.ch" className="block text-ink hover:text-terracotta-500 transition-colors font-medium underline underline-offset-4">
+                  jeannine.germann@smarttalk.ch
+                </a>
+                <p className="text-ink-muted">SmartTalk · Zentralschweiz</p>
+              </div>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
-            <div className="md:col-span-3 bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
-              <KontaktFormular />
-            </div>
-            <div className="md:col-span-2 space-y-6">
-              <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
-                <h3 className="font-bold text-gray-900 mb-4">Direkt in Kontakt</h3>
-                <div className="space-y-3 text-sm">
-                  <a href="mailto:jeannine.germann@smarttalk.ch" className="flex items-center gap-3 text-gray-600 hover:text-[#F5821F] transition-colors">
-                    <div className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center shrink-0">
-                      <svg className="w-4 h-4 text-[#F5821F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    jeannine.germann@smarttalk.ch
-                  </a>
-                  <div className="flex items-center gap-3 text-gray-600">
-                    <div className="w-8 h-8 rounded-lg bg-orange-100 flex items-center justify-center shrink-0">
-                      <svg className="w-4 h-4 text-[#F5821F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    Zentralschweiz
-                  </div>
-                </div>
-              </div>
-              <div className="bg-orange-50 rounded-2xl border border-orange-200 p-6">
-                <p className="text-sm font-semibold text-orange-800 mb-1">Schnelle Antwort</p>
-                <p className="text-sm text-orange-700">Wir melden uns innerhalb von zwei Werktagen.</p>
-              </div>
-              <div className="bg-teal-50 rounded-2xl border border-teal-200 p-6">
-                <p className="text-sm font-semibold text-teal-800 mb-1">Beratungs-Erstgespräch</p>
-                <p className="text-sm text-teal-700">Kostenlos · 4 freie Slots pro Monat · Jetzt anfragen</p>
-              </div>
-            </div>
+          <div className="bg-paper p-8 sm:p-12 border border-ink/10">
+            <KontaktFormular />
           </div>
         </div>
       </section>
