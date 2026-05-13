@@ -22,7 +22,7 @@ export default async function HomePage() {
 
               <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-ink leading-[1.05] tracking-tight mb-8">
                 Lernen,<br />
-                <span className="italic text-apricot-600">das bleibt.</span>
+                <span className="text-apricot-600">das bleibt.</span>
               </h1>
 
               <p className="text-xl sm:text-2xl text-ink-soft leading-relaxed mb-12 max-w-xl">
@@ -71,7 +71,7 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-medium uppercase tracking-[0.2em] text-ink-muted">Das Fundament</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5 leading-tight">
-              Der Mensch <span className="italic">im Zentrum.</span>
+              Der Mensch <span>im Zentrum.</span>
             </h2>
             <p className="text-ink-soft text-lg max-w-2xl mx-auto leading-relaxed">
               Wir leben, wachsen und entwickeln uns in vier Kompetenzbereichen — ein Leben lang.
@@ -152,7 +152,7 @@ export default async function HomePage() {
             </div>
           </div>
 
-          <p className="text-center text-xs text-ink-muted italic">
+          <p className="text-center text-xs text-ink-muted">
             In Anlehnung an: OECD Skills Outlook 2019 und WEF Future of Jobs Report 2023
           </p>
         </div>
@@ -172,7 +172,7 @@ export default async function HomePage() {
             </div>
             <div className="flex-1">
               <div className="font-serif text-apricot-400 text-7xl leading-none mb-6">"</div>
-              <p className="font-serif text-2xl sm:text-3xl text-cream leading-snug mb-8 italic">
+              <p className="font-serif text-2xl sm:text-3xl text-cream leading-snug mb-8">
                 Ich glaube, dass jeder Mensch das Potenzial hat, mit den richtigen Kompetenzen wirklich vorwärtszukommen.
               </p>
               <div className="flex items-center gap-4">
@@ -197,7 +197,7 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-apricot-600">Bildung · KI & Digital</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              KI & <span className="italic text-apricot-600">Digital</span>
+              KI & <span className="text-apricot-600">Digital</span>
             </h2>
             <p className="text-ink-soft max-w-xl mx-auto text-lg">
               Online und Präsenz · drei Kurse vom Einstieg bis zum persönlichen KI-Arbeitsplatz
@@ -253,7 +253,7 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-mauve-600">Bildung · Kommunikation</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              Kommunikation <span className="italic text-mauve-600">& Auftreten</span>
+              Kommunikation <span className="text-mauve-600">& Auftreten</span>
             </h2>
             <p className="text-ink-soft max-w-xl mx-auto text-lg">
               Präsenz · drei Tageskurse für mehr Wirkung, Klarheit und Verbindung
@@ -279,7 +279,7 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-eucalyptus-600">Beratung & New Work</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              Beratung <span className="italic text-eucalyptus-600">& New Work</span>
+              Beratung <span className="text-eucalyptus-600">& New Work</span>
             </h2>
             <p className="text-ink-soft max-w-xl mx-auto text-lg">
               Für Organisationen, die Future Skills leben wollen — mit Begleitung, die wirklich etwas bewegt.
@@ -389,7 +389,7 @@ export default async function HomePage() {
           <div className="text-center mb-16">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-apricot-600">Über SmartTalk</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              Das Team <span className="italic">hinter SmartTalk</span>
+              Das Team <span>hinter SmartTalk</span>
             </h2>
             <p className="text-ink-soft max-w-2xl mx-auto text-lg leading-relaxed">
               Gegründet 2016. Rund 100 Menschen in Kursleitung, Administration, Marketing und Geschäftsleitung. Alle vereint durch eine Haltung: Kompetenz wächst, wenn Menschen wachsen dürfen.
@@ -446,7 +446,7 @@ export default async function HomePage() {
           </div>
 
           <div className="mt-16 bg-cream-200 rounded-4xl p-10 text-center">
-            <p className="font-serif text-xl text-ink-soft leading-relaxed max-w-2xl mx-auto italic">
+            <p className="font-serif text-xl text-ink-soft leading-relaxed max-w-2xl mx-auto">
               „Wir leben, was wir lehren. SmartTalk arbeitet agil, nutzt KI im Alltag und glaubt daran, dass Unternehmen dann stark sind, wenn Mitarbeitende wachsen dürfen."
             </p>
           </div>
@@ -459,7 +459,7 @@ export default async function HomePage() {
           <div className="text-center mb-14">
             <span className="text-xs font-semibold uppercase tracking-[0.2em] text-apricot-600">Kontakt</span>
             <h2 className="font-serif text-4xl sm:text-5xl text-ink mt-4 mb-5">
-              Wir freuen uns auf <span className="italic">den Austausch.</span>
+              Wir freuen uns auf <span>den Austausch.</span>
             </h2>
             <p className="text-ink-soft max-w-lg mx-auto text-lg">
               Ob Kursfragen, Inhouse-Anfragen, Erstgespräch Beratung oder einfach ein erstes Hallo — jede Nachricht ist willkommen.

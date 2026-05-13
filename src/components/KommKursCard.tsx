@@ -32,7 +32,7 @@ export default function KommKursCard({ kurs }: { kurs: KommKurs }) {
         </h3>
 
         {/* Subtitle */}
-        <p className="text-sm text-ink-soft italic mb-5">{kurs.untertitel}</p>
+        <p className="text-sm text-ink-soft mb-5">{kurs.untertitel}</p>
 
         {/* Description */}
         <p className="text-sm text-ink-soft leading-relaxed mb-5">
@@ -50,7 +50,7 @@ export default function KommKursCard({ kurs }: { kurs: KommKurs }) {
               </li>
             ))}
             {kurs.inhalte.length > 3 && (
-              <li className="text-xs text-ink-muted pl-4 italic">+ {kurs.inhalte.length - 3} weitere</li>
+              <li className="text-xs text-ink-muted pl-4">+ {kurs.inhalte.length - 3} weitere</li>
             )}
           </ul>
         </div>

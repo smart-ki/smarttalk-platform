@@ -26,7 +26,7 @@ export default function KiKursCard({ kurs }: { kurs: KiKurs }) {
         </h3>
 
         {/* Subtitle */}
-        <p className="text-sm text-ink-soft italic mb-5">{kurs.untertitel}</p>
+        <p className="text-sm text-ink-soft mb-5">{kurs.untertitel}</p>
 
         {/* Description */}
         <p className="text-sm text-ink-soft leading-relaxed flex-1 mb-6">

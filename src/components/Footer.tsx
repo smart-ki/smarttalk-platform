@@ -14,7 +14,7 @@ export default function Footer() {
                 <span className="text-[10px] text-apricot-400 font-medium uppercase tracking-widest leading-none mt-1">Future Skills</span>
               </div>
             </div>
-            <p className="text-sm text-cream/60 leading-relaxed font-serif italic">
+            <p className="text-sm text-cream/60 leading-relaxed font-serif">
               Der Mensch im Mittelpunkt. Future Skills für die Arbeitswelt von morgen.
             </p>
           </div>
