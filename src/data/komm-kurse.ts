@@ -52,8 +52,8 @@ export const kommKurse: KommKurs[] = [
     format: 'Präsenz (Ganztag) · auch als Inhouse-Training buchbar',
     dauer: 'Ganztag (ca. 7h)',
     preisAb: 'CHF 460',
-    preisDetail: 'CHF 460 / Person | Inhouse ab CHF 1\'800 / Gruppe',
-    preisAbFirma: 'ab CHF 1\'800 / Gruppe',
+    preisDetail: 'CHF 460 / Person | Inhouse ab CHF 3\'500 / Gruppe',
+    preisAbFirma: 'ab CHF 3\'500 / Gruppe',
     termine: [
       // Monatlich ab Juli 2026: 2. Donnerstag des Monats, ganztägig in Luzern.
       { datum: '2026-07-09', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-06-25', status: 'offen' },
@@ -93,8 +93,8 @@ export const kommKurse: KommKurs[] = [
     format: 'Präsenz (Ganztag) · auch als Inhouse-Training buchbar',
     dauer: 'Ganztag (ca. 7h)',
     preisAb: 'CHF 490',
-    preisDetail: 'CHF 490 / Person | Inhouse ab CHF 1\'800 / Gruppe',
-    preisAbFirma: 'ab CHF 1\'800 / Gruppe',
+    preisDetail: 'CHF 490 / Person | Inhouse ab CHF 3\'500 / Gruppe',
+    preisAbFirma: 'ab CHF 3\'500 / Gruppe',
     termine: [
       // Monatlich ab Juli 2026: 3. Donnerstag des Monats, ganztägig in Luzern.
       { datum: '2026-07-16', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-07-02', status: 'offen' },
@@ -136,8 +136,8 @@ export const kommKurse: KommKurs[] = [
     format: 'Präsenz (Ganztag) · auch als Inhouse-Training buchbar',
     dauer: 'Ganztag (ca. 7h)',
     preisAb: 'CHF 490',
-    preisDetail: 'CHF 490 / Person | Inhouse ab CHF 1\'800 / Gruppe',
-    preisAbFirma: 'ab CHF 1\'800 / Gruppe',
+    preisDetail: 'CHF 490 / Person | Inhouse ab CHF 3\'500 / Gruppe',
+    preisAbFirma: 'ab CHF 3\'500 / Gruppe',
     termine: [
       // Monatlich ab Juli 2026: 4. Dienstag des Monats, ganztägig in Luzern.
       { datum: '2026-07-28', uhrzeit: '09:00 – 17:00', ort: 'Luzern, SmartTalk-Räume', maxTeilnehmer: 8, anmeldefrist: '2026-07-14', status: 'offen' },

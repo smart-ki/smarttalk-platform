@@ -98,8 +98,8 @@ export const kiKurse: KiKurs[] = [
     zielgruppe: 'Berufsleute nach dem Einstiegskurs oder mit ersten KI-Erfahrungen',
     format: 'Präsenz (Halbtag)',
     dauer: 'Halbtag (ca. 3.5h)',
-    preisAb: 'CHF 149',
-    preisDetail: 'CHF 149 / Person',
+    preisAb: 'CHF 349',
+    preisDetail: 'CHF 349 / Person',
     preisAbFirma: 'auf Anfrage',
     termine: [
       // Monatlich ab Juli 2026: 2. Freitag des Monats, vormittags in Luzern.
@@ -112,7 +112,7 @@ export const kiKurse: KiKurs[] = [
     ],
     seoTitel: 'Meine Aufgaben mit KI lösen. Halbtageskurs | SmartTalk',
     metaBeschreibung:
-      'Eigene Aufgaben mitbringen, sofort mit KI lösen und fertige Prompt-Vorlagen mitnehmen. Halbtageskurs CHF 149. Zentralschweiz.',
+      'Eigene Aufgaben mitbringen, sofort mit KI lösen und fertige Prompt-Vorlagen mitnehmen. Halbtageskurs CHF 349. Zentralschweiz.',
     keywords: ['KI Berufsalltag', 'KI Praxiskurs Schweiz', 'Prompt Vorlagen', 'KI im Job'],
   },
 ]

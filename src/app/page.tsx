@@ -230,7 +230,7 @@ export default async function HomePage() {
               </div>
               <div className="text-left sm:text-right shrink-0">
                 <div className="text-xs text-cream/50 uppercase tracking-wide mb-1">Ganztag · auf Anfrage</div>
-                <div className="text-3xl font-serif text-cream">CHF 1'800</div>
+                <div className="text-3xl font-serif text-cream">CHF 2'600</div>
                 <div className="text-xs text-cream/50 mb-5">/ Gruppe</div>
                 <Link href="/#kontakt" className="btn-primary py-3 px-6 text-sm">
                   Kurs anfragen →
@@ -323,7 +323,7 @@ export default async function HomePage() {
               </div>
               <div className="text-left sm:text-right shrink-0">
                 <div className="text-xs text-ink-muted uppercase tracking-wide mb-1">Halbtag</div>
-                <div className="text-3xl font-serif text-ink">CHF 900</div>
+                <div className="text-3xl font-serif text-ink">CHF 2'000</div>
                 <div className="text-xs text-ink-muted mb-4">/ Unternehmen</div>
                 <Link href="/#kontakt" className="btn-eucalyptus py-3 px-6 text-sm">
                   Check buchen →
@@ -349,7 +349,7 @@ export default async function HomePage() {
               </div>
               <div className="text-left sm:text-right shrink-0">
                 <div className="text-xs text-ink-muted uppercase tracking-wide mb-1">Ganztag</div>
-                <div className="text-3xl font-serif text-ink">CHF 1'600</div>
+                <div className="text-3xl font-serif text-ink">CHF 2'800</div>
                 <div className="text-xs text-ink-muted mb-4">/ Unternehmen</div>
                 <Link href="/#kontakt" className="btn-eucalyptus py-3 px-6 text-sm">
                   Diagnose anfragen →
@@ -390,7 +390,7 @@ export default async function HomePage() {
                   <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> KI-Kurse inhouse</span>
                   <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> Kommunikationstrainings</span>
                   <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> Kombinationspakete</span>
-                  <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> Ab CHF 1'800 / Gruppe</span>
+                  <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> Ab CHF 3'500 / Gruppe</span>
                 </div>
               </div>
               <Link href="/#kontakt" className="btn-eucalyptus py-3 px-7 text-sm whitespace-nowrap shrink-0">
