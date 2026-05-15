@@ -5,7 +5,7 @@ import { getKiKurse, getKiKursBySlug } from '@/lib/strapi'
 import BuchungsFormular from '@/components/BuchungsFormular'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -18,13 +18,15 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const kurs = await getKiKursBySlug(params.slug)
+  const { slug } = await params
+  const kurs = await getKiKursBySlug(slug)
   if (!kurs) return {}
   return { title: kurs.seoTitel, description: kurs.metaBeschreibung, keywords: kurs.keywords }
 }
 
 export default async function KiKursDetailPage({ params }: Props) {
-  const kurs = await getKiKursBySlug(params.slug)
+  const { slug } = await params
+  const kurs = await getKiKursBySlug(slug)
   if (!kurs) notFound()
 
   const alleKurse = await getKiKurse()

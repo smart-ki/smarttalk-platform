@@ -12,3 +12,6 @@
 # misc
 .DS_Store
 *.pem
+
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo

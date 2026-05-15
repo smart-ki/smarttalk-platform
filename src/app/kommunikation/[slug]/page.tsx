@@ -5,7 +5,7 @@ import { getKommKurse, getKommKursBySlug } from '@/lib/strapi'
 import BuchungsFormular from '@/components/BuchungsFormular'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -18,13 +18,15 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const kurs = await getKommKursBySlug(params.slug)
+  const { slug } = await params
+  const kurs = await getKommKursBySlug(slug)
   if (!kurs) return {}
   return { title: kurs.seoTitel, description: kurs.metaBeschreibung, keywords: kurs.keywords }
 }
 
 export default async function KommKursDetailPage({ params }: Props) {
-  const kurs = await getKommKursBySlug(params.slug)
+  const { slug } = await params
+  const kurs = await getKommKursBySlug(slug)
   if (!kurs) notFound()
 
   const alleKurse = await getKommKurse()
