@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { getKiKurse, getKommKurse } from '@/lib/strapi'
-import KiKursCard from '@/components/v2/KiKursCard'
-import KommKursCard from '@/components/v2/KommKursCard'
+import KiKursCard from '@/components/KiKursCard'
+import KommKursCard from '@/components/KommKursCard'
 import KontaktFormular from '@/components/KontaktFormular'
 
-export default async function V2HomePage() {
+export default async function HomePage() {
   const [kiKurse, kommKurse] = await Promise.all([getKiKurse(), getKommKurse()])
   return (
     <>
@@ -31,9 +31,9 @@ export default async function V2HomePage() {
 
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-ink-muted mb-4">Hier geht es direkt zu den Angeboten</p>
               <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
-                <Link href="/v2#ki-digital" className="btn-v2-primary text-sm py-3 px-6">KI →</Link>
-                <Link href="/v2#kommunikation" className="btn-v2-mauve text-sm py-3 px-6">Kommunikation →</Link>
-                <Link href="/v2#beratung" className="btn-v2-eucalyptus text-sm py-3 px-6">Beratung →</Link>
+                <Link href="/#ki-digital" className="btn-primary text-sm py-3 px-6">KI →</Link>
+                <Link href="/#kommunikation" className="btn-mauve text-sm py-3 px-6">Kommunikation →</Link>
+                <Link href="/#beratung" className="btn-eucalyptus text-sm py-3 px-6">Beratung →</Link>
               </div>
 
               {/* Trust-Zeile */}
@@ -165,7 +165,7 @@ export default async function V2HomePage() {
             <div className="w-full md:w-2/5 shrink-0">
               <div className="rounded-4xl overflow-hidden aspect-[40/29] shadow-soft-lg">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/jeannine-v7.jpg" alt="Jeannine Germann bei SmartTalk" className="w-full h-full object-cover object-top" />
+                <img src="/jeannine.jpg" alt="Jeannine Germann bei SmartTalk" className="w-full h-full object-cover object-top" />
               </div>
             </div>
             <div className="flex-1">
@@ -232,7 +232,7 @@ export default async function V2HomePage() {
                 <div className="text-xs text-cream/50 uppercase tracking-wide mb-1">Ganztag · auf Anfrage</div>
                 <div className="text-3xl font-serif text-cream">CHF 1'800</div>
                 <div className="text-xs text-cream/50 mb-5">/ Gruppe</div>
-                <Link href="/v2#kontakt" className="btn-v2-primary py-3 px-6 text-sm">
+                <Link href="/#kontakt" className="btn-primary py-3 px-6 text-sm">
                   Kurs anfragen →
                 </Link>
               </div>
@@ -297,7 +297,7 @@ export default async function V2HomePage() {
                   <span className="font-semibold text-white"> 4 freie Slots pro Monat.</span>
                 </p>
               </div>
-              <Link href="/v2#kontakt" className="bg-white text-eucalyptus-700 font-semibold rounded-full hover:bg-cream transition-colors py-3 px-7 text-sm whitespace-nowrap shadow-soft">
+              <Link href="/#kontakt" className="bg-white text-eucalyptus-700 font-semibold rounded-full hover:bg-cream transition-colors py-3 px-7 text-sm whitespace-nowrap shadow-soft">
                 Gespräch anfragen →
               </Link>
             </div>
@@ -325,7 +325,7 @@ export default async function V2HomePage() {
                 <div className="text-xs text-ink-muted uppercase tracking-wide mb-1">Halbtag</div>
                 <div className="text-3xl font-serif text-ink">CHF 900</div>
                 <div className="text-xs text-ink-muted mb-4">/ Unternehmen</div>
-                <Link href="/v2#kontakt" className="btn-v2-eucalyptus py-3 px-6 text-sm">
+                <Link href="/#kontakt" className="btn-eucalyptus py-3 px-6 text-sm">
                   Check buchen →
                 </Link>
               </div>
@@ -351,7 +351,7 @@ export default async function V2HomePage() {
                 <div className="text-xs text-ink-muted uppercase tracking-wide mb-1">Ganztag</div>
                 <div className="text-3xl font-serif text-ink">CHF 1'600</div>
                 <div className="text-xs text-ink-muted mb-4">/ Unternehmen</div>
-                <Link href="/v2#kontakt" className="btn-v2-eucalyptus py-3 px-6 text-sm">
+                <Link href="/#kontakt" className="btn-eucalyptus py-3 px-6 text-sm">
                   Diagnose anfragen →
                 </Link>
               </div>
@@ -393,7 +393,7 @@ export default async function V2HomePage() {
                   <span className="flex items-center gap-1.5"><span className="text-eucalyptus-300">✓</span> Ab CHF 1'800 / Gruppe</span>
                 </div>
               </div>
-              <Link href="/v2#kontakt" className="btn-v2-eucalyptus py-3 px-7 text-sm whitespace-nowrap shrink-0">
+              <Link href="/#kontakt" className="btn-eucalyptus py-3 px-7 text-sm whitespace-nowrap shrink-0">
                 Inhouse anfragen →
               </Link>
             </div>

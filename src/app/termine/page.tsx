@@ -34,10 +34,10 @@ const TYP_BADGE = {
 }
 
 function detailLink(e: Eintrag): string {
-  return e.kursTyp === 'ki' ? `/v2/ki/${e.kursSlug}` : `/v2/kommunikation/${e.kursSlug}`
+  return e.kursTyp === 'ki' ? `/ki/${e.kursSlug}` : `/kommunikation/${e.kursSlug}`
 }
 
-export default async function V2TerminePage() {
+export default async function TerminePage() {
   const eintraege = (await alleTermine()).filter((e) => !isVergangen(e.termin.datum))
 
   return (
@@ -45,7 +45,7 @@ export default async function V2TerminePage() {
       {/* Breadcrumb */}
       <div className="bg-cream-200 py-3 px-4">
         <div className="max-w-5xl mx-auto text-sm text-ink-muted flex items-center gap-2">
-          <Link href="/v2" className="hover:text-apricot-600 transition-colors">Startseite</Link>
+          <Link href="/" className="hover:text-apricot-600 transition-colors">Startseite</Link>
           <span>/</span>
           <span className="text-ink">Termine</span>
         </div>
@@ -68,7 +68,7 @@ export default async function V2TerminePage() {
               <p className="text-ink-soft font-serif text-lg mb-6">
                 Aktuell sind keine Termine ausgeschrieben. Schreib uns für ein Inhouse-Training oder lass dich auf die Warteliste setzen.
               </p>
-              <Link href="/v2#kontakt" className="btn-v2-primary py-3 px-6 text-sm">Kontakt aufnehmen</Link>
+              <Link href="/#kontakt" className="btn-primary py-3 px-6 text-sm">Kontakt aufnehmen</Link>
             </div>
           ) : (
             <div className="space-y-4">
@@ -100,7 +100,7 @@ export default async function V2TerminePage() {
                       </div>
                       <div className="col-span-12 md:col-span-3 md:text-right">
                         {kannBuchen ? (
-                          <Link href={detailLink(e)} className="btn-v2-primary text-sm py-2.5 px-5 inline-block">Details & Anmeldung →</Link>
+                          <Link href={detailLink(e)} className="btn-primary text-sm py-2.5 px-5 inline-block">Details & Anmeldung →</Link>
                         ) : (
                           <span className="text-sm text-ink-muted">—</span>
                         )}
@@ -114,7 +114,7 @@ export default async function V2TerminePage() {
 
           <div className="mt-12 bg-eucalyptus-50 rounded-3xl p-6">
             <p className="text-sm text-ink-soft font-serif">
-              Kein passender Termin? Wir bieten alle Kurse auch als <strong className="text-ink">Inhouse-Training</strong> für Teams an. <Link href="/v2#kontakt" className="text-eucalyptus-700 font-medium hover:underline underline-offset-4">Jetzt anfragen →</Link>
+              Kein passender Termin? Wir bieten alle Kurse auch als <strong className="text-ink">Inhouse-Training</strong> für Teams an. <Link href="/#kontakt" className="text-eucalyptus-700 font-medium hover:underline underline-offset-4">Jetzt anfragen →</Link>
             </p>
           </div>
         </div>

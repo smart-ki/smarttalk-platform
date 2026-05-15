@@ -65,14 +65,21 @@ async function strapiGet<T>(path: string, opts?: { revalidate?: number }): Promi
   const headers: Record<string, string> = {}
   if (STRAPI_API_TOKEN) headers.Authorization = `Bearer ${STRAPI_API_TOKEN}`
 
-  const res = await fetch(url, {
-    headers,
-    next: { revalidate: opts?.revalidate ?? REVALIDATE },
-  })
-  if (!res.ok) {
-    throw new Error(`Strapi-Fehler ${res.status} bei ${path}: ${await res.text()}`)
+  try {
+    const res = await fetch(url, {
+      headers,
+      next: { revalidate: opts?.revalidate ?? REVALIDATE },
+    })
+    if (!res.ok) {
+      console.warn(`Strapi ${res.status} bei ${path}`)
+      return { data: [] } as T
+    }
+    return res.json() as Promise<T>
+  } catch (err) {
+    // Strapi nicht erreichbar (z.B. lokaler Build ohne laufendes Backend): leeres Resultat statt Build-Abbruch
+    console.warn(`Strapi unerreichbar bei ${path}:`, (err as Error).message)
+    return { data: [] } as T
   }
-  return res.json() as Promise<T>
 }
 
 function strapiToTermin(t: StrapiTermin): Termin {

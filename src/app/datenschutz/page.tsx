@@ -1,4 +1,4 @@
-export default function V2DatenschutzPage() {
+export default function DatenschutzPage() {
   return (
     <div className="bg-cream py-20 px-4">
       <div className="max-w-3xl mx-auto">

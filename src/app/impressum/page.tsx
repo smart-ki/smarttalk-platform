@@ -1,4 +1,4 @@
-export default function V2ImpressumPage() {
+export default function ImpressumPage() {
   return (
     <div className="bg-cream py-20 px-4">
       <div className="max-w-3xl mx-auto">
