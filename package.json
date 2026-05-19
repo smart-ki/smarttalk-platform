@@ -9,10 +9,10 @@
     "migrate:strapi": "tsx --env-file=.env.local scripts/migrate-to-strapi.ts"
   },
   "dependencies": {
+    "@azure/identity": "^4.13.1",
     "next": "^16.2.6",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "resend": "^4.0.0"
+    "react-dom": "^19.2.6"
   },
   "devDependencies": {
     "@types/node": "^20",

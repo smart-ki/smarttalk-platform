@@ -1,14 +1,10 @@
 import { NextResponse } from 'next/server'
-import { Resend } from 'resend'
+import { sendMail } from '@/lib/mailer'
 
 export async function POST(req: Request) {
   try {
     const body = await req.json()
-    const resend = new Resend(process.env.RESEND_API_KEY)
-    const empfaenger = (process.env.BOOKING_EMAIL ?? '').split(',').map((s) => s.trim()).filter(Boolean)
-    await resend.emails.send({
-      from: 'SmartTalk <onboarding@resend.dev>',
-      to: empfaenger,
+    await sendMail({
       subject: `Neue Buchungsanfrage: ${body.kursTitel}`,
       html: `
         <p><strong>Kurs:</strong> ${body.kursTitel}</p>
@@ -21,7 +17,8 @@ export async function POST(req: Request) {
       `,
     })
     return NextResponse.json({ ok: true })
-  } catch {
+  } catch (err) {
+    console.error('buchen/route Fehler:', (err as Error).message)
     return NextResponse.json({ ok: false }, { status: 500 })
   }
 }
