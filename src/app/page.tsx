@@ -63,7 +63,7 @@ export default async function HomePage() {
       </section>
 
       {/* ─── DER MENSCH IM ZENTRUM ─── */}
-      <section className="relative py-24 px-4 overflow-hidden">
+      <section className="relative bg-cream-50 py-24 px-4 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 blob bg-mauve-100 opacity-60 blur-2xl -translate-y-1/4 translate-x-1/4 pointer-events-none" />
         <div className="max-w-6xl mx-auto relative">
           <div className="text-center mb-16">
@@ -186,7 +186,7 @@ export default async function HomePage() {
       </section>
 
       {/* ─── PILLAR 1: KI & DIGITAL ─── */}
-      <section id="ki-digital" className="relative py-24 px-4 overflow-hidden">
+      <section id="ki-digital" className="relative bg-cream py-24 px-4 overflow-hidden">
         <div className="absolute top-20 left-0 w-72 h-72 blob bg-apricot-100 opacity-50 blur-2xl pointer-events-none" />
         <div className="max-w-6xl mx-auto relative">
           <div className="text-center mb-16">
