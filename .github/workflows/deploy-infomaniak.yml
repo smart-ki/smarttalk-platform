@@ -1,0 +1,38 @@
+name: Deploy to Infomaniak VPS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Queue deploys instead of cancelling one mid-flight.
+concurrency:
+  group: deploy-infomaniak
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "${PORT}" -H "${HOST}" >> ~/.ssh/known_hosts 2>/dev/null
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          PORT: ${{ secrets.DEPLOY_PORT || '22' }}
+
+      # The key is locked to a forced command on the server (authorized_keys),
+      # so it can only run the deploy script for /home/ki-smarttalk/app.
+      # The argument below is ignored by the forced command.
+      - name: Trigger deploy
+        run: |
+          ssh -i ~/.ssh/deploy_key -p "${PORT}" \
+            -o ServerAliveInterval=30 -o ServerAliveCountMax=10 -o TCPKeepAlive=yes \
+            "${DEPLOY_USER}@${HOST}" deploy
+        env:
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT || '22' }}
