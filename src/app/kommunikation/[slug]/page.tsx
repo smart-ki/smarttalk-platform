@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { getKommKurse, getKommKursBySlug } from '@/lib/strapi'
+import { getKommKurse, getKommKursBySlug } from '@/lib/studio'
 import BuchungsFormular from '@/components/BuchungsFormular'
 
 interface Props {

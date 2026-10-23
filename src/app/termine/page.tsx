@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { getKiKurse, getKommKurse } from '@/lib/strapi'
+import { getKiKurse, getKommKurse } from '@/lib/studio'
 import type { Termin } from '@/data/termin'
 import { formatTerminBereich, isVergangen, statusLabel } from '@/data/termin'
 

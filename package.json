@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "migrate:strapi": "tsx --env-file=.env.local scripts/migrate-to-strapi.ts"
+    "check:studio": "tsx scripts/pruefe-studio.ts"
   },
   "dependencies": {
     "@azure/identity": "^4.13.1",

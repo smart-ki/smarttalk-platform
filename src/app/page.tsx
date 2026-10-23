@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getKiKurse, getKommKurse } from '@/lib/strapi'
+import { getKiKurse, getKommKurse } from '@/lib/studio'
 import KiKursCard from '@/components/KiKursCard'
 import KommKursCard from '@/components/KommKursCard'
 import KontaktFormular from '@/components/KontaktFormular'
