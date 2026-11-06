@@ -14,13 +14,23 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # Host key is pinned via DEPLOY_KNOWN_HOSTS (security audit 2026-11, INF-68392C).
+      # A blind ssh-keyscan trusts whatever answers on that IP (MITM on first contact).
+      # Fallback to keyscan only while the secret is not set yet.
       - name: Setup SSH key
         run: |
-          mkdir -p ~/.ssh
-          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/deploy_key
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
-          ssh-keyscan -p "${PORT}" -H "${HOST}" >> ~/.ssh/known_hosts 2>/dev/null
+          if [ -n "$DEPLOY_KNOWN_HOSTS" ]; then
+            printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          else
+            echo "::warning::DEPLOY_KNOWN_HOSTS not set - falling back to ssh-keyscan (unpinned host key)"
+            ssh-keyscan -p "${PORT}" -H "${HOST}" >> ~/.ssh/known_hosts 2>/dev/null
+          fi
         env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
           HOST: ${{ secrets.DEPLOY_HOST }}
           PORT: ${{ secrets.DEPLOY_PORT || '22' }}
 
@@ -29,7 +39,7 @@ jobs:
       # The argument below is ignored by the forced command.
       - name: Trigger deploy
         run: |
-          ssh -i ~/.ssh/deploy_key -p "${PORT}" \
+          ssh -i ~/.ssh/deploy_key -p "${PORT}" -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
             -o ServerAliveInterval=30 -o ServerAliveCountMax=10 -o TCPKeepAlive=yes \
             "${DEPLOY_USER}@${HOST}" deploy
         env:
